@@ -1,0 +1,23 @@
+general.import = [
+  "~/.config/alacritty/catppuccin-mocha.toml"
+]
+
+[mouse]
+hide_when_typing = true
+
+[cursor.style]
+shape = "Beam"
+blinking = "Always"
+
+[window]
+opacity = 0.7
+decorations = "None"
+blur = true
+
+[font.normal]
+
+[terminal]
+shell = "/usr/bin/fish"
+#family = "NotoSansM Nerd Font Mono"
+#style = "Normal"
+
