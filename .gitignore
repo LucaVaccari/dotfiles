@@ -4,3 +4,4 @@ vifm/.config/vifm/vifminfo.json
 nvim/.config/nvim/lazy-lock.json
 
 gcm-diagnose.log
+fish_variables

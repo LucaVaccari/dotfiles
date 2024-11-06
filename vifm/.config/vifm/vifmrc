@@ -186,7 +186,7 @@ fileviewer {*.md},<text/markdown> bat %f
 filetype {*.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,*.opus,
          \*.aac,*.mpga},
         \<audio/*>
-       \ vlc %f,
+       \ vlc %f &,
        \ ffplay -nodisp -hide_banner -autoexit %c,
 fileviewer {*.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,*.opus,
            \*.aac,*.mpga},
@@ -236,6 +236,9 @@ fileviewer {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
         \ vifmimg draw %px %py %pw %ph %c
         \ %pc
          \ vifmimg clear
+
+" MuseScore
+filetype {*.mscz},mscore %f
 
 " MD5
 filetype *.md5
