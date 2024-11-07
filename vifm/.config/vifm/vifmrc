@@ -180,7 +180,7 @@ filetype {*.pdf},<application/pdf> librewolf %c %i
 fileviewer {*.pdf},<application/pdf> pdftotext -nopgbrk %c -
 
 " Markdown
-fileviewer {*.md},<text/markdown> bat %f
+fileviewer {*.md},<text/markdown> mdv %c
 
 " Audio
 filetype {*.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,*.opus,
