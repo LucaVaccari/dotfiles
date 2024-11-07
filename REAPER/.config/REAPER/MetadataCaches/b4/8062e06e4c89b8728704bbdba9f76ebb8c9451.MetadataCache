@@ -1,0 +1,579 @@
+C10018 "C:\Users\luca_\Desktop\Luca\ReaperProjects\4. Fallen leaves\Single edits\Lament (single edit)\Audio"
+F 02-Drums-01.flac 18559928 0 1719159642 0
+D s 44100 n 2 l 1:42.722 i 24
+F 02-Drums-02.flac 18444006 0 1719159643 0
+D s 44100 n 2 l 1:46.672 i 24
+F 02-Drums.flac 2489477 0 1719159641 0
+D s 44100 n 2 l 0:26.653 i 24
+F "04-Groove Agent 5 - stem [chan 1]-01.flac" 9345742 0 1719159645 0
+D s 44100 n 1 l 1:40.722 i 24
+F "04-Groove Agent 5 - stem [chan 1]-02.flac" 9303959 0 1719159646 0
+D s 44100 n 1 l 1:44.672 i 24
+F "04-Groove Agent 5 - stem [chan 1].flac" 1938356 0 1719159644 0
+D s 44100 n 1 l 0:24.653 i 24
+F "05-Groove Agent 5 - stem [chan 2]-01.flac" 9388830 0 1719159647 0
+D s 44100 n 1 l 1:40.722 i 24
+F "05-Groove Agent 5 - stem [chan 2]-02.flac" 9314887 0 1719159647 0
+D s 44100 n 1 l 1:44.672 i 24
+F "05-Groove Agent 5 - stem [chan 2].flac" 1950400 0 1719159646 0
+D s 44100 n 1 l 0:24.653 i 24
+F "06-Groove Agent 5 - stem [chan 3]-01.flac" 5193987 0 1719159648 0
+D s 44100 n 1 l 1:40.722 i 24
+F "06-Groove Agent 5 - stem [chan 3]-02.flac" 5018763 0 1719159649 0
+D s 44100 n 1 l 1:44.672 i 24
+F "06-Groove Agent 5 - stem [chan 3].flac" 923017 0 1719159647 0
+D s 44100 n 1 l 0:24.653 i 24
+F 08-Swells-01.flac 1509430 0 1719159649 0
+D y 2021-05-24 s 44100 n 2 l 0:13.624
+D i 24
+F 08-Swells-02.flac 3077341 0 1719159650 0
+D y 2021-05-24 s 44100 n 2 l 0:28.395
+D i 24
+F 08-Swells.flac 1474486 0 1719159649 0
+D y 2021-05-24 s 44100 n 2 l 0:13.627
+D i 24
+F 09-Kick-01.flac 6114131 0 1719159651 0
+D s 44100 n 1 l 1:32.464 i 24
+F 09-Kick-02.flac 6337068 0 1719159651 0
+D s 44100 n 1 l 1:31.077 i 24
+F 09-Kick.flac 1123520 0 1719159650 0
+D s 44100 n 1 l 0:20.453 i 24
+F "11-Bass source-01.flac" 4822222 0 1719159653 0
+D s 44100 n 1 l 1:40.847 i 24
+F "11-Bass source.flac" 4623935 0 1719159652 0
+D s 44100 n 1 l 1:40.580 i 24
+F "12-Bass low-01.flac" 1940792 0 1719159654 0
+D s 44100 n 1 l 1:42.846 i 24
+F "12-Bass low.flac" 1873500 0 1719159653 0
+D s 44100 n 1 l 1:42.579 i 24
+F "13-Bass mids-01.flac" 4550161 0 1719159656 0
+D s 44100 n 1 l 1:44.846 i 24
+F "13-Bass mids.flac" 4352842 0 1719159655 0
+D s 44100 n 1 l 1:44.579 i 24
+F 15-Acoustic-01.flac 3140821 0 1719159657 0
+D s 44100 n 2 l 0:42.527 i 24
+F 15-Acoustic-02.flac 9488899 0 1719159659 0
+D s 44100 n 2 l 2:06.560 i 24
+F 15-Acoustic.flac 4385486 0 1719159656 0
+D s 44100 n 2 l 1:07.137 i 24
+F 17-Distorted_1L-01.flac 6173106 0 1719159660 0
+D s 44100 n 1 l 1:28.386 i 24
+F 17-Distorted_1L.flac 3717462 0 1719159659 0
+D s 44100 n 1 l 0:56.273 i 24
+F 18-Distorted_1R-01.flac 6074633 0 1719159661 0
+D s 44100 n 1 l 1:28.386 i 24
+F 18-Distorted_1R.flac 3725409 0 1719159660 0
+D s 44100 n 1 l 0:56.273 i 24
+F 20-Acoustic-2023-09-07_10.15-01.wav 19390828 0 1699007547 0
+D y 2023-11-03 s 44100 n 1 r 0:14.780
+D l 2:26.562 i 24
+F 20-Acoustic-2023-09-07_10.21.wav 5360620 0 1699007582 0
+D y 2023-11-03 s 44100 n 1 r 3:49.396
+D l 0:40.513 i 24
+F 20-Acoustic-2023-09-07_10.23-01.wav 19593004 0 1699007761 0
+D y 2023-11-03 s 44100 n 1 r 5:23.064
+D l 2:28.090 i 24
+F 20-Distorted_2L.flac 5393753 0 1719159661 0
+D y 2024-06-23 s 44100 n 1 l 1:05.773
+D i 24
+F 21-Distorted_2R.flac 5405041 0 1719159662 0
+D y 2024-06-23 s 44100 n 1 l 1:05.773
+D i 24
+F "22-Keys & Synths.flac" 41720588 0 1719159666 0
+D y 2024-06-23 s 44100 n 2 l 4:58.483
+D i 24
+F 23-Piano-01.flac 8044827 0 1719159669 0
+D s 44100 n 2 l 1:09.308 i 24
+F 23-Piano.flac 19800634 0 1719159668 0
+D s 44100 n 2 l 3:16.638 i 24
+F "24-Piano effects-01.flac" 1606250 0 1719159670 0
+D y 2023-09-11 s 44100 n 2 l 0:12.039
+D i 24
+F "24-Piano effects.flac" 1960855 0 1719159670 0
+D y 2023-09-11 s 44100 n 2 l 0:14.764
+D i 24
+F "25-Fast swell-01.flac" 764439 0 1719159671 0
+D s 44100 n 2 l 0:04.696 i 24
+F "25-Fast swell-02.flac" 765151 0 1719159671 0
+D s 44100 n 2 l 0:04.696 i 24
+F "25-Fast swell-03.flac" 807071 0 1719159671 0
+D s 44100 n 2 l 0:04.693 i 24
+F "25-Fast swell-04.flac" 806424 0 1719159671 0
+D s 44100 n 2 l 0:04.696 i 24
+F "25-Fast swell.flac" 764577 0 1719159670 0
+D s 44100 n 2 l 0:04.693 i 24
+F 26-Arpeggio-01.flac 4438946 0 1719159673 0
+D s 44100 n 2 l 0:30.540 i 24
+F 26-Arpeggio-02.flac 4895891 0 1719159674 0
+D s 44100 n 2 l 0:37.926 i 24
+F 26-Arpeggio.flac 6517953 0 1719159672 0
+D s 44100 n 2 l 0:45.310 i 24
+F "27-Pluck delay-01.flac" 7156280 0 1719159675 0
+D s 44100 n 2 l 0:39.926 i 24
+F "27-Pluck delay-02.flac" 13383395 0 1719159676 0
+D s 44100 n 2 l 1:11.308 i 24
+F "27-Pluck delay.flac" 3036698 0 1719159674 0
+D s 44100 n 2 l 0:17.780 i 24
+F "29-Legato strings-01.flac" 11482330 0 1719159677 0
+D s 44100 n 2 l 1:12.266 i 24
+F "29-Legato strings-02.flac" 2182225 0 1719159678 0
+D s 44100 n 2 l 0:17.176 i 24
+F "29-Legato strings-03.flac" 11862454 0 1719159679 0
+D s 44100 n 2 l 1:09.308 i 24
+F "29-Legato strings.flac" 4630949 0 1719159676 0
+D s 44100 n 2 l 0:30.856 i 24
+F 29-Main-2024-01-17_09.38-02.wav 19539342 0 1705486261 0
+D y 2024-01-17 s 96000 n 1 r 6:37.232
+D l 1:07.842 i 24
+F 29-Main-2024-01-17_09.39.wav 19485582 0 1705486286 0
+D y 2024-01-17 s 96000 n 1 r 6:37.232
+D l 1:07.656 i 24
+F 29-Main-2024-01-17_09.41.wav 19375072 0 1705480932 0
+D y 2024-01-17 s 96000 n 1 r 6:37.232
+D l 1:07.272 i 24
+F 29-Main-2024-01-17_09.42.wav 19357326 0 1705486270 0
+D y 2024-01-17 s 96000 n 1 r 6:37.232
+D l 1:07.210 i 24
+F 29-Main-2024-01-17_09.44-01.wav 11696608 0 1705481089 0
+D y 2024-01-17 s 96000 n 1 r 3:47.552
+D l 0:40.610 i 24
+F 29-Main-2024-01-17_09.44-02.wav 10892430 0 1705486224 0
+D y 2024-01-17 s 96000 n 1 r 3:47.552
+D l 0:37.818 i 24
+F 29-Main-2024-01-17_09.45.wav 10950030 0 1705486210 0
+D y 2024-01-17 s 96000 n 1 r 3:47.552
+D l 0:38.018 i 24
+F 29-Main-2024-01-17_09.46.wav 10871694 0 1705486217 0
+D y 2024-01-17 s 96000 n 1 r 3:47.552
+D l 0:37.746 i 24
+F 29-Main-2024-01-17_09.52-01.wav 13244046 0 1705486148 0
+D y 2024-01-17 s 96000 n 1 r 1:49.154
+D l 0:45.984 i 24
+F 29-Main-2024-01-17_09.53.wav 12405390 0 1705486136 0
+D y 2024-01-17 s 96000 n 1 r 1:50.999
+D l 0:43.072 i 24
+F 29-Main-2024-01-17_09.54.wav 12949134 0 1705486147 0
+D y 2024-01-17 s 96000 n 1 r 1:49.154
+D l 0:44.960 i 24
+F 29-Main-2024-01-17_09.55.wav 13006734 0 1705486149 0
+D y 2024-01-17 s 96000 n 1 r 1:49.154
+D l 0:45.160 i 24
+F 29-Main-2024-01-17_09.56.wav 12925326 0 1705486198 0
+D y 2024-01-17 s 96000 n 1 r 2:48.475
+D l 0:44.877 i 24
+F 29-Main-2024-01-17_09.57-01.wav 13258720 0 1705481914 0
+D y 2024-01-17 s 96000 n 1 r 2:48.475
+D l 0:46.034 i 24
+F 29-Main-2024-01-17_09.57.wav 12909966 0 1705486185 0
+D y 2024-01-17 s 96000 n 1 r 2:48.475
+D l 0:44.824 i 24
+F 29-Main-2024-01-17_09.58.wav 12890766 0 1705486186 0
+D y 2024-01-17 s 96000 n 1 r 2:48.475
+D l 0:44.757 i 24
+F 29-Main-2024-01-17_10.02.wav 13778656 0 1705482170 0
+D y 2024-01-17 s 96000 n 1 r 5:20.353
+D l 0:47.840 i 24
+F 29-Main-2024-01-17_10.03-01.wav 13666446 0 1705486238 0
+D y 2024-01-17 s 96000 n 1 r 5:20.353
+D l 0:47.450 i 24
+F 29-Main-2024-01-17_10.03.wav 13700320 0 1705482234 0
+D y 2024-01-17 s 96000 n 1 r 5:20.353
+D l 0:47.568 i 24
+F 29-Main-2024-01-17_10.04.wav 13664142 0 1705486328 0
+D y 2024-01-17 s 96000 n 1 r 5:20.353
+D l 0:47.442 i 24
+F "30-Intimate violins.flac" 2308475 0 1719159679 0
+D y 2024-01-16 s 44100 n 2 l 0:17.176
+D i 24
+F "30-Main soft-2024-01-18_11.02.wav" 1283702 0 1705572161 0
+D y 2024-01-18 s 44100 n 1 r 6:31.694
+D l 0:09.697 i 24
+F "30-Piano effects-2023-09-11_17.48-glued.wav" 3908674 0 1694447320 0
+D y 2023-09-11 s 44100 n 2 r 0:46.153
+D l 0:14.769 i 24
+F 31-Vocals.flac 26869626 0 1719159682 0
+D y 2024-06-23 s 44100 n 2 l 4:24.411
+D i 24
+F 32-2024-01-18_21.51.wav 1956832 0 1705611112 0
+D y 2024-01-18 s 44100 n 2 r 6:22.449
+D l 0:07.392 i 24
+F 33-2024-01-18_10.37-01.wav 4231588 0 1705570847 0
+D y 2024-01-18 s 44100 n 1 r 3:49.399
+D l 0:31.979 i 24
+F 33-L1-2024-01-18_10.44-02.wav 2502902 0 1705571077 0
+D y 2024-01-18 s 44100 n 1 r 3:12.476
+D l 0:18.912 i 24
+F 33-L1-2024-01-18_10.47.wav 1743350 0 1705571276 0
+D y 2024-01-18 s 44100 n 1 r 5:45.926
+D l 0:13.171 i 24
+F 33-L1-2024-01-18_10.49.wav 4872182 0 1705571418 0
+D y 2024-01-18 s 44100 n 1 r 6:39.079
+D l 0:36.821 i 24
+F 33-L1-2024-01-18_10.50.wav 2469878 0 1705571446 0
+D y 2024-01-18 s 44100 n 1 r 7:23.386
+D l 0:18.663 i 24
+F "33-Main soft - stem-01.flac" 3066328 0 1719159684 0
+D s 44100 n 1 l 1:12.347 i 24
+F "33-Main soft - stem.flac" 5157597 0 1719159683 0
+D s 44100 n 1 l 1:35.660 i 24
+F 34-2024-01-18_10.41.wav 4262390 0 1705570915 0
+D y 2024-01-18 s 44100 n 1 r 3:49.399
+D l 0:32.212 i 24
+F "34-Main chorus - stem-01.flac" 4887256 0 1719159685 0
+D s 44100 n 2 l 1:10.124 i 24
+F "34-Main chorus - stem.flac" 3072224 0 1719159684 0
+D s 44100 n 2 l 0:44.680 i 24
+F 34-R1-2024-01-18_10.44.wav 2500982 0 1705571100 0
+D y 2024-01-18 s 44100 n 1 r 3:12.476
+D l 0:18.898 i 24
+F 34-R1-2024-01-18_10.47.wav 1676150 0 1705571291 0
+D y 2024-01-18 s 44100 n 1 r 5:45.926
+D l 0:12.663 i 24
+F 34-R1-2024-01-18_10.51.wav 4781558 0 1705571520 0
+D y 2024-01-18 s 44100 n 1 r 6:39.079
+D l 0:36.136 i 24
+F 34-R1-2024-01-18_10.52-01.wav 2339318 0 1705571586 0
+D y 2024-01-18 s 44100 n 1 r 7:23.386
+D l 0:17.676 i 24
+F 35-Bg-01.flac 1377492 0 1719159686 0
+D y 2024-06-23 s 44100 n 2 l 0:14.050
+D i 24
+F 35-Bg-02.flac 10123876 0 1719159687 0
+D y 2024-06-23 s 44100 n 2 l 1:05.602
+D i 24
+F 35-Bg.flac 6614744 0 1719159686 0
+D y 2024-06-23 s 44100 n 2 l 0:56.076
+D i 24
+F 35-Cassette-2023-11-19_18.44.rpp 69459 0 1705436179 0
+D a "Lit Silver" p 130 n 2 l 1:47.840
+F 35-L2-2024-01-18_10.55.wav 4269302 0 1705571738 0
+D y 2024-01-18 s 44100 n 1 r 6:39.079
+D l 0:32.264 i 24
+F 35-L2-2024-01-18_10.57.wav 2269814 0 1705571842 0
+D y 2024-01-18 s 44100 n 1 r 7:23.386
+D l 0:17.150 i 24
+F 35-L2-2024-01-18_11.04.wav 1198838 0 1705572271 0
+D y 2024-01-18 s 44100 n 1 r 7:14.379
+D l 0:09.055 i 24
+F 36-2024-01-16_21.19.wav 360182 0 1705436362 0
+D y 2024-01-16 s 44100 n 1 r 7:47.386
+D l 0:02.716 i 24
+F 36-L1-01.flac 658830 0 1719159687 0
+D s 44100 n 1 l 0:12.051 i 24
+F 36-L1-02.flac 4879489 0 1719159688 0
+D s 44100 n 1 l 1:03.602 i 24
+F 36-L1.flac 3243739 0 1719159687 0
+D s 44100 n 1 l 0:53.844 i 24
+F 36-R2-2024-01-18_10.55-01.wav 4225526 0 1705571785 0
+D y 2024-01-18 s 44100 n 1 r 6:39.079
+D l 0:31.933 i 24
+F 36-R2-2024-01-18_10.57.wav 2224118 0 1705571861 0
+D y 2024-01-18 s 44100 n 1 r 7:23.386
+D l 0:16.805 i 24
+F "37-Ad libs-2024-01-18_11.05.wav" 4112630 0 1705572364 0
+D y 2024-01-18 s 44100 n 1 r 6:40.925
+D l 0:31.080 i 24
+F "37-Ad libs-2024-01-18_11.06.wav" 2552054 0 1705572423 0
+D y 2024-01-18 s 44100 n 1 r 7:11.386
+D l 0:19.284 i 24
+F 37-R1-01.flac 684886 0 1719159688 0
+D s 44100 n 1 l 0:12.051 i 24
+F 37-R1-02.flac 2971853 0 1719159689 0
+D s 44100 n 1 l 0:36.768 i 24
+F 37-R1-03.flac 1408647 0 1719159689 0
+D s 44100 n 1 l 0:18.770 i 24
+F 37-R1.flac 3247194 0 1719159688 0
+D s 44100 n 1 l 0:54.076 i 24
+F 38-2023-11-03_11.40-glued.wav 1330856 0 1699008234 0
+D y 2023-11-03 s 44100 n 2 r 6:03.832
+D l 0:07.540 i 16
+F 38-L2-01.flac 1251194 0 1719159689 0
+D y 2024-06-23 s 44100 n 1 l 0:18.245
+D i 24
+F 38-L2.flac 2483880 0 1719159689 0
+D y 2024-06-23 s 44100 n 1 l 0:32.896
+D i 24
+F 39-R2-01.flac 1220167 0 1719159690 0
+D y 2024-06-23 s 44100 n 1 l 0:17.899
+D i 24
+F 39-R2.flac 3135431 0 1719159689 0
+D y 2024-06-23 s 44100 n 1 l 0:37.540
+D i 24
+F "40-Ad libs.flac" 5314195 0 1719159690 0
+D y 2024-06-23 s 44100 n 2 l 0:33.848
+D i 24
+F "42-Rev 1.flac" 26538524 0 1719159694 0
+D y 2024-06-23 s 44100 n 2 l 4:24.411
+D i 24
+F "43-Rev 2.flac" 36198032 0 1719159698 0
+D y 2024-06-23 s 44100 n 2 l 4:59.421
+D i 24
+F 44-Delay.flac 23630410 0 1719159701 0
+D y 2024-06-23 s 44100 n 2 l 4:24.411
+D i 24
+F 46-Reverse-01.flac 890944 0 1719159702 0
+D s 44100 n 2 l 0:07.816 i 24
+F 46-Reverse-02.flac 688701 0 1719159702 0
+D s 44100 n 2 l 0:07.354 i 24
+F 46-Reverse-03.flac 912878 0 1719159703 0
+D s 44100 n 2 l 0:08.121 i 24
+F 46-Reverse.flac 744826 0 1719159702 0
+D s 44100 n 2 l 0:08.060 i 24
+F "47-Cassette - subproject.flac" 3442673 0 1719159703 0
+D y 2024-06-23 s 44100 n 2 l 0:26.560
+D i 24
+F 48.flac 56872 0 1719159703 0
+D y 2024-01-16 s 44100 n 1 l 0:01.384
+D i 24
+F "Lament (single edit)_freeze_Acoustic-001.wav" 22360552 0 1719159398 0
+D y 2024-06-23 s 44100 n 2 r 0:03.758
+D l 1:03.378 i 32
+F "Lament (single edit)_freeze_Acoustic-002.wav" 15003432 0 1719159399 0
+D y 2024-06-23 s 44100 n 2 r 2:02.367
+D l 0:42.524 i 32
+F "Lament (single edit)_freeze_Acoustic-003.wav" 44650192 0 1719159404 0
+D y 2024-06-23 s 44100 n 2 r 2:50.861
+D l 2:06.557 i 32
+F "Lament (single edit)_freeze_Ad libs.wav" 93284208 0 1719159601 0
+D y 2024-06-23 s 44100 n 2 r 0:28.557
+D l 4:24.408 i 32
+F "Lament (single edit)_freeze_Bass low-002.wav" 18095404 0 1719159354 0
+D y 2024-06-23 s 44100 n 1 r 1:05.136
+D l 1:42.577 i 32
+F "Lament (single edit)_freeze_Bass low-003.wav" 18142808 0 1719159357 0
+D y 2024-06-23 s 44100 n 1 r 3:15.637
+D l 1:42.846 i 32
+F "Lament (single edit)_freeze_Bass mids-002.wav" 18448204 0 1719159364 0
+D y 2024-06-23 s 44100 n 1 r 1:05.136
+D l 1:44.577 i 32
+F "Lament (single edit)_freeze_Bass mids-003.wav" 18495608 0 1719159367 0
+D y 2024-06-23 s 44100 n 1 r 3:15.637
+D l 1:44.846 i 32
+F "Lament (single edit)_freeze_Bass source-001.wav" 17742600 0 1719159347 0
+D y 2024-06-23 s 44100 n 1 r 1:05.136
+D l 1:40.577 i 32
+F "Lament (single edit)_freeze_Bass source-002.wav" 17790008 0 1719159349 0
+D y 2024-06-23 s 44100 n 1 r 3:15.637
+D l 1:40.846 i 32
+F "Lament (single edit)_freeze_Bg.wav" 93284208 0 1719159601 0
+D y 2024-06-23 s 44100 n 2 r 0:28.557
+D l 4:24.408 i 32
+F "Lament (single edit)_freeze_Cassette - subproject.wav" 9370976 0 1719159569 0
+D y 2024-06-23 s 44100 n 2 r 0:09.355
+D l 0:26.559 i 32
+F "Lament (single edit)_freeze_Delay.wav" 104309832 0 1719159630 0
+D y 2024-06-23 s 44100 n 2 r 0:03.758
+D l 4:55.660 i 32
+F "Lament (single edit)_freeze_Distorted_1L-001.wav" 9926728 0 1719159427 0
+D y 2024-06-23 s 44100 n 1 r 1:49.444
+D l 0:56.269 i 32
+F "Lament (single edit)_freeze_Distorted_1L-002.wav" 15591792 0 1719159430 0
+D y 2024-06-23 s 44100 n 1 r 3:29.944
+D l 1:28.384 i 32
+F "Lament (single edit)_freeze_Distorted_1R-001.wav" 9926728 0 1719159427 0
+D y 2024-06-23 s 44100 n 1 r 1:49.444
+D l 0:56.269 i 32
+F "Lament (single edit)_freeze_Distorted_1R-002.wav" 15591792 0 1719159430 0
+D y 2024-06-23 s 44100 n 1 r 3:29.944
+D l 1:28.384 i 32
+F "Lament (single edit)_freeze_Distorted_2L-002.wav" 15591792 0 1719159430 0
+D y 2024-06-23 s 44100 n 1 r 3:29.944
+D l 1:28.384 i 32
+F "Lament (single edit)_freeze_Distorted_2R-002.wav" 15591792 0 1719159430 0
+D y 2024-06-23 s 44100 n 1 r 3:29.944
+D l 1:28.384 i 32
+F "Lament (single edit)_freeze_Drums-001.wav" 9404024 0 1719159318 0
+D y 2024-06-23 s 44100 n 2 r 0:12.449
+D l 0:26.653 i 32
+F "Lament (single edit)_freeze_Drums-002.wav" 36240880 0 1719159325 0
+D y 2024-06-23 s 44100 n 2 r 1:04.508
+D l 1:42.721 i 32
+F "Lament (single edit)_freeze_Drums-003.wav" 37634288 0 1719159331 0
+D y 2024-06-23 s 44100 n 2 r 3:13.658
+D l 1:46.671 i 32
+F "Lament (single edit)_freeze_Groove Agent 5 - stem [chan 1]-001.wav" 4349584 0 1719159311 0
+D y 2024-06-23 s 44100 n 1 r 0:12.449
+D l 0:24.653 i 32
+F "Lament (single edit)_freeze_Groove Agent 5 - stem [chan 1]-002.wav" 17768012 0 1719159312 0
+D y 2024-06-23 s 44100 n 1 r 1:04.508
+D l 1:40.721 i 32
+F "Lament (single edit)_freeze_Groove Agent 5 - stem [chan 1]-003.wav" 18464716 0 1719159313 0
+D y 2024-06-23 s 44100 n 1 r 3:13.658
+D l 1:44.671 i 32
+F "Lament (single edit)_freeze_Groove Agent 5 - stem [chan 2]-001.wav" 4349584 0 1719159302 0
+D y 2024-06-23 s 44100 n 1 r 0:12.449
+D l 0:24.653 i 32
+F "Lament (single edit)_freeze_Groove Agent 5 - stem [chan 2]-002.wav" 17768012 0 1719159304 0
+D y 2024-06-23 s 44100 n 1 r 1:04.508
+D l 1:40.721 i 32
+F "Lament (single edit)_freeze_Groove Agent 5 - stem [chan 2]-003.wav" 18464716 0 1719159305 0
+D y 2024-06-23 s 44100 n 1 r 3:13.658
+D l 1:44.671 i 32
+F "Lament (single edit)_freeze_Groove Agent 5 - stem [chan 3]-001.wav" 4349584 0 1719159302 0
+D y 2024-06-23 s 44100 n 1 r 0:12.449
+D l 0:24.653 i 32
+F "Lament (single edit)_freeze_Groove Agent 5 - stem [chan 3]-002.wav" 17768012 0 1719159304 0
+D y 2024-06-23 s 44100 n 1 r 1:04.508
+D l 1:40.721 i 32
+F "Lament (single edit)_freeze_Groove Agent 5 - stem [chan 3]-003.wav" 18464716 0 1719159305 0
+D y 2024-06-23 s 44100 n 1 r 3:13.658
+D l 1:44.671 i 32
+F "Lament (single edit)_freeze_Keys & Synths.wav" 104654344 0 1719159470 0
+D y 2024-06-23 s 44100 n 2 r 0:01.846
+D l 4:56.637 i 32
+F "Lament (single edit)_freeze_Kick-001.wav" 3608408 0 1719159039 0
+D y 2024-06-23 s 44100 n 1 r 0:14.919
+D l 0:20.451 i 32
+F "Lament (single edit)_freeze_Kick-002.wav" 16310960 0 1719159048 0
+D y 2024-06-23 s 44100 n 1 r 1:05.136
+D l 1:32.461 i 32
+F "Lament (single edit)_freeze_Kick-003.wav" 16066716 0 1719159057 0
+D y 2024-06-23 s 44100 n 1 r 3:15.637
+D l 1:31.076 i 32
+F "Lament (single edit)_freeze_L1-001.wav" 3121668 0 1719159557 0
+D y 2024-06-23 s 44100 n 1 r 1:42.520
+D l 0:17.692 i 32
+F "Lament (single edit)_freeze_L1-002.wav" 5794032 0 1719159558 0
+D y 2024-06-23 s 44100 n 1 r 2:03.751
+D l 0:32.841 i 32
+F "Lament (single edit)_freeze_L1-003.wav" 2126408 0 1719159558 0
+D y 2024-06-23 s 44100 n 1 r 3:08.058
+D l 0:12.050 i 32
+F "Lament (single edit)_freeze_L1-004.wav" 11219892 0 1719159563 0
+D y 2024-06-23 s 44100 n 1 r 3:44.714
+D l 1:03.600 i 32
+F "Lament (single edit)_freeze_L2-004.wav" 11219892 0 1719159563 0
+D y 2024-06-23 s 44100 n 1 r 3:44.714
+D l 1:03.600 i 32
+F "Lament (single edit)_freeze_Main chorus - stem-001.wav" 15762944 0 1719159545 0
+D y 2024-06-23 s 44100 n 2 r 1:58.036
+D l 0:44.677 i 32
+F "Lament (single edit)_freeze_Main chorus - stem-002.wav" 24740416 0 1719159546 0
+D y 2024-06-23 s 44100 n 2 r 3:40.842
+D l 1:10.123 i 32
+F "Lament (single edit)_freeze_Main soft - stem-001.wav" 16874484 0 1719159507 0
+D y 2024-06-23 s 44100 n 1 r 0:28.557
+D l 1:35.656 i 32
+F "Lament (single edit)_freeze_Main soft - stem-002.wav" 12762384 0 1719159508 0
+D y 2024-06-23 s 44100 n 1 r 2:38.651
+D l 1:12.344 i 32
+F "Lament (single edit)_freeze_Piano-001.wav" 68723016 0 1706377759 0
+D y 2024-01-27 s 44100 n 2 r 0:01.846
+D l 3:14.791 i 32
+F "Lament (single edit)_freeze_Piano-002.wav" 24451824 0 1706377768 0
+D y 2024-01-27 s 44100 n 2 r 3:45.177
+D l 1:09.305 i 32
+F "Lament (single edit)_freeze_Pluck delay-001.wav" 6272880 0 1719159445 0
+D y 2024-06-23 s 44100 n 2 r 0:16.764
+D l 0:17.778 i 32
+F "Lament (single edit)_freeze_Pluck delay-002.wav" 14085608 0 1719159446 0
+D y 2024-06-23 s 44100 n 2 r 2:04.213
+D l 0:39.923 i 32
+F "Lament (single edit)_freeze_Pluck delay-003.wav" 25158104 0 1719159448 0
+D y 2024-06-23 s 44100 n 2 r 3:45.175
+D l 1:11.307 i 32
+F "Lament (single edit)_freeze_R1-001.wav" 3121668 0 1719159557 0
+D y 2024-06-23 s 44100 n 1 r 1:42.520
+D l 0:17.692 i 32
+F "Lament (single edit)_freeze_R1-002.wav" 5794032 0 1719159558 0
+D y 2024-06-23 s 44100 n 1 r 2:03.751
+D l 0:32.841 i 32
+F "Lament (single edit)_freeze_R1-003.wav" 2126408 0 1719159558 0
+D y 2024-06-23 s 44100 n 1 r 3:08.058
+D l 0:12.050 i 32
+F "Lament (single edit)_freeze_R1-004.wav" 11219892 0 1719159563 0
+D y 2024-06-23 s 44100 n 1 r 3:44.714
+D l 1:03.600 i 32
+F "Lament (single edit)_freeze_R2-004.wav" 11219892 0 1719159563 0
+D y 2024-06-23 s 44100 n 1 r 3:44.714
+D l 1:03.600 i 32
+F "Lament (single edit)_freeze_Rev 1.wav" 104309832 0 1719159630 0
+D y 2024-06-23 s 44100 n 2 r 0:03.758
+D l 4:55.660 i 32
+F "Lament (single edit)_freeze_Rev 2.wav" 104309832 0 1719159630 0
+D y 2024-06-23 s 44100 n 2 r 0:03.758
+D l 4:55.660 i 32
+F "Lament (single edit)_freeze_Vocals.wav" 93284208 0 1719159601 0
+D y 2024-06-23 s 44100 n 2 r 0:28.557
+D l 4:24.408 i 32
+F "Lament (single edit)_stems_Groove Agent 5.wav" 3368021224 0 1719159127 0
+D y 2024-06-23 s 44100 n 64 l 4:58.329
+D i 32
+F Lament_freeze_Arpeggio-002.wav 23070280 0 1694005360 0
+D y 2023-09-06 s 48000 n 2 r 2:52.154
+D l 1:00.076 i 32
+F Lament_freeze_Arpeggio-003.wav 11727512 0 1694005363 0
+D y 2023-09-06 s 48000 n 2 r 6:11.372
+D l 0:30.538 i 32
+F Lament_freeze_Arpeggio-004.wav 14563200 0 1694005367 0
+D y 2023-09-06 s 48000 n 2 r 7:10.449
+D l 0:37.923 i 32
+F "Lament_freeze_Bass source-001.wav" 39989448 0 1700416495 0
+D y 2023-11-19 s 44100 n 2 r 2:37.385
+D l 1:53.346 i 32
+F "Lament_freeze_Bass source-002.wav" 34873672 0 1700416515 0
+D y 2023-11-19 s 44100 n 2 r 6:11.372
+D l 1:38.846 i 32
+F Lament_freeze_Distorted_1L-001.wav 41679928 0 1699007417 0
+D y 2023-11-03 s 96000 n 2 r 3:36.462
+D l 0:54.269 i 32
+F Lament_freeze_Distorted_1L-002.wav 66344128 0 1699007466 0
+D y 2023-11-03 s 96000 n 2 r 6:25.680
+D l 1:26.384 i 32
+F Lament_freeze_Distorted_1R-001.wav 41679928 0 1699007417 0
+D y 2023-11-03 s 96000 n 2 r 3:36.462
+D l 0:54.269 i 32
+F Lament_freeze_Distorted_1R-002.wav 66344128 0 1699007466 0
+D y 2023-11-03 s 96000 n 2 r 6:25.680
+D l 1:26.384 i 32
+F Lament_freeze_Distorted_2L-002.wav 66344128 0 1699007466 0
+D y 2023-11-03 s 96000 n 2 r 6:25.680
+D l 1:26.384 i 32
+F Lament_freeze_Distorted_2R-002.wav 66344128 0 1699007466 0
+D y 2023-11-03 s 96000 n 2 r 6:25.680
+D l 1:26.384 i 32
+F "Lament_freeze_Fast swell-001.wav" 1656192 0 1705438113 0
+D y 2024-01-16 s 44100 n 2 r 4:13.385
+D l 0:04.692 i 32
+F "Lament_freeze_Fast swell-002.wav" 1656192 0 1705438114 0
+D y 2024-01-16 s 44100 n 2 r 6:52.911
+D l 0:04.692 i 32
+F "Lament_freeze_Fast swell-003.wav" 1656192 0 1705438114 0
+D y 2024-01-16 s 44100 n 2 r 7:03.064
+D l 0:04.692 i 32
+F "Lament_freeze_Fast swell-004.wav" 1656184 0 1705438115 0
+D y 2024-01-16 s 44100 n 2 r 7:18.757
+D l 0:04.692 i 32
+F "Lament_freeze_Fast swell-005.wav" 1656192 0 1705438116 0
+D y 2024-01-16 s 44100 n 2 r 7:32.603
+D l 0:04.692 i 32
+F "Lament_freeze_Intimate violinsn.wav" 11491376 0 1705438554 0
+D y 2024-01-16 s 44100 n 2 r 5:39.802
+D l 0:32.569 i 32
+F "Lament_freeze_Legato strings-011.wav" 10767544 0 1699008715 0
+D y 2023-11-03 s 44100 n 2 r 2:22.751
+D l 0:30.518 i 32
+F "Lament_freeze_Legato strings-012.wav" 5564136 0 1699008731 0
+D y 2023-11-03 s 44100 n 2 r 3:06.923
+D l 0:15.769 i 32
+F "Lament_freeze_Legato strings-013.wav" 20284288 0 1699008789 0
+D y 2023-11-03 s 44100 n 2 r 3:36.462
+D l 0:57.493 i 32
+F "Lament_freeze_Legato strings-014.wav" 11491376 0 1699008822 0
+D y 2023-11-03 s 44100 n 2 r 5:39.802
+D l 0:32.569 i 32
+F "Lament_freeze_Legato strings-015.wav" 24452504 0 1699008892 0
+D y 2023-11-03 s 44100 n 2 r 6:40.911
+D l 1:09.307 i 32
+F "Lament_freeze_Pluck delay-004.wav" 11727512 0 1694005310 0
+D y 2023-09-06 s 48000 n 2 r 1:15.928
+D l 0:30.538 i 32
+F "Lament_freeze_Pluck delay-005.wav" 14563208 0 1694005316 0
+D y 2023-09-06 s 48000 n 2 r 3:51.231
+D l 0:37.923 i 32
+F "Lament_freeze_Pluck delay-006.wav" 26614904 0 1694005329 0
+D y 2023-09-06 s 48000 n 2 r 6:40.911
+D l 1:09.307 i 32
+F "Swell 1.wav" 3605354 0 1638019328 0
+D y 2021-05-24 s 44100 n 2 r 0:34.936
+D l 0:13.622 i 24

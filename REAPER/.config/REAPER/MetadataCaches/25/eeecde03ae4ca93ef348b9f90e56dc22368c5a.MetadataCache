@@ -1,0 +1,404 @@
+C10018 "C:\Users\luca_\Desktop\Luca\ReaperProjects\4. Fallen leaves\6. PostFataResurgo\PostFataResurgo_2\Audio"
+F "02-Groove Agent SE-01.flac" 3516891 0 1719574226 0
+D s 44100 n 2 l 0:25.887 i 24
+F "02-Groove Agent SE.flac" 17454951 0 1719574225 0
+D s 44100 n 2 l 2:02.676 i 24
+F 03-ReaSamplOmatic5000.flac 8382624 0 1719574227 0
+D y 2024-06-20 s 44100 n 2 l 0:46.460
+D i 24
+F 04-Swells-01.flac 1463469 0 1719574229 0
+D y 2021-05-24 s 44100 n 2 l 0:13.702
+D i 24
+F 04-Swells-02.flac 1437556 0 1719574229 0
+D y 2021-05-24 s 44100 n 2 l 0:13.473
+D i 24
+F 04-Swells-03.flac 1287468 0 1719574230 0
+D y 2021-05-24 s 44100 n 2 l 0:12.094
+D i 24
+F 04-Swells.flac 1478154 0 1719574228 0
+D y 2021-05-24 s 44100 n 2 l 0:13.644
+D i 24
+F 06-High-01.flac 2592409 0 1719574231 0
+D s 44100 n 1 l 0:58.938 i 24
+F 06-High.flac 2081806 0 1719574231 0
+D s 44100 n 1 l 0:53.873 i 24
+F 07-2023-12-30_11.24-glued-01.wav 6560290 0 1714039248 0
+D y 2024-04-25 s 44100 n 1 r 2:15.082
+D l 0:49.580 i 24
+F 07-Acoustic-2023-12-30_15.51-02.wav 17157110 0 1703948047 0
+D y 2023-12-30 s 44100 n 1 r 0:00.014
+D l 2:09.677 i 24
+F 07-Acoustic-2023-12-30_16.01.wav 8896886 0 1703948567 0
+D y 2023-12-30 s 44100 n 1 r 2:01.130
+D l 1:07.242 i 24
+F 07-Low-01.flac 1086837 0 1719574232 0
+D s 44100 n 1 l 0:58.938 i 24
+F 07-Low.flac 880904 0 1719574232 0
+D s 44100 n 1 l 0:53.873 i 24
+F "08-Acoustic 2-2023-12-30_16.05.wav" 4158710 0 1703948787 0
+D y 2023-12-30 s 44100 n 1 r 2:37.080
+D l 0:31.428 i 24
+F 10-1.flac 14155271 0 1719574234 0
+D y 2024-06-25 s 44100 n 1 l 3:07.353
+D i 24
+F "10-Bass source-2024-04-27_18.30.wav" 6929654 0 1714235491 0
+D y 2024-04-27 s 44100 n 1 r 0:36.331
+D l 0:52.372 i 24
+F 11-2.flac 2176970 0 1719574234 0
+D y 2024-06-25 s 44100 n 1 l 0:28.287
+D i 24
+F 12-3.flac 4056058 0 1719574235 0
+D y 2024-06-25 s 44100 n 1 l 0:52.628
+D i 24
+F 13-Classic-01.flac 1697742 0 1719574236 0
+D s 44100 n 1 l 0:25.986 i 24
+F 13-Classic.flac 3237867 0 1719574235 0
+D s 44100 n 1 l 0:52.323 i 24
+F 14-Clean-01.flac 1717556 0 1719574237 0
+D s 44100 n 2 l 0:20.503 i 24
+F 14-Clean-02.flac 5470465 0 1719574238 0
+D s 44100 n 2 l 0:57.301 i 24
+F 14-Clean-03.flac 3340120 0 1719574239 0
+D s 44100 n 2 l 0:32.002 i 24
+F 14-Clean.flac 1939819 0 1719574236 0
+D s 44100 n 2 l 0:29.022 i 24
+F 15-Solo.flac 3982217 0 1719574239 0
+D y 2024-06-25 s 44100 n 2 l 0:30.600
+D i 24
+F 16-Clean-2024-02-24_18.55-01.wav 1297334 0 1708797348 0
+D y 2024-02-24 s 44100 n 1 r 0:22.822
+D l 0:09.800 i 24
+F 16-Clean-2024-02-24_18.55.wav 1304246 0 1708797330 0
+D y 2024-02-24 s 44100 n 1 r 0:07.603
+D l 0:09.852 i 24
+F 16-Clean-2024-02-24_18.58-01.wav 7052150 0 1708797592 0
+D y 2024-02-24 s 44100 n 1 r 1:24.599
+D l 0:53.298 i 24
+F 16-Clean-2024-02-24_18.58.wav 2183798 0 1708797517 0
+D y 2024-02-24 s 44100 n 1 r 0:45.396
+D l 0:16.500 i 24
+F 16-Clean-2024-02-24_19.01-glued.wav 3806390 0 1708797778 0
+D y 2024-02-24 s 44100 n 1 r 2:36.066
+D l 0:28.765 i 24
+F 17-2024-04-27_17.28.wav 6887798 0 1714231734 0
+D y 2024-04-27 s 44100 n 1 r 2:13.113
+D l 0:52.056 i 24
+F 17-Piano-01.flac 1054930 0 1719574243 0
+D s 44100 n 2 l 0:14.004 i 24
+F 17-Piano-02.flac 3706471 0 1719574245 0
+D s 44100 n 2 l 0:58.737 i 24
+F 17-Piano.flac 16288945 0 1719574243 0
+D s 44100 n 2 l 2:39.587 i 24
+F 18-2024-04-27_17.59.wav 3625334 0 1714233585 0
+D y 2024-04-27 s 44100 n 1 r 2:13.113
+D l 0:27.396 i 24
+F 18-Classic-2024-04-27_18.25.wav 6924662 0 1714235153 0
+D y 2024-04-27 s 44100 n 1 r 0:36.317
+D l 0:52.335 i 24
+F "18-Solina V2-01.flac" 8924741 0 1719574247 0
+D s 44100 n 2 l 1:14.106 i 24
+F "18-Solina V2.flac" 3055684 0 1719574245 0
+D s 44100 n 2 l 0:26.264 i 24
+F "19-Bass synth.flac" 1845555 0 1719574248 0
+D y 2024-06-20 s 44100 n 2 l 0:25.887
+D i 24
+F "20-Alice Palace-01.flac" 1756473 0 1719574249 0
+D s 44100 n 2 l 0:14.004 i 24
+F "20-Alice Palace-02.flac" 2651562 0 1719574249 0
+D s 44100 n 2 l 0:26.003 i 24
+F "20-Alice Palace.flac" 3538436 0 1719574248 0
+D s 44100 n 2 l 0:32.107 i 24
+F "21-Bass synth-240620_1627-jsfx.wav" 912384 0 1718893626 0
+D y 2024-06-20 s 44100 n 2 l 0:02.584
+D i 32
+F "21-Bright FM Guitar.flac" 7289477 0 1719574251 0
+D y 2024-06-20 s 44100 n 2 l 0:46.460
+D i 24
+F 22-2024-01-13_17.38-glued.wav 2044496 0 1705163897 0
+D y 2024-01-13 s 44100 n 2 r 3:03.914
+D l 0:07.714 i 24
+F "22-Augmented STRINGS-01.flac" 13655719 0 1719574254 0
+D s 44100 n 2 l 1:34.461 i 24
+F "22-Augmented STRINGS.flac" 5684755 0 1719574252 0
+D s 44100 n 2 l 0:54.944 i 24
+F 23-Bubbles-01.flac 3693204 0 1719574256 0
+D s 44100 n 2 l 0:35.004 i 24
+F 23-Bubbles.flac 2522908 0 1719574255 0
+D s 44100 n 2 l 0:24.276 i 24
+F "24-Bass source-2023-12-30_12.14.wav" 7266806 0 1703934930 0
+D y 2023-12-30 s 44100 n 1 r 2:12.014
+D l 0:54.921 i 24
+F "24-Bass source-2023-12-30_12.19-02.wav" 479606 0 1703935202 0
+D y 2023-12-30 s 44100 n 1 r 2:20.014
+D l 0:03.619 i 24
+F 26-Trumpet.flac 2761417 0 1719574256 0
+D y 2024-06-20 s 44100 n 2 l 0:29.001
+D i 24
+F "27-Real flute - stem-01.flac" 2317786 0 1719574257 0
+D y 2024-06-28 s 44100 n 1 l 0:33.436
+D i 24
+F "27-Real flute - stem.flac" 3222502 0 1719574257 0
+D y 2024-06-28 s 44100 n 1 l 0:43.305
+D i 24
+F "29-Violins 1-01.flac" 3256448 0 1719574259 0
+D s 44100 n 2 l 0:25.814 i 24
+F "29-Violins 1-02.flac" 1873736 0 1719574259 0
+D s 44100 n 2 l 0:14.004 i 24
+F "29-Violins 1-03.flac" 1126351 0 1719574259 0
+D s 44100 n 2 l 0:08.002 i 24
+F "29-Violins 1.flac" 3605284 0 1719574258 0
+D s 44100 n 2 l 0:32.429 i 24
+F 30-Contrabass.flac 2766471 0 1719574260 0
+D y 2024-06-20 s 44100 n 2 l 0:32.429
+D i 24
+F "30-Real flute-2024-06-20_18.06.wav" 5858980 0 1718951266 0
+D y 2024-06-21 s 44100 n 1 r 1:09.397
+D l 0:44.280 i 24
+F "30-Real flute-2024-06-20_18.08-01.wav" 5781028 0 1718951286 0
+D y 2024-06-21 s 44100 n 1 r 1:09.397
+D l 0:43.691 i 24
+F "30-Real flute-2024-06-20_18.10.wav" 5871652 0 1718951298 0
+D y 2024-06-21 s 44100 n 1 r 1:09.397
+D l 0:44.376 i 24
+F "30-Real flute-2024-06-20_18.14-01.wav" 3952420 0 1718951309 0
+D y 2024-06-21 s 44100 n 1 r 2:37.066
+D l 0:29.869 i 24
+F "30-Real flute-2024-06-20_18.14.wav" 3921782 0 1718900089 0
+D y 2024-06-20 s 44100 n 1 r 2:37.066
+D l 0:29.637 i 24
+F "30-Real flute-2024-06-20_18.15.wav" 3949732 0 1718951320 0
+D y 2024-06-21 s 44100 n 1 r 2:37.066
+D l 0:29.849 i 24
+F 31-Choir.flac 8048192 0 1719574262 0
+D y 2024-06-28 s 44100 n 2 l 0:53.687
+D i 24
+F 32-2024-04-25_10.34.wav 6870134 0 1714034104 0
+D y 2024-04-25 s 44100 n 1 r 2:13.113
+D l 0:51.922 i 24
+F 32.flac 3978751 0 1719574262 0
+D y 2024-06-24 s 44100 n 1 l 0:50.494
+D i 24
+F 33-2024-04-25_10.37.wav 6908918 0 1714034287 0
+D y 2024-04-25 s 44100 n 1 r 2:13.113
+D l 0:52.216 i 24
+F 33.flac 3823942 0 1719574263 0
+D y 2024-06-24 s 44100 n 1 l 0:50.494
+D i 24
+F "34- - stem.flac" 4014873 0 1719574263 0
+D y 2024-06-24 s 44100 n 1 l 0:51.687
+D i 24
+F 34-2024-04-25_10.41.wav 6818678 0 1714034536 0
+D y 2024-04-25 s 44100 n 1 r 2:13.113
+D l 0:51.533 i 24
+F "36-Fire crackling-01.flac" 7097876 0 1719574268 0
+D s 44100 n 2 l 0:52.503 i 24
+F "36-Fire crackling.flac" 11897025 0 1719574267 0
+D s 44100 n 2 l 1:59.931 i 24
+F 37-Ambience-01.flac 8200691 0 1719574272 0
+D s 44100 n 2 l 0:56.398 i 24
+F 37-Ambience.flac 5421444 0 1719574270 0
+D s 44100 n 2 l 0:33.230 i 24
+F 38-240425_1108-jsfx.wav 2101976 0 1714036093 0
+D y 2024-04-25 s 44100 n 2 l 0:05.955
+D i 32
+F 38-Reverse-01.flac 243048 0 1719574273 0
+D s 44100 n 2 l 0:02.586 i 24
+F 38-Reverse.flac 438421 0 1719574272 0
+D s 44100 n 2 l 0:04.002 i 24
+F 39-38-240425_1108-jsfx.flac 603487 0 1719574273 0
+D y 2024-04-25 s 44100 n 2 l 0:06.280
+D i 24
+F 39-FXs-240425_1111-jsfx.wav 1812920 0 1714036274 0
+D y 2024-04-25 s 44100 n 2 l 0:05.136
+D i 32
+F 40.flac 645310 0 1719574274 0
+D y 2024-04-25 s 44100 n 2 l 0:04.919
+D i 24
+F 42-Reverb.flac 28410470 0 1719574281 0
+D y 2024-06-28 s 44100 n 2 l 4:40.388
+D i 24
+F "AMBForst-LR_Thailand-Ambience, Forest, Birds, Wind, Distance River, Flow, Birds, Daytime, 03.wav" 60721478 0 1707616954 0
+D t 02-14-22 y 2022-02-14 d "Daytime ambience in a Thailand forest: The gentle caress of the wind, the distant murmur of a flowing river, and the symphony of birdsong enveloping the serene landscape." s 192000
+D n 2 r 3:08:48.067 l 0:39.524 i 32
+F fireplace-with-crackling-sounds-2-min-rk-178392-glued-01.wav 21156412 0 1719574213 0
+D y 2024-06-28 s 44100 n 2 l 1:59.930
+D i 16
+F fireplace-with-crackling-sounds-2-min-rk-178392-glued.wav 9261736 0 1719574207 0
+D y 2024-06-28 s 44100 n 2 r 3:44.024
+D l 0:52.500 i 16
+F fireplace-with-crackling-sounds-2-min-rk-178392.mp3 3838537 0 1718892484 0
+D s 44100 n 2 l 2:00.059 i 256k
+F PostFataResurgo_2_freeze-001.wav 17814376 0 1718895440 0
+D y 2024-06-20 s 44100 n 2 r 2:15.574
+D l 0:50.492 i 32
+F PostFataResurgo_2_freeze-002.wav 8907560 0 1719216827 0
+D y 2024-06-24 s 44100 n 1 r 2:15.574
+D l 0:50.492 i 32
+F PostFataResurgo_2_freeze-003.wav 8907560 0 1719216827 0
+D y 2024-06-24 s 44100 n 1 r 2:15.574
+D l 0:50.492 i 32
+F PostFataResurgo_2_freeze.wav 17814376 0 1718895435 0
+D y 2024-06-20 s 44100 n 2 r 2:15.574
+D l 0:50.492 i 32
+F PostFataResurgo_2_freeze_1.wav 32608660 0 1719308694 0
+D y 2024-06-25 s 44100 n 1 r 0:02.500
+D l 3:04.852 i 32
+F PostFataResurgo_2_freeze_2-002.wav 9315996 0 1719308703 0
+D y 2024-06-25 s 44100 n 1 r 2:14.544
+D l 0:52.807 i 32
+F PostFataResurgo_2_freeze_3-002.wav 9315996 0 1719308703 0
+D y 2024-06-25 s 44100 n 1 r 2:14.544
+D l 0:52.807 i 32
+F "PostFataResurgo_2_freeze_Alice Palace-001.wav" 11327520 0 1718895635 0
+D y 2024-06-20 s 44100 n 2 r 0:36.317
+D l 0:32.105 i 32
+F "PostFataResurgo_2_freeze_Alice Palace-002.wav" 4939944 0 1718895637 0
+D y 2024-06-20 s 44100 n 2 r 2:25.066
+D l 0:14.000 i 32
+F "PostFataResurgo_2_freeze_Alice Palace-003.wav" 9173544 0 1718895640 0
+D y 2024-06-20 s 44100 n 2 r 3:48.524
+D l 0:26.000 i 32
+F "PostFataResurgo_2_freeze_Augmented STRINGS-001.wav" 19384608 0 1718895365 0
+D y 2024-06-20 s 44100 n 2 r 0:12.133
+D l 0:54.942 i 32
+F "PostFataResurgo_2_freeze_Augmented STRINGS-002.wav" 33325632 0 1718895379 0
+D y 2024-06-20 s 44100 n 2 r 3:04.066
+D l 1:34.458 i 32
+F "PostFataResurgo_2_freeze_Bass source-001.wav" 18300464 0 1718895491 0
+D y 2024-06-20 s 44100 n 2 r 0:38.834
+D l 0:51.869 i 32
+F "PostFataResurgo_2_freeze_Bass source-002.wav" 20087208 0 1718895498 0
+D y 2024-06-20 s 44100 n 2 r 2:13.066
+D l 0:56.934 i 32
+F "PostFataResurgo_2_freeze_Bass synth.wav" 9133624 0 1718895627 0
+D y 2024-06-20 s 44100 n 2 r 3:24.637
+D l 0:25.886 i 32
+F "PostFataResurgo_2_freeze_Bright FM Guitar-002.wav" 33325632 0 1718895379 0
+D y 2024-06-20 s 44100 n 2 r 3:04.066
+D l 1:34.458 i 32
+F PostFataResurgo_2_freeze_Bubbles-001.wav 8564024 0 1718895407 0
+D y 2024-06-20 s 44100 n 2 r 1:54.005
+D l 0:24.272 i 32
+F PostFataResurgo_2_freeze_Bubbles-002.wav 12348656 0 1718895409 0
+D y 2024-06-20 s 44100 n 2 r 2:28.066
+D l 0:34.999 i 32
+F PostFataResurgo_2_freeze_Choir.wav 18941208 0 1719574153 0
+D y 2024-06-28 s 44100 n 2 r 2:14.380
+D l 0:53.686 i 32
+F PostFataResurgo_2_freeze_Classic-001.wav 9230220 0 1719308701 0
+D y 2024-06-25 s 44100 n 1 r 0:38.331
+D l 0:52.321 i 32
+F PostFataResurgo_2_freeze_Classic-002.wav 9315996 0 1719308703 0
+D y 2024-06-25 s 44100 n 1 r 2:14.544
+D l 0:52.807 i 32
+F PostFataResurgo_2_freeze_Clean-001.wav 4182368 0 1718895301 0
+D y 2024-06-20 s 44100 n 2 r 0:07.603
+D l 0:11.852 i 32
+F PostFataResurgo_2_freeze_Clean-002.wav 4163936 0 1718895304 0
+D y 2024-06-20 s 44100 n 2 r 0:22.822
+D l 0:11.800 i 32
+F PostFataResurgo_2_freeze_Clean-003.wav 6527840 0 1718895308 0
+D y 2024-06-20 s 44100 n 2 r 0:45.396
+D l 0:18.500 i 32
+F PostFataResurgo_2_freeze_Clean-004.wav 19510112 0 1718895319 0
+D y 2024-06-20 s 44100 n 2 r 1:24.599
+D l 0:55.298 i 32
+F PostFataResurgo_2_freeze_Clean-005.wav 10584744 0 1718895325 0
+D y 2024-06-20 s 44100 n 2 r 2:36.066
+D l 0:30.000 i 32
+F PostFataResurgo_2_freeze_Clean-006.wav 10238960 0 1719308707 0
+D y 2024-06-25 s 44100 n 2 r 0:07.603
+D l 0:29.019 i 32
+F PostFataResurgo_2_freeze_Clean-007.wav 7233440 0 1719308708 0
+D y 2024-06-25 s 44100 n 2 r 0:45.396
+D l 0:20.500 i 32
+F PostFataResurgo_2_freeze_Clean-008.wav 20215712 0 1719308709 0
+D y 2024-06-25 s 44100 n 2 r 1:24.599
+D l 0:57.298 i 32
+F PostFataResurgo_2_freeze_Clean-009.wav 11500832 0 1719308710 0
+D y 2024-06-25 s 44100 n 2 r 2:36.066
+D l 0:32.596 i 32
+F PostFataResurgo_2_freeze_Contrabass.wav 11441280 0 1718895658 0
+D y 2024-06-20 s 44100 n 2 r 1:24.599
+D l 0:32.427 i 32
+F PostFataResurgo_2_freeze_Flute-001.wav 14892272 0 1718895676 0
+D y 2024-06-20 s 44100 n 2 r 1:12.395
+D l 0:42.209 i 32
+F PostFataResurgo_2_freeze_Flute-002.wav 9173544 0 1718895679 0
+D y 2024-06-20 s 44100 n 2 r 2:40.066
+D l 0:26.000 i 32
+F "PostFataResurgo_2_freeze_Groove Agent SE-001.wav" 43280360 0 1719308810 0
+D y 2024-06-25 s 44100 n 2 r 1:03.391
+D l 2:02.674 i 32
+F "PostFataResurgo_2_freeze_Groove Agent SE-002.wav" 9133624 0 1719308812 0
+D y 2024-06-25 s 44100 n 2 r 3:24.637
+D l 0:25.886 i 32
+F PostFataResurgo_2_freeze_High-001.wav 9503404 0 1719574110 0
+D y 2024-06-28 s 44100 n 1 r 0:38.834
+D l 0:53.869 i 32
+F PostFataResurgo_2_freeze_High-002.wav 10396776 0 1719574112 0
+D y 2024-06-28 s 44100 n 1 r 2:13.066
+D l 0:58.934 i 32
+F PostFataResurgo_2_freeze_Low-001.wav 9503404 0 1719574110 0
+D y 2024-06-28 s 44100 n 1 r 0:38.834
+D l 0:53.869 i 32
+F PostFataResurgo_2_freeze_Low-002.wav 10396776 0 1719574112 0
+D y 2024-06-28 s 44100 n 1 r 2:13.066
+D l 0:58.934 i 32
+F PostFataResurgo_2_freeze_Piano-006.wav 56302552 0 1719217120 0
+D y 2024-06-24 s 44100 n 2 r 0:39.337
+D l 2:39.585 i 32
+F PostFataResurgo_2_freeze_Piano-007.wav 4939944 0 1719217122 0
+D y 2024-06-24 s 44100 n 2 r 3:22.494
+D l 0:14.000 i 32
+F PostFataResurgo_2_freeze_Piano-008.wav 20722184 0 1719217130 0
+D y 2024-06-24 s 44100 n 2 r 3:39.654
+D l 0:58.734 i 32
+F PostFataResurgo_2_freeze_Piano.wav 84693032 0 1718895614 0
+D y 2024-06-20 s 44100 n 2 r 0:38.331
+D l 4:00.057 i 32
+F PostFataResurgo_2_freeze_ReaSamplOmatic5000.wav 16391224 0 1718895482 0
+D y 2024-06-20 s 44100 n 2 r 3:04.066
+D l 0:46.458 i 32
+F PostFataResurgo_2_freeze_Reverb.wav 98039840 0 1719574171 0
+D y 2024-06-28 s 44100 n 2 r 0:02.500
+D l 4:37.888 i 32
+F "PostFataResurgo_2_freeze_Solina V2-001.wav" 9266328 0 1718895348 0
+D y 2024-06-20 s 44100 n 2 r 1:03.391
+D l 0:26.262 i 32
+F "PostFataResurgo_2_freeze_Solina V2-002.wav" 26144504 0 1718895354 0
+D y 2024-06-20 s 44100 n 2 r 1:51.962
+D l 1:14.103 i 32
+F PostFataResurgo_2_freeze_Solo-004.wav 11500832 0 1719308710 0
+D y 2024-06-25 s 44100 n 2 r 2:36.066
+D l 0:32.596 i 32
+F PostFataResurgo_2_freeze_Solo.wav 10089632 0 1718895337 0
+D y 2024-06-20 s 44100 n 2 r 2:38.066
+D l 0:28.596 i 32
+F PostFataResurgo_2_freeze_Trumpet.wav 10231944 0 1718895418 0
+D y 2024-06-20 s 44100 n 2 r 2:37.066
+D l 0:29.000 i 32
+F "PostFataResurgo_2_freeze_Violins 1-001.wav" 11441280 0 1718895663 0
+D y 2024-06-20 s 44100 n 2 r 1:24.599
+D l 0:32.427 i 32
+F "PostFataResurgo_2_freeze_Violins 1-002.wav" 9107040 0 1718895664 0
+D y 2024-06-20 s 44100 n 2 r 2:04.254
+D l 0:25.811 i 32
+F "PostFataResurgo_2_freeze_Violins 1-003.wav" 4939944 0 1718895665 0
+D y 2024-06-20 s 44100 n 2 r 2:40.066
+D l 0:14.000 i 32
+F "PostFataResurgo_2_freeze_Violins 1-004.wav" 2823144 0 1718895665 0
+D y 2024-06-20 s 44100 n 2 r 2:58.066
+D l 0:08.000 i 32
+F PostFataResurgo_2_stems.wav 49485300 0 1719216815 0
+D y 2024-06-24 s 44100 n 1 l 4:40.524
+D i 32
+F "PostFataResurgo_2_stems_Real flute.wav" 49485300 0 1719574130 0
+D y 2024-06-28 s 44100 n 1 l 4:40.524
+D i 32
+F "Swell 1.wav" 3605354 0 1638019328 0
+D y 2021-05-24 s 44100 n 2 r 0:34.936
+D l 0:13.622 i 24
+F "WINDVege-LR_Taiwan-Wind, Vegetation, Strong, Powerful, High Waves, Sand Beach, Taitung, 02.wav" 171585426 0 1707348852 0
+D t 12-25-23 y 2023-12-25 d "Strong coastal wind and powerful ocean waves hitting Taitung's long sandy beach." s 192000
+D n 2 r 6:46:02.025 l 1:51.702 i 32

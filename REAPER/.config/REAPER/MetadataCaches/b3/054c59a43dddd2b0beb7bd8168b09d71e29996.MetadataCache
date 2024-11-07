@@ -1,0 +1,20 @@
+C10018 /mnt/dati/luca/Personal/Music/References
+F "Adele - Rolling In The Deep.mp3" 3804273 0 1700750584 0
+D t "Rolling In The Deep" a Adele b 21 y 2011
+D g Pop c @eumaike p 104 s 44100
+D n 2 l 3:48.572 i 128k m 1
+D j "mime:image/jpeg type:0 offset:348 length:152548"
+F "Coldplay - Clocks.mp3" 12648319 0 1700750567 0
+D t Clocks a Coldplay b "A Rush Of Blood To The Head" y 2002
+D g "Rock Alternativo " s 44100 n 2 l 5:07.467
+D i 320k m 5 j "mime:image/jpeg type:3 offset:300 length:345651"
+F "Kings Of Convenience - Cayman Islands.mp3" 6002153 0 1700750545 0
+D t "Cayman Islands" a "Kings Of Convenience" b "О Земле Обетованной" y 2008
+D g MuDi c haplishe s 44100 n 2
+D l 3:05.105 i 256k m 01 j "mime:image/jpeg type:3 offset:350 length:81670"
+F "The Struts - Primadonna Like Me.mp3" 8192044 0 1700750574 0
+D s 44100 n 2 l 3:24.742 i 320k
+F "Untouchable Part 1.mp3" 6276701 0 1706733186 0
+D t "Untouchable Part 1" a Anathema b "Weather Systems" y 2015-01-27
+D g Rock p 123 s 44100 n 2
+D l 6:15.146 i 128k m 1 j "mime:image/jpeg desc:Cover type:3 offset:361 length:280016"

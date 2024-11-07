@@ -1,0 +1,17 @@
+C10018 "D:\Software\FLStudio 20.8.4\Data\Patches\Packs\Shapes\HQ"
+F HQ_Ramp.wav 22304 0 1575368430 0
+D c "altered by FruityLoops (98-00) Didier Dambrin" s 44100 n 1 l 0:00.250
+D i 16
+F HQ_RoundSaw.wav 22304 0 1575368430 0
+D c "altered by FruityLoops (98-00) Didier Dambrin" s 44100 n 1 l 0:00.250
+D i 16
+F HQ_Saw.wav 88312 0 1575368430 0
+D s 44100 n 1 l 0:01.000 i 16
+F HQ_Sine_Dist.wav 88312 0 1575368430 0
+D s 44100 n 1 l 0:01.000 i 16
+F HQ_SmoothInvSaw.wav 88312 0 1575368430 0
+D s 44100 n 1 l 0:01.000 i 16
+F HQ_SmoothInvSaw_2.wav 90052 0 1575368430 0
+D s 44100 n 1 l 0:01.019 i 16
+F HQ_SmoothInvSaw_Dist.wav 90052 0 1575368430 0
+D s 44100 n 1 l 0:01.019 i 16

@@ -1,0 +1,142 @@
+C10018 "C:\Users\luca_\Desktop\Luca\ReaperProjects\4. Fallen leaves\DEMO\RecurringDreams-DEMO\Audio"
+F 01-Guide.flac 31600430 0 1719162956 0
+D y 2024-06-23 s 44100 n 1 l 6:26.840
+D i 24
+F 02-Drums-01.flac 2902605 0 1719162956 0
+D s 44100 n 2 l 0:17.159 i 24
+F 02-Drums-02.flac 57818115 0 1719162961 0
+D s 44100 n 2 l 4:52.159 i 24
+F 02-Drums.flac 2687328 0 1719162956 0
+D s 44100 n 2 l 0:14.637 i 24
+F 03-Bass-01.flac 4767492 0 1719162962 0
+D s 44100 n 1 l 1:34.264 i 24
+F 03-Bass-02.flac 12702376 0 1719162963 0
+D s 44100 n 1 l 3:47.088 i 24
+F 03-Bass.flac 799265 0 1719162961 0
+D s 44100 n 1 l 0:16.216 i 24
+F "05-Clean arpeggio-01.flac" 1747502 0 1719162964 0
+D s 44100 n 1 l 0:31.686 i 24
+F "05-Clean arpeggio-02.flac" 1190904 0 1719162964 0
+D s 44100 n 1 l 0:22.662 i 24
+F "05-Clean arpeggio-03.flac" 2905686 0 1719162964 0
+D s 44100 n 1 l 0:51.922 i 24
+F "05-Clean arpeggio.flac" 850423 0 1719162964 0
+D s 44100 n 1 l 0:16.759 i 24
+F 06-Power.flac 3834171 0 1719162965 0
+D y 2024-06-23 s 44100 n 1 l 0:55.762
+D i 24
+F "08-Piano V3-01.flac" 2742974 0 1719162966 0
+D s 44100 n 2 l 0:32.722 i 24
+F "08-Piano V3-02.flac" 4115120 0 1719162967 0
+D s 44100 n 2 l 0:30.563 i 24
+F "08-Piano V3-03.flac" 2466655 0 1719162967 0
+D s 44100 n 2 l 0:26.807 i 24
+F "08-Piano V3.flac" 6411573 0 1719162966 0
+D s 44100 n 2 l 1:06.475 i 24
+F "09-Mini V3.flac" 10813461 0 1719162968 0
+D y 2024-06-23 s 44100 n 2 l 0:55.666
+D i 24
+F 10-Synth-01.flac 4789998 0 1719162968 0
+D s 44100 n 2 l 0:34.214 i 24
+F 10-Synth-02.flac 4728940 0 1719162969 0
+D s 44100 n 2 l 0:34.641 i 24
+F 10-Synth.flac 1235160 0 1719162968 0
+D s 44100 n 2 l 0:14.637 i 24
+F "11-Stage-73 V2.flac" 15913892 0 1719162971 0
+D y 2024-06-23 s 44100 n 2 l 2:22.370
+D i 24
+F 12-Bubble-01.flac 5037293 0 1719162972 0
+D s 44100 n 2 l 0:32.722 i 24
+F 12-Bubble-02.flac 4604708 0 1719162973 0
+D s 44100 n 2 l 0:33.169 i 24
+F 12-Bubble.flac 4906828 0 1719162972 0
+D s 44100 n 2 l 0:32.319 i 24
+F "13-Sweep pad-01.flac" 16019287 0 1719162974 0
+D s 44100 n 2 l 1:46.164 i 24
+F "13-Sweep pad.flac" 4483985 0 1719162973 0
+D s 44100 n 2 l 0:32.319 i 24
+F 14-Mellotron-01.flac 7081140 0 1719162976 0
+D s 44100 n 2 l 1:26.929 i 24
+F 14-Mellotron.flac 2922428 0 1719162975 0
+D s 44100 n 2 l 0:36.562 i 24
+F RecurringDreams-DEMO_freeze_Bass-001.wav 2860280 0 1719162793 0
+D y 2024-06-23 s 44100 n 1 r 0:12.631
+D l 0:16.210 i 32
+F RecurringDreams-DEMO_freeze_Bass-002.wav 16628392 0 1719162809 0
+D y 2024-06-23 s 44100 n 1 r 0:42.000
+D l 1:34.261 i 32
+F RecurringDreams-DEMO_freeze_Bass-003.wav 40058568 0 1719162845 0
+D y 2024-06-23 s 44100 n 1 r 2:21.941
+D l 3:47.085 i 32
+F RecurringDreams-DEMO_freeze_Bubble-002.wav 23452144 0 1719162909 0
+D y 2024-06-23 s 44100 n 2 r 1:09.788
+D l 1:06.472 i 32
+F RecurringDreams-DEMO_freeze_Bubble-003.wav 23737128 0 1719162919 0
+D y 2024-06-23 s 44100 n 2 r 2:29.621
+D l 1:07.280 i 32
+F RecurringDreams-DEMO_freeze_Bubble-004.wav 50227176 0 1719162944 0
+D y 2024-06-23 s 44100 n 2 r 3:46.661
+D l 2:22.365 i 32
+F "RecurringDreams-DEMO_freeze_Clean arpeggio-001.wav" 2956040 0 1719162887 0
+D y 2024-06-23 s 44100 n 1 r 0:12.631
+D l 0:16.753 i 32
+F "RecurringDreams-DEMO_freeze_Clean arpeggio-002.wav" 5589840 0 1719162888 0
+D y 2024-06-23 s 44100 n 1 r 0:40.105
+D l 0:31.684 i 32
+F "RecurringDreams-DEMO_freeze_Clean arpeggio-003.wav" 3997448 0 1719162888 0
+D y 2024-06-23 s 44100 n 1 r 1:53.577
+D l 0:22.657 i 32
+F "RecurringDreams-DEMO_freeze_Clean arpeggio-004.wav" 9159432 0 1719162889 0
+D y 2024-06-23 s 44100 n 1 r 2:58.421
+D l 0:51.920 i 32
+F RecurringDreams-DEMO_freeze_Drums-001.wav 5162760 0 1719162752 0
+D y 2024-06-23 s 44100 n 2 r 0:12.631
+D l 0:14.631 i 32
+F RecurringDreams-DEMO_freeze_Drums-002.wav 6054048 0 1719162753 0
+D y 2024-06-23 s 44100 n 2 r 0:42.000
+D l 0:17.157 i 32
+F RecurringDreams-DEMO_freeze_Drums-003.wav 103073688 0 1719162783 0
+D y 2024-06-23 s 44100 n 2 r 1:09.789
+D l 4:52.156 i 32
+F RecurringDreams-DEMO_freeze_Guide.wav 67960968 0 1719162740 0
+D y 2024-06-23 s 44100 n 1 r 0:01.578
+D l 6:25.262 i 32
+F RecurringDreams-DEMO_freeze_Mellotron-003.wav 23737128 0 1719162919 0
+D y 2024-06-23 s 44100 n 2 r 2:29.621
+D l 1:07.280 i 32
+F RecurringDreams-DEMO_freeze_Mellotron-004.wav 50227176 0 1719162944 0
+D y 2024-06-23 s 44100 n 2 r 3:46.661
+D l 2:22.365 i 32
+F "RecurringDreams-DEMO_freeze_Mini V3-004.wav" 50227176 0 1719162944 0
+D y 2024-06-23 s 44100 n 2 r 3:46.661
+D l 2:22.365 i 32
+F "RecurringDreams-DEMO_freeze_Piano V3-002.wav" 23452144 0 1719162909 0
+D y 2024-06-23 s 44100 n 2 r 1:09.788
+D l 1:06.472 i 32
+F "RecurringDreams-DEMO_freeze_Piano V3-003.wav" 23737128 0 1719162919 0
+D y 2024-06-23 s 44100 n 2 r 2:29.621
+D l 1:07.280 i 32
+F "RecurringDreams-DEMO_freeze_Piano V3-004.wav" 50227176 0 1719162944 0
+D y 2024-06-23 s 44100 n 2 r 3:46.661
+D l 2:22.365 i 32
+F RecurringDreams-DEMO_freeze_Power-005.wav 9836808 0 1719162891 0
+D y 2024-06-23 s 44100 n 1 r 5:05.621
+D l 0:55.760 i 32
+F "RecurringDreams-DEMO_freeze_Stage-73 V2-004.wav" 50227176 0 1719162944 0
+D y 2024-06-23 s 44100 n 2 r 3:46.661
+D l 2:22.365 i 32
+F "RecurringDreams-DEMO_freeze_Sweep pad-002.wav" 23452144 0 1719162909 0
+D y 2024-06-23 s 44100 n 2 r 1:09.788
+D l 1:06.472 i 32
+F "RecurringDreams-DEMO_freeze_Sweep pad-004.wav" 50227176 0 1719162944 0
+D y 2024-06-23 s 44100 n 2 r 3:46.661
+D l 2:22.365 i 32
+F RecurringDreams-DEMO_freeze_Synth-001.wav 5162768 0 1719162899 0
+D y 2024-06-23 s 44100 n 2 r 0:14.210
+D l 0:14.631 i 32
+F RecurringDreams-DEMO_freeze_Synth-002.wav 23452144 0 1719162909 0
+D y 2024-06-23 s 44100 n 2 r 1:09.788
+D l 1:06.472 i 32
+F RecurringDreams-DEMO_freeze_Synth-003.wav 23737128 0 1719162919 0
+D y 2024-06-23 s 44100 n 2 r 2:29.621
+D l 1:07.280 i 32

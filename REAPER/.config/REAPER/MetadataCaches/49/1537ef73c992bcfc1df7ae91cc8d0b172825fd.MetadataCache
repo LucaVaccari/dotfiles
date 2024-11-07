@@ -1,0 +1,425 @@
+C10018 "D:\luca\Software\FLStudio 20.8.4\Data\Patches\Packs\Drums\Kits\Rock"
+F "crash1 01 soft.wav" 44162 0 1575368444 0
+F "crash1 02 soft.wav" 50924 0 1575368442 0
+F "crash1 03 soft.wav" 53282 0 1575368444 0
+F "crash1 04 medium.wav" 60856 0 1575368444 0
+F "crash1 05 medium.wav" 58356 0 1575368442 0
+F "crash1 06 medium.wav" 57934 0 1575368444 0
+F "crash1 07 hard.wav" 55310 0 1575368444 0
+F "crash1 08 hard.wav" 50678 0 1575368442 0
+F "crash1 09 hard.wav" 61726 0 1575368444 0
+F "hatclosed 01 subtle.wav" 6754 0 1575368444 0
+F "hatclosed 02 subtle.wav" 6724 0 1575368444 0
+F "hatclosed 03 subtle.wav" 8070 0 1575368442 0
+F "hatclosed 04 soft.wav" 6992 0 1575368442 0
+F "hatclosed 05 soft.wav" 7932 0 1575368444 0
+F "hatclosed 06 soft.wav" 10268 0 1575368444 0
+F "hatclosed 07 soft.wav" 9600 0 1575368444 0
+F "hatclosed 08 soft.wav" 8944 0 1575368444 0
+F "hatclosed 09 soft.wav" 7170 0 1575368442 0
+F "hatclosed 10 soft.wav" 10292 0 1575368444 0
+F "hatclosed 11 soft.wav" 9972 0 1575368442 0
+F "hatclosed 12 soft.wav" 8184 0 1575368444 0
+F "hatclosed 13 soft.wav" 9050 0 1575368442 0
+F "hatclosed 14 soft.wav" 10182 0 1575368444 0
+F "hatclosed 15 soft.wav" 8152 0 1575368444 0
+F "hatclosed 16 soft.wav" 9742 0 1575368442 0
+F "hatclosed 17 soft.wav" 8770 0 1575368444 0
+F "hatclosed 18 soft.wav" 9464 0 1575368442 0
+F "hatclosed 19 soft.wav" 11162 0 1575368444 0
+F "hatclosed 20 soft.wav" 9956 0 1575368442 0
+F "hatclosed 21 soft.wav" 8710 0 1575368444 0
+F "hatclosed 22 medium.wav" 11560 0 1575368442 0
+F "hatclosed 23 medium.wav" 11194 0 1575368444 0
+F "hatclosed 24 medium.wav" 10414 0 1575368444 0
+F "hatclosed 25 medium.wav" 10034 0 1575368442 0
+F "hatclosed 26 medium.wav" 10546 0 1575368444 0
+F "hatclosed 27 medium.wav" 11218 0 1575368444 0
+F "hatclosed 28 medium.wav" 11126 0 1575368444 0
+F "hatclosed 29 medium.wav" 10412 0 1575368442 0
+F "hatclosed 30 hard.wav" 12504 0 1575368444 0
+F "hatclosed 31 hard.wav" 11568 0 1575368442 0
+F "hatclosed 32 hard.wav" 11626 0 1575368444 0
+F "hatclosed 33 hard.wav" 11736 0 1575368442 0
+F "hatclosed 34 hard.wav" 12156 0 1575368444 0
+F "hatclosed 35 hard.wav" 11856 0 1575368442 0
+F "hatopen2 01 soft.wav" 23310 0 1575368442 0
+F "hatopen2 02 soft.wav" 28816 0 1575368444 0
+F "hatopen2 03 soft.wav" 35960 0 1575368444 0
+F "hatopen2 04 soft.wav" 32680 0 1575368444 0
+F "hatopen2 05 soft.wav" 41940 0 1575368444 0
+F "hatopen2 06 soft.wav" 37528 0 1575368442 0
+F "hatopen2 07 soft.wav" 44126 0 1575368444 0
+F "hatopen2 08 medium.wav" 46798 0 1575368444 0
+F "hatopen2 09 medium.wav" 28444 0 1575368444 0
+F "hatopen2 10 medium.wav" 27310 0 1575368444 0
+F "hatopen2 11 medium.wav" 44334 0 1575368444 0
+F "hatopen2 12 medium.wav" 25018 0 1575368444 0
+F "hatopen2 13 hard.wav" 48866 0 1575368444 0
+F "hatopen2 14 hard.wav" 41376 0 1575368442 0
+F "hatopen2 15 hard.wav" 36100 0 1575368444 0
+F "hatopen2 16 hard.wav" 45546 0 1575368442 0
+F "hatopen2 17 hard.wav" 47488 0 1575368444 0
+F "hatpedal 01 soft.wav" 10390 0 1575368442 0
+F "hatpedal 02 soft.wav" 10274 0 1575368444 0
+F "hatpedal 03 soft.wav" 8220 0 1575368442 0
+F "hatpedal 04 soft.wav" 11224 0 1575368444 0
+F "hatpedal 05 soft.wav" 11640 0 1575368442 0
+F "hatpedal 06 soft.wav" 9908 0 1575368444 0
+F "hatpedal 07 soft.wav" 11750 0 1575368444 0
+F "hatpedal 08 soft.wav" 11444 0 1575368444 0
+F "hatpedal 09 medium.wav" 11034 0 1575368444 0
+F "hatpedal 10 medium.wav" 11112 0 1575368442 0
+F "hatpedal 11 medium.wav" 11648 0 1575368444 0
+F "hatpedal 12 medium.wav" 10104 0 1575368444 0
+F "hatpedal 13 medium.wav" 13110 0 1575368442 0
+F "hatpedal 14 medium.wav" 11678 0 1575368444 0
+F "hatpedal 15 medium.wav" 11134 0 1575368444 0
+F "hatpedal 16 hard.wav" 12338 0 1575368442 0
+F "hatpedal 17 hard.wav" 11670 0 1575368444 0
+F "hatpedal 18 hard.wav" 12258 0 1575368442 0
+F "hatpedal 19 hard.wav" 14334 0 1575368444 0
+F "hatpedal 20 hard.wav" 11262 0 1575368444 0
+F "kick 03.wav" 11174 0 1575368444 0
+F "kick 04.wav" 11278 0 1575368442 0
+F "kick 05.wav" 11610 0 1575368444 0
+F "kick 06.wav" 13190 0 1575368444 0
+F "kick 07.wav" 13814 0 1575368444 0
+F "kick 08.wav" 13878 0 1575368442 0
+F "kick 09.wav" 13572 0 1575368444 0
+F "kick 10.wav" 15044 0 1575368444 0
+F "kick 11.wav" 14526 0 1575368444 0
+F "kick 12.wav" 14222 0 1575368442 0
+F "kick 13.wav" 14520 0 1575368442 0
+F "kick 14.wav" 13244 0 1575368444 0
+F "kick 15.wav" 14820 0 1575368444 0
+F "kick 16.wav" 13814 0 1575368442 0
+F "kick 17.wav" 13914 0 1575368442 0
+F "kick 19.wav" 15176 0 1575368444 0
+F "kick 21.wav" 14260 0 1575368442 0
+F "kick 23.wav" 14076 0 1575368444 0
+F "kick 24.wav" 14084 0 1575368444 0
+F "kick 25.wav" 14854 0 1575368442 0
+F "kick 26.wav" 15646 0 1575368444 0
+F "kick 27.wav" 15980 0 1575368444 0
+F "kick_oh 03.wav" 20528 0 1575368442 0
+F "kick_oh 04.wav" 20152 0 1575368442 0
+F "kick_oh 05.wav" 20820 0 1575368444 0
+F "kick_oh 06.wav" 24714 0 1575368444 0
+F "kick_oh 07.wav" 25682 0 1575368442 0
+F "kick_oh 08.wav" 26376 0 1575368444 0
+F "kick_oh 09.wav" 25266 0 1575368444 0
+F "kick_oh 10.wav" 28128 0 1575368444 0
+F "kick_oh 11.wav" 27204 0 1575368444 0
+F "kick_oh 12.wav" 26372 0 1575368442 0
+F "kick_oh 13.wav" 26656 0 1575368444 0
+F "kick_oh 14.wav" 24290 0 1575368444 0
+F "kick_oh 15.wav" 28010 0 1575368444 0
+F "kick_oh 16.wav" 25586 0 1575368442 0
+F "kick_oh 17.wav" 25514 0 1575368444 0
+F "kick_oh 19.wav" 28644 0 1575368444 0
+F "kick_oh 21.wav" 26460 0 1575368442 0
+F "kick_oh 23.wav" 25804 0 1575368444 0
+F "kick_oh 24.wav" 25878 0 1575368444 0
+F "kick_oh 25.wav" 27782 0 1575368442 0
+F "kick_oh 26.wav" 29446 0 1575368444 0
+F "kick_oh 27.wav" 30234 0 1575368444 0
+F "ride 01 soft.wav" 54144 0 1575368444 0
+F "ride 02 soft.wav" 52974 0 1575368444 0
+F "ride 03 soft.wav" 52462 0 1575368444 0
+F "ride 04 soft.wav" 45984 0 1575368444 0
+F "ride 05 soft.wav" 56394 0 1575368442 0
+F "ride 06 soft.wav" 68924 0 1575368444 0
+F "ride 07 medium.wav" 65076 0 1575368442 0
+F "ride 08 medium.wav" 66484 0 1575368444 0
+F "ride 09 medium.wav" 72920 0 1575368444 0
+F "ride 10 medium.wav" 66076 0 1575368444 0
+F "ride 11 medium.wav" 40206 0 1575368444 0
+F "ride 12 medium.wav" 78928 0 1575368444 0
+F "ride 13 hard.wav" 68278 0 1575368442 0
+F "ride 14 hard.wav" 77890 0 1575368444 0
+F "ride 15 hard.wav" 76752 0 1575368444 0
+F "ride 16 hard.wav" 64270 0 1575368444 0
+F "ride 17 hard.wav" 68270 0 1575368444 0
+F "ridebell 01 soft.wav" 35622 0 1575368444 0
+F "ridebell 02 soft.wav" 65466 0 1575368444 0
+F "ridebell 03 soft.wav" 37712 0 1575368442 0
+F "ridebell 04 soft.wav" 43558 0 1575368444 0
+F "ridebell 05 soft.wav" 57894 0 1575368442 0
+F "ridebell 06 soft.wav" 44766 0 1575368444 0
+F "ridebell 07 soft.wav" 42966 0 1575368442 0
+F "ridebell 08 soft.wav" 61316 0 1575368444 0
+F "ridebell 09 medium.wav" 47142 0 1575368444 0
+F "ridebell 10 medium.wav" 64006 0 1575368444 0
+F "ridebell 11 medium.wav" 80930 0 1575368444 0
+F "ridebell 12 medium.wav" 54086 0 1575368442 0
+F "ridebell 13 medium.wav" 77422 0 1575368444 0
+F "ridebell 14 medium.wav" 53936 0 1575368444 0
+F "ridebell 15 medium.wav" 68800 0 1575368444 0
+F "ridebell 16 hard.wav" 64784 0 1575368444 0
+F "ridebell 17 hard.wav" 77070 0 1575368444 0
+F "ridebell 18 hard.wav" 71798 0 1575368442 0
+F "ridebell 19 hard.wav" 88658 0 1575368444 0
+F "ridebell 20 hard.wav" 54982 0 1575368442 0
+F "ridebell 21 hard.wav" 89504 0 1575368444 0
+F "ridebell 22 hard.wav" 80106 0 1575368444 0
+F "snare 01.wav" 9134 0 1575368444 0
+F "snare 02.wav" 10752 0 1575368444 0
+F "snare 03.wav" 9594 0 1575368442 0
+F "snare 04.wav" 8786 0 1575368442 0
+F "snare 05.wav" 9980 0 1575368444 0
+F "snare 06.wav" 11522 0 1575368444 0
+F "snare 07.wav" 12626 0 1575368442 0
+F "snare 08.wav" 13164 0 1575368444 0
+F "snare 09.wav" 14940 0 1575368444 0
+F "snare 10.wav" 13458 0 1575368444 0
+F "snare 11.wav" 14464 0 1575368444 0
+F "snare 12.wav" 14408 0 1575368442 0
+F "snare 13.wav" 12510 0 1575368444 0
+F "snare 14.wav" 12494 0 1575368444 0
+F "snare 15.wav" 12490 0 1575368444 0
+F "snare 16.wav" 14090 0 1575368442 0
+F "snare 17.wav" 15204 0 1575368444 0
+F "snare 18.wav" 12386 0 1575368444 0
+F "snare 19.wav" 14094 0 1575368444 0
+F "snare 20.wav" 14260 0 1575368444 0
+F "snare 21.wav" 13578 0 1575368442 0
+F "snare 22.wav" 12922 0 1575368444 0
+F "snare 23.wav" 12254 0 1575368444 0
+F "snare 24.wav" 14980 0 1575368444 0
+F "snare 25.wav" 15100 0 1575368442 0
+F "snare 26.wav" 12202 0 1575368444 0
+F "snare 27.wav" 15580 0 1575368444 0
+F "snare 28.wav" 15548 0 1575368444 0
+F "snare 29.wav" 15724 0 1575368442 0
+F "snare 30.wav" 15232 0 1575368442 0
+F "snare 31.wav" 12548 0 1575368444 0
+F "snare 32.wav" 15434 0 1575368444 0
+F "snare 33.wav" 15116 0 1575368442 0
+F "snare 34.wav" 15284 0 1575368442 0
+F "snare 35.wav" 15672 0 1575368444 0
+F "snare 36.wav" 12004 0 1575368444 0
+F "snare 37.wav" 15322 0 1575368442 0
+F "snare 38.wav" 15480 0 1575368442 0
+F "snare 39.wav" 15650 0 1575368444 0
+F "snare 40.wav" 12330 0 1575368444 0
+F "snare 41.wav" 14232 0 1575368444 0
+F "snare 42.wav" 13626 0 1575368442 0
+F "snare 43.wav" 12492 0 1575368444 0
+F "snare 44.wav" 14558 0 1575368444 0
+F "snare 45.wav" 14936 0 1575368444 0
+F "snare 46.wav" 15800 0 1575368442 0
+F "snare 47.wav" 15998 0 1575368444 0
+F "snare 48.wav" 12530 0 1575368444 0
+F "snare 49.wav" 15714 0 1575368444 0
+F "snare 50.wav" 15272 0 1575368444 0
+F "snare 51.wav" 15374 0 1575368442 0
+F "snare 52.wav" 15532 0 1575368444 0
+F "snare2 01.wav" 12606 0 1575368444 0
+F "snare2 02.wav" 13462 0 1575368444 0
+F "snare2 03.wav" 15564 0 1575368442 0
+F "snare2 04.wav" 15430 0 1575368444 0
+F "snare2 05.wav" 15456 0 1575368444 0
+F "snare2 06.wav" 15496 0 1575368444 0
+F "snare2 07.wav" 15506 0 1575368442 0
+F "snare2_oh 01.wav" 13944 0 1575368444 0
+F "snare2_oh 02.wav" 15112 0 1575368444 0
+F "snare2_oh 03.wav" 17460 0 1575368444 0
+F "snare2_oh 04.wav" 17358 0 1575368442 0
+F "snare2_oh 05.wav" 17424 0 1575368444 0
+F "snare2_oh 06.wav" 17510 0 1575368444 0
+F "snare2_oh 07.wav" 17372 0 1575368444 0
+F "snare_oh 01.wav" 9948 0 1575368442 0
+F "snare_oh 02.wav" 11892 0 1575368442 0
+F "snare_oh 03.wav" 10468 0 1575368444 0
+F "snare_oh 04.wav" 9544 0 1575368444 0
+F "snare_oh 05.wav" 10960 0 1575368442 0
+F "snare_oh 06.wav" 12728 0 1575368442 0
+F "snare_oh 07.wav" 13982 0 1575368444 0
+F "snare_oh 08.wav" 14842 0 1575368444 0
+F "snare_oh 09.wav" 16734 0 1575368442 0
+F "snare_oh 10.wav" 15074 0 1575368442 0
+F "snare_oh 11.wav" 16250 0 1575368442 0
+F "snare_oh 12.wav" 16186 0 1575368444 0
+F "snare_oh 13.wav" 13952 0 1575368444 0
+F "snare_oh 14.wav" 14164 0 1575368442 0
+F "snare_oh 15.wav" 14080 0 1575368442 0
+F "snare_oh 16.wav" 15962 0 1575368444 0
+F "snare_oh 17.wav" 17254 0 1575368444 0
+F "snare_oh 18.wav" 14164 0 1575368442 0
+F "snare_oh 19.wav" 15784 0 1575368442 0
+F "snare_oh 20.wav" 16132 0 1575368444 0
+F "snare_oh 21.wav" 15252 0 1575368444 0
+F "snare_oh 22.wav" 14422 0 1575368444 0
+F "snare_oh 23.wav" 13812 0 1575368442 0
+F "snare_oh 24.wav" 16880 0 1575368444 0
+F "snare_oh 25.wav" 17000 0 1575368444 0
+F "snare_oh 26.wav" 13542 0 1575368444 0
+F "snare_oh 27.wav" 17822 0 1575368442 0
+F "snare_oh 28.wav" 17642 0 1575368444 0
+F "snare_oh 29.wav" 17982 0 1575368444 0
+F "snare_oh 30.wav" 17408 0 1575368444 0
+F "snare_oh 31.wav" 14210 0 1575368444 0
+F "snare_oh 32.wav" 17582 0 1575368442 0
+F "snare_oh 33.wav" 17048 0 1575368444 0
+F "snare_oh 34.wav" 17478 0 1575368444 0
+F "snare_oh 35.wav" 17766 0 1575368444 0
+F "snare_oh 36.wav" 13756 0 1575368442 0
+F "snare_oh 37.wav" 17322 0 1575368444 0
+F "snare_oh 38.wav" 17498 0 1575368444 0
+F "snare_oh 39.wav" 17806 0 1575368444 0
+F "snare_oh 40.wav" 14054 0 1575368442 0
+F "snare_oh 41.wav" 16160 0 1575368442 0
+F "snare_oh 42.wav" 15516 0 1575368444 0
+F "snare_oh 43.wav" 14192 0 1575368444 0
+F "snare_oh 44.wav" 16346 0 1575368442 0
+F "snare_oh 45.wav" 17000 0 1575368442 0
+F "snare_oh 46.wav" 18062 0 1575368444 0
+F "snare_oh 47.wav" 18260 0 1575368444 0
+F "snare_oh 48.wav" 14238 0 1575368442 0
+F "snare_oh 49.wav" 17844 0 1575368442 0
+F "snare_oh 50.wav" 17420 0 1575368442 0
+F "snare_oh 51.wav" 17542 0 1575368444 0
+F "snare_oh 52.wav" 17546 0 1575368444 0
+F "splash 01 soft.wav" 19712 0 1575368444 0
+F "splash 02 soft.wav" 24436 0 1575368444 0
+F "splash 03 soft.wav" 48130 0 1575368444 0
+F "splash 04 soft.wav" 23880 0 1575368442 0
+F "splash 05 medium.wav" 23464 0 1575368442 0
+F "splash 06 medium.wav" 25684 0 1575368444 0
+F "splash 07 medium.wav" 20050 0 1575368444 0
+F "splash 08 medium.wav" 23790 0 1575368442 0
+F "splash 09 hard.wav" 23678 0 1575368444 0
+F "splash 10 hard.wav" 25630 0 1575368442 0
+F "splash 11 hard.wav" 24796 0 1575368444 0
+F "splash 12 hard.wav" 24472 0 1575368442 0
+F "sticknoise 01.wav" 6476 0 1575368444 0
+F "sticknoise 02.wav" 6162 0 1575368442 0
+F "sticknoise 03.wav" 6766 0 1575368444 0
+F "sticknoise 04.wav" 6730 0 1575368444 0
+F "sticknoise 05.wav" 6170 0 1575368444 0
+F "sticknoise 06.wav" 6738 0 1575368442 0
+F "sticknoise 07.wav" 6760 0 1575368444 0
+F "sticknoise 08.wav" 6874 0 1575368444 0
+F "sticknoise 09.wav" 6916 0 1575368444 0
+F "sticknoise 10.wav" 6718 0 1575368442 0
+F "sticknoise 11.wav" 6334 0 1575368442 0
+F "sticknoise 12.wav" 6546 0 1575368444 0
+F "sticknoise_oh 01.wav" 7032 0 1575368444 0
+F "sticknoise_oh 02.wav" 6690 0 1575368442 0
+F "sticknoise_oh 03.wav" 7378 0 1575368444 0
+F "sticknoise_oh 04.wav" 7274 0 1575368444 0
+F "sticknoise_oh 05.wav" 6776 0 1575368444 0
+F "sticknoise_oh 06.wav" 7328 0 1575368442 0
+F "sticknoise_oh 07.wav" 7336 0 1575368444 0
+F "sticknoise_oh 08.wav" 7572 0 1575368444 0
+F "sticknoise_oh 09.wav" 7588 0 1575368444 0
+F "sticknoise_oh 10.wav" 7348 0 1575368442 0
+F "sticknoise_oh 11.wav" 6988 0 1575368442 0
+F "sticknoise_oh 12.wav" 7210 0 1575368444 0
+F "tom1_oh 01.wav" 15946 0 1575368444 0
+F "tom1_oh 02.wav" 17376 0 1575368442 0
+F "tom1_oh 03.wav" 18276 0 1575368444 0
+F "tom1_oh 04.wav" 20222 0 1575368444 0
+F "tom1_oh 05.wav" 24002 0 1575368444 0
+F "tom1_oh 06.wav" 22850 0 1575368442 0
+F "tom1_oh 07.wav" 23644 0 1575368444 0
+F "tom1_oh 08.wav" 21618 0 1575368444 0
+F "tom1_oh 09.wav" 23994 0 1575368444 0
+F "tom1_oh 10.wav" 26040 0 1575368442 0
+F "tom1_oh 11.wav" 24538 0 1575368442 0
+F "tom1_oh 12.wav" 26244 0 1575368444 0
+F "tom1_oh 13.wav" 23804 0 1575368444 0
+F "tom1_oh 14.wav" 24556 0 1575368442 0
+F "tom1_oh 15.wav" 24250 0 1575368442 0
+F "tom1_oh 16.wav" 23888 0 1575368444 0
+F "tom1_oh 17.wav" 25696 0 1575368444 0
+F "tom1_oh 18.wav" 24990 0 1575368442 0
+F "tom1_oh 19.wav" 24986 0 1575368442 0
+F "tom1_oh 20.wav" 24028 0 1575368442 0
+F "tom1_oh 21.wav" 27134 0 1575368444 0
+F "tom1_oh 22.wav" 26298 0 1575368444 0
+F "tom1_oh 23.wav" 26344 0 1575368442 0
+F "tom1_oh 24.wav" 22344 0 1575368442 0
+F "tom1_oh 25.wav" 26480 0 1575368444 0
+F "tom1_oh 26.wav" 26488 0 1575368444 0
+F "tom1_oh 27.wav" 27742 0 1575368442 0
+F "tom1_oh 28.wav" 26382 0 1575368444 0
+F "tom1_oh 29.wav" 24038 0 1575368444 0
+F "tom1_oh 30.wav" 22714 0 1575368444 0
+F "tom1_oh 31.wav" 25194 0 1575368444 0
+F "tom1_oh 32.wav" 25758 0 1575368442 0
+F "tom2_oh 01.wav" 21188 0 1575368444 0
+F "tom2_oh 02.wav" 17354 0 1575368444 0
+F "tom2_oh 03.wav" 19506 0 1575368442 0
+F "tom2_oh 04.wav" 19800 0 1575368442 0
+F "tom2_oh 05.wav" 23822 0 1575368444 0
+F "tom2_oh 06.wav" 20350 0 1575368444 0
+F "tom2_oh 07.wav" 21334 0 1575368442 0
+F "tom2_oh 08.wav" 20900 0 1575368442 0
+F "tom2_oh 09.wav" 18426 0 1575368444 0
+F "tom2_oh 10.wav" 23366 0 1575368444 0
+F "tom2_oh 11.wav" 22612 0 1575368444 0
+F "tom2_oh 12.wav" 22100 0 1575368442 0
+F "tom2_oh 13.wav" 23792 0 1575368444 0
+F "tom2_oh 14.wav" 24258 0 1575368444 0
+F "tom2_oh 15.wav" 23176 0 1575368444 0
+F "tom2_oh 16.wav" 26154 0 1575368442 0
+F "tom2_oh 17.wav" 23384 0 1575368444 0
+F "tom2_oh 18.wav" 23174 0 1575368444 0
+F "tom2_oh 19.wav" 24062 0 1575368444 0
+F "tom2_oh 20.wav" 25040 0 1575368444 0
+F "tom3_oh 01.wav" 23548 0 1575368442 0
+F "tom3_oh 02.wav" 20238 0 1575368444 0
+F "tom3_oh 03.wav" 24826 0 1575368444 0
+F "tom3_oh 04.wav" 28146 0 1575368444 0
+F "tom3_oh 05.wav" 25110 0 1575368442 0
+F "tom3_oh 06.wav" 27046 0 1575368444 0
+F "tom3_oh 07.wav" 27214 0 1575368444 0
+F "tom3_oh 08.wav" 28448 0 1575368444 0
+F "tom3_oh 09.wav" 26194 0 1575368442 0
+F "tom3_oh 10.wav" 23726 0 1575368442 0
+F "tom3_oh 11.wav" 27958 0 1575368444 0
+F "tom3_oh 12.wav" 29892 0 1575368444 0
+F "tom3_oh 13.wav" 26856 0 1575368442 0
+F "tom3_oh 14.wav" 25006 0 1575368442 0
+F "tom3_oh 15.wav" 22950 0 1575368444 0
+F "tom3_oh 16.wav" 26284 0 1575368444 0
+F "tom3_oh 17.wav" 27204 0 1575368442 0
+F "tom3_oh 18.wav" 26966 0 1575368442 0
+F "tom3_oh 19.wav" 25118 0 1575368444 0
+F "tom3_oh 20.wav" 25676 0 1575368444 0
+F "tom3_oh 21.wav" 25740 0 1575368444 0
+F "tom3_oh 22.wav" 26576 0 1575368442 0
+F "tom3_oh 23.wav" 27984 0 1575368442 0
+F "tom3_oh 24.wav" 28514 0 1575368444 0
+F "tom3_oh 25.wav" 28648 0 1575368444 0
+F "tom4_oh 01.wav" 17476 0 1575368444 0
+F "tom4_oh 02.wav" 20718 0 1575368442 0
+F "tom4_oh 03.wav" 16298 0 1575368442 0
+F "tom4_oh 04.wav" 16708 0 1575368444 0
+F "tom4_oh 05.wav" 21962 0 1575368444 0
+F "tom4_oh 06.wav" 20606 0 1575368442 0
+F "tom4_oh 07.wav" 21232 0 1575368444 0
+F "tom4_oh 08.wav" 17218 0 1575368444 0
+F "tom4_oh 09.wav" 19024 0 1575368444 0
+F "tom4_oh 10.wav" 25030 0 1575368444 0
+F "tom4_oh 11.wav" 26236 0 1575368442 0
+F "tom4_oh 12.wav" 21634 0 1575368444 0
+F "tom4_oh 13.wav" 23298 0 1575368444 0
+F "tom4_oh 14.wav" 26480 0 1575368444 0
+F "tom4_oh 15.wav" 24332 0 1575368442 0
+F "tom4_oh 16.wav" 27080 0 1575368444 0
+F "tom4_oh 17.wav" 28426 0 1575368444 0
+F "tom4_oh 18.wav" 25792 0 1575368444 0
+F "tom4_oh 19.wav" 25948 0 1575368442 0
+F "tom4_oh 20.wav" 26436 0 1575368442 0
+F "tom4_oh 21.wav" 27782 0 1575368444 0
+F "tom4_oh 22.wav" 29924 0 1575368444 0
+F "tom4_oh 23.wav" 27778 0 1575368444 0
+F "tom4_oh 24.wav" 22468 0 1575368442 0
+F "tom4_oh 25.wav" 18912 0 1575368444 0
+F "tom4_oh 26.wav" 26736 0 1575368444 0
+F "tom4_oh 27.wav" 28236 0 1575368444 0
+F "tom4_oh 28.wav" 30786 0 1575368442 0
+F "tom4_oh 29.wav" 30070 0 1575368444 0
