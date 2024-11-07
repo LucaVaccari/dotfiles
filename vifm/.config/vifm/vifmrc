@@ -3,6 +3,8 @@
 " The " character at the beginning of a line comments out the line.
 " Blank lines are ignored.
 
+let $INSIDE_VIFM = 'true'
+
 " ------------------------------------------------------------------------------
 " Main settings
 " ------------------------------------------------------------------------------
@@ -94,14 +96,6 @@ set suggestoptions=normal,visual,view,otherpane,keys,marks,registers
 " remove confirmation before trash/delete
 set confirm-=delete,permdelete
 
-" use fzf to fuzzy search and run file
-command! FZFfind : set noquickview
-                \| let $FZF_PICK = term('find ./* | fzf --height 10 2>/dev/tty')
-                \| if $FZF_PICK != ''
-                \|     execute 'goto' fnameescape($FZF_PICK)
-                \| endif
-nnoremap / :FZFfind<cr>
-
 " ------------------------------------------------------------------------------
 " Bookmarks
 " ------------------------------------------------------------------------------
@@ -139,6 +133,15 @@ command! make !!make %a
 command! mkcd :mkdir %a | cd %a
 command! vgrep vim "+grep %a"
 command! reload :write | restart full
+command! extractfiles :execute '!%%n extract-files' &fusehome expand('%%D') expand('%%f:p')
+
+" use fzf to fuzzy search and run file
+command! FZFfind : set noquickview
+                \| let $FZF_PICK = term('find ./* | fzf --height 10 2>/dev/tty')
+                \| if $FZF_PICK != ''
+                \|     execute 'goto' fnameescape($FZF_PICK)
+                \| endif
+nnoremap / :FZFfind<cr>
 
 " ------------------------------------------------------------------------------
 " File types association
@@ -307,7 +310,7 @@ filetype {*.7z},<application/x-7z-compressed>
 fileviewer {*.7z},<application/x-7z-compressed> 7z l %c
 
 " Office files
-filetype {*.odt,*.doc,*.docx,*.xls,*.xlsx,*.odp,*.pptx,*.ppt},
+filetype {*.odt,*.doc,*.docx,*.xls,*.xlsx,*.ods,*.odp,*.pptx,*.ppt},
          \<application/vnd.openxmlformats-officedocument.*,
           \application/msword,
           \application/vnd.ms-excel>
