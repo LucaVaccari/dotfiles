@@ -94,14 +94,6 @@ set suggestoptions=normal,visual,view,otherpane,keys,marks,registers
 " remove confirmation before trash/delete
 set confirm-=delete,permdelete
 
-" use fzf to fuzzy search and run file
-command! FZFfind : set noquickview
-                \| let $FZF_PICK = term('find ./* | fzf --height 10 2>/dev/tty')
-                \| if $FZF_PICK != ''
-                \|     execute 'goto' fnameescape($FZF_PICK)
-                \| endif
-nnoremap / :FZFfind<cr>
-
 " ------------------------------------------------------------------------------
 " Bookmarks
 " ------------------------------------------------------------------------------
@@ -139,6 +131,13 @@ command! make !!make %a
 command! mkcd :mkdir %a | cd %a
 command! vgrep vim "+grep %a"
 command! reload :write | restart full
+" use fzf to fuzzy search and run file
+command! FZFfind : set noquickview
+                \| let $FZF_PICK = term('find ./* | fzf --height 10 2>/dev/tty')
+                \| if $FZF_PICK != ''
+                \|     execute 'goto' fnameescape($FZF_PICK)
+                \| endif
+nnoremap / :FZFfind<cr>
 
 " ------------------------------------------------------------------------------
 " File types association
@@ -214,6 +213,7 @@ fileviewer {*.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
         \ %pc
         \ vifmimg clear
 
+" HTML
 filetype {*.xhtml,*.html,*.htm},<text/html>
         \ {Open with librewolf}
         \ librewolf %f &,
@@ -323,6 +323,8 @@ filetype */
         \ vifm %f &,
 fileviewer */ ls --color=always
 fileviewer .*/ ls --color=always
+
+" fileviewer * file %c
 
 " Syntax highlighting in preview
 "
