@@ -1,0 +1,2621 @@
+--[[
+		Settings for Lokasenna_Radial Menu.lua
+	
+		This file is written as a Lua table, and must use the appropriate 
+	syntax with regard to tables, indices, keys, strings, etc, etc. If
+	you run Radial Menu and get an error loading the menu, it either
+	couldn't find this file or you've got some incorrect Lua in it.
+
+	A few general notes:
+
+	- Due to quirks with the function that loads these settings into 
+	the script, all indices must include square brackets and/or quotation 
+	marks rather than being left bare, i.e. 
+
+					[3]				not		3
+					["col_main"]	not		col_main
+	
+	
+	- Colors can be specified per button, per menu, or globally (see
+	table index [-1]). Buttons with no colors specified will use their
+	menu's settings, menus will use the global settings.
+	
+	- When a button is assigned to an action that's toggled On, the button
+	  will light up; if the mouse is hovering or clicked on it, the toggle 
+	  color will be blended with the hover or background color, respectively.
+	
+	- Menus are numbered starting from 0, and menu numbers do NOT need to
+	  be contiguous - that is, 1 2 3 4 9 11 15 20 25 is fine, so feel free
+	  to organize your menus by number however you want.
+	
+	- Buttons are numbered starting from 0, and button numbers DO need to
+	  be contiguous.
+	  
+	- You can add a button in the center of the ring by giving it the
+	  number [-1]
+	  
+	
+	  
+
+
+	Menu #:
+	[0] = {	
+	
+		(There's no limit to the number of menus you can have)
+		
+		["alias"] = "blah",			A name to use for this menu so you don't have
+									to remember menu numbers. Displayed in the
+									menu list, and can be used in button actions
+									and context boxes. (See below)
+	
+		["col_main"] = {			Normal button color for buttons in this menu
+			[1] = 0.0,				R
+			[2] = 1.0,				G	(values are from 0-1)
+			[3] = 1.0,				B
+			
+		["col_tog"] = {				Toggled color, for use with
+			...						i.e. "Options: Toggle metronome"
+			
+		["col_hvr"] = {				Mouse-over color
+			...
+			
+		["col_bg"] = {				Background color
+			...
+		
+	
+	
+		Button #:
+		[0] = {
+		
+			(Maximum of 16 buttons per menu)
+		
+			Button settings:
+			
+			["lbl"] = "cool",			The button's label
+			
+										| or ; will wrap the text to a new line,
+										i.e. "Multi|line;text"
+			
+			["act"] = "menu 1",			Action to perform / menu to open. 
+			
+										Valid commands are...
+										
+										Action IDs:											
+										40364	
+											
+										Script/extension actions:
+										_SWS_AWMPLAYTOG
+										_RS2bf8e77e958d48b42c7d7b585790ee0427a96a7e
+										
+											Note: Because the MIDI Editor uses its own
+											action list, when running MIDI actions you
+											may need to enter them as 'midi 40364' to
+											keep Reaper from getting confused.
+										
+										Open a menu:
+										menu 20		(opens menu 20)
+										menu stuff	(opens the menu with alias 'stuff')
+										
+										back		Return to the previous menu
+										base		Return to the original menu
+													(either menu 0 or the specified menu
+													for a given Reaper context)
+													
+										quit		Close the script
+										
+										
+										Special commands:
+										
+										midi 12345	Send an action to the current MIDI
+													editor rather than the main window
+					
+										xN 12345	Perform the action N times each time
+													the button is clicked.
+										
+													e.g.	x3 40001
+													
+													will insert three new tracks each
+													time the button is clicked
+													
+													
+													
+										repeat N "12345"	Repeats the action every N
+												 '12345'	seconds while the mouse button
+															is held down.
+												 
+													e.g.	repeat 0.5 "40001"
+													
+													will insert a new track every 0.5 seconds
+													
+										The special commands can be combined, in (I think)
+										any order:
+										
+										midi x3 12345		Perform MIDI action 12345 three times
+										
+										repeat 0.5 "x3 12345"	Perform action 12345 three times,
+																every 0.5 seconds.
+																
+										
+										
+													
+													
+					
+					
+
+					
+										
+										
+	
+			["col_main"] = {			Normal button color
+				[1] = 0.0,				R
+				[2] = 1.0,				G	(values are from 0-1)
+				[3] = 1.0,				B
+				
+			["col_tog"] = {				Toggled color, for use with
+				...						i.e. "Options: Toggle metronome"
+				
+			["col_hvr"] = {				Mouse-over color
+				...
+				
+				
+				
+	Global settings are stored in index [-1]:
+	[-1] = {
+	
+		["close_time"] = 600,		How long to keep the window open (in ms) on 
+									startup	if no key is being held down. Going
+									lower than 600ms will probably cause the menu 
+									to keep opening and closing.
+	
+	
+									Global color settings:
+		["col_main"] = {			Normal button color for buttons in this menu
+			[1] = 0.0,				R
+			[2] = 1.0,				G	(values are from 0-1)
+			[3] = 1.0,				B
+			
+		["col_tog"] = {				Toggled color, for use with
+			...						i.e. "Options: Toggle metronome"
+			
+		["col_hvr"] = {				Mouse-over color
+			...
+			
+		["col_bg"] = {				Background color
+			...
+			
+		["contexts"] = {			What menu to open on startup for a given mouse
+			["mcp|empty"] = 10,		context. Contexts can be assigned with menu 
+									numbers or aliases, i.e.
+										20
+										stuff
+									
+									If a particular context isn't given a menu, 
+									it will	look up one 'level' at a time until
+									it finds a match.
+									
+									Example:									
+									The menu was opened with the mouse cursor over 
+									an empty area of a track in the Arrange view.
+									The script will look for:
+										["arrange|track|empty"]
+									then:
+										["arrange|track"]
+									then:
+										["arrange"]
+									
+									If there's still no match, it will open menu 0.				
+									(see the Setup script's Context tab for a list
+									of available contexts)
+									
+		["fonts"] = {				Font settings
+		
+			[1] = 	{				1 - Normal buttons
+									2 - Menus
+									3 - Preview text
+									
+				"Calibri", 			Font face. See the note below.
+				
+				16, 				Size
+				
+				"b"					Flags. Just a string listing:
+										b	bold
+										i	italics
+										u	underline
+										
+									The order doesn't matter, i.e. this would be
+									perfectly fine: "iub"
+									
+										
+									Important: Font names are really picky, and will
+									default back to Arial if you get them wrong. The
+									Setup script provides a green/red light for each
+									font to let you know if it's correct or not.
+									
+									Unfortunately, the names are often not what you
+									see when using them in Office, etc...
+									
+									To get a font's name in Windows:
+									1. Find the .ttf file in your Windows\Fonts folder
+									2. Right-click it, select Properties
+									3. Select the Details tab
+									4. The first field, "Name", is what you want to
+									   be using here.
+									   
+									Mac users - I have no idea. 
+									   
+									   
+									I know, it's stupid.
+				
+			
+		
+		["hvr_click"] = false,		Boolean - hover over a button to 'click' it
+		["hvr_time"] = 200,			Hover time for ^^^ (in ms)
+		
+		
+		["key_binds"] = {			Key bind settings
+		
+			["enabled"] = true,		Boolean - enables the assigned key binds
+		
+			["hints"] =	true,		Boolean - display key binds outside the menu ring
+			
+			["last_num"] = 1,		Last menu size selected in the setup script (1-13)
+		
+			[4] =	{				Menu size for each set of bindings. (4-16)
+			
+				[1] = "r",			Key bind for the given button number.
+				
+										-1	=	Center button
+										1	=	Always the button facing right
+		
+		
+		["key_mode"] = 1,			What to do when the shortcut key is released
+									(1-3, see the options in the Setup script)
+									
+		["last_tab"] = 1,			The last tab that was active in the Setup script
+									
+		["mouse_mode"] = 1,			What to do when the mouse is clicked
+									(1-3, see the options in the Setup script)
+									
+									
+		["num_btns"] = 8,			Number of buttons for new menus to start with
+		
+		["preview"] = true,			Whether or not to preview a menu's buttons when
+									hovering the mouse over it.
+									
+		
+									Button radiuses/target areas:
+		["ra"] = 48,				Center button
+		["rb"] = 60,				Currently unused
+		["rc"] = 116,				Inside of the button ring
+		["rd"] = 192,				Outside of the button ring
+		["re"] = 192,				Threshold for tracking Swipes
+		
+									Note that the preview labels when hovering over
+									a menu are drawn with a radius of (rc - ra), so
+									adjusting these will affect the labels as well.
+		
+		["swipe"] = {				Parameters for the Swiping feature:
+		
+			["accel"] = 65,			Start sensitivity
+			["actions"]	= true,		Whether Swipes can trigger actions, or just menus
+			["decel"] = 10,			Stop sensitivity
+			["enabled"] = true,		Whether Swiping mode is active or not
+			["menu"] = 0,			What menu to use for Swipe actions...
+			["mode"] = 1,		...if this is set to 2. Setting it to 1 will always
+									use the current menu
+			["stop"] = 20,			Stop time for Swipes, in milliseconds
+			
+		
+]]--
+
+
+return {
+	[-1] = {
+		["close_time"] = 5000,
+		["col_bg"] = {
+			[1] = 0.2,
+			[2] = 0.2,
+			[3] = 0.2,
+		},
+		["col_hvr"] = {
+			[1] = 0.878,
+			[2] = 0.878,
+			[3] = 0.878,
+		},
+		["col_main"] = {
+			[1] = 0.753,
+			[2] = 0.753,
+			[3] = 0.753,
+		},
+		["col_tog"] = {
+			[1] = 0,
+			[2] = 0.753,
+			[3] = 0,
+		},
+		["contexts"] = {
+			["arrange"] = "",
+			["arrange|track"] = "",
+			["arrange|track|empty"] = "",
+			["arrange|track|env_point"] = "",
+			["arrange|track|item"] = "",
+			["mcp"] = "",
+			["midi_editor"] = "",
+			["ruler"] = "",
+			["tcp"] = "",
+			["tcp|empty"] = "",
+			["tcp|envelope"] = "",
+			["tcp|track"] = "",
+			["transport"] = "record",
+		},
+		["fonts"] = {
+			[1] = {
+				[1] = "Calibri",
+				[2] = 16,
+				[3] = "b",
+			},
+			[2] = {
+				[1] = "Calibri",
+				[2] = 16,
+				[3] = "bu",
+			},
+			[3] = {
+				[1] = "Calibri",
+				[2] = 14,
+			},
+		},
+		["hvr_click"] = false,
+		["hvr_time"] = 200,
+		["key_binds"] = {
+			[4] = {
+			},
+			[5] = {
+			},
+			[6] = {
+			},
+			[7] = {
+			},
+			[8] = {
+			},
+			[9] = {
+			},
+			[10] = {
+			},
+			[11] = {
+			},
+			[12] = {
+			},
+			[13] = {
+			},
+			[14] = {
+			},
+			[15] = {
+			},
+			[16] = {
+			},
+			["enabled"] = false,
+			["hints"] = false,
+			["last_num"] = 8,
+		},
+		["key_mode"] = 3,
+		["last_pos"] = {
+			[1] = 0,
+			[2] = 0,
+		},
+		["last_tab"] = 5,
+		["mnu_0_on_act"] = false,
+		["mouse_mode"] = 1,
+		["num_btns"] = 8,
+		["preview"] = true,
+		["ra"] = 48,
+		["rb"] = 85,
+		["rc"] = 116,
+		["rd"] = 192,
+		["re"] = 192,
+		["swipe"] = {
+			["accel"] = 65,
+			["actions"] = false,
+			["decel"] = 10,
+			["enabled"] = false,
+			["menu"] = 0,
+			["menu_mode"] = 1,
+			["stop"] = 20,
+		},
+		["win_pos"] = 1,
+	},
+	[0] = {
+		[0] = {
+			["act"] = "menu options",
+			["lbl"] = "Options",
+		},
+		[1] = {
+			["act"] = "menu items",
+			["col_main"] = {
+				[1] = 0.79607843137255,
+				[2] = 0.70588235294118,
+				[3] = 0.47058823529412,
+			},
+			["lbl"] = "Items",
+		},
+		[2] = {
+			["act"] = "menu Item Prop",
+			["col_main"] = {
+				[1] = 0.79607843137255,
+				[2] = 0.70588235294118,
+				[3] = 0.47058823529412,
+			},
+			["lbl"] = "Item|Properties",
+		},
+		[3] = {
+			["act"] = "menu take",
+			["lbl"] = "Take",
+		},
+		[4] = {
+			["act"] = "menu record",
+			["col_main"] = {
+				[1] = 0.8,
+				[2] = 0.46666666666667,
+				[3] = 0.48235294117647,
+			},
+			["lbl"] = "Recording",
+		},
+		[5] = {
+			["act"] = "menu env",
+			["lbl"] = "Envelopes",
+		},
+		[6] = {
+			["act"] = "menu midi",
+			["lbl"] = "MIDI|Editor",
+		},
+		[7] = {
+			["act"] = "menu Project",
+			["col_main"] = {
+				[1] = 0.8,
+				[2] = 0.48627450980392,
+				[3] = 0.36862745098039,
+			},
+			["lbl"] = "Project",
+		},
+		[8] = {
+			["act"] = "menu SWS",
+			["col_main"] = {
+				[1] = 0.79607843137255,
+				[2] = 0.70588235294118,
+				[3] = 0.47058823529412,
+			},
+			["lbl"] = "SWS",
+		},
+		[9] = {
+			["act"] = "menu Grid Size",
+			["col_main"] = {
+				[1] = 0.50196078431373,
+				[2] = 0.57647058823529,
+				[3] = 0.7921568627451,
+			},
+			["lbl"] = "Grid Size",
+		},
+		[10] = {
+			["act"] = "menu Plugins",
+			["col_main"] = {
+				[1] = 0.58823529411765,
+				[2] = 0.7843137254902,
+				[3] = 0.78823529411765,
+			},
+			["lbl"] = "Plugins",
+		},
+		[11] = {
+			["act"] = "menu track",
+			["col_main"] = {
+				[1] = 0.65490196078431,
+				[2] = 0.54901960784314,
+				[3] = 0.7921568627451,
+			},
+			["lbl"] = "Track",
+		},
+		[12] = {
+			["act"] = "menu Advanced",
+			["col_main"] = {
+				[1] = 0.74509803921569,
+				[2] = 0.7843137254902,
+				[3] = 0.51764705882353,
+			},
+			["lbl"] = "Advanced|Editing",
+		},
+		[13] = {
+			["act"] = "menu view",
+			["col_main"] = {
+				[1] = 0.753,
+				[2] = 0.753,
+				[3] = 0.753,
+			},
+			["lbl"] = "View",
+		},
+	},
+	[1] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "",
+			["col_main"] = {
+				[1] = 0.47843137254902,
+				[2] = 0.94117647058824,
+				[3] = 0.72941176470588,
+			},
+			["lbl"] = "Zoom to| Selected",
+		},
+		[1] = {
+			["act"] = "_RS391cb9256e0729e7b47165e5df6c1546498225b9",
+			["col_main"] = {
+				[1] = 0.29019607843137,
+				[2] = 0.38823529411765,
+				[3] = 0.73725490196078,
+			},
+			["lbl"] = "Batch|Rename",
+		},
+		[2] = {
+			["act"] = "40357",
+			["lbl"] = "Set|Color",
+		},
+		[3] = {
+			["act"] = "40899",
+			["lbl"] = "Set|Icon",
+		},
+		[4] = {
+			["act"] = "",
+			["col_main"] = {
+				[1] = 0.92941176470588,
+				[2] = 0.12156862745098,
+				[3] = 0.043137254901961,
+			},
+			["lbl"] = "Remove|Icon",
+		},
+		[5] = {
+			["act"] = "menu track env",
+			["lbl"] = "Envelopes",
+		},
+		[6] = {
+			["act"] = "40421",
+			["lbl"] = "Select|All Items",
+		},
+		[7] = {
+			["act"] = "9",
+			["col_tog"] = {
+				[1] = 1.0,
+				[2] = 0.0,
+				[3] = 0.0,
+			},
+			["lbl"] = "Record Arm",
+		},
+		[8] = {
+			["act"] = "menu track auto",
+			["lbl"] = "Automation|Modes",
+		},
+		[9] = {
+			["act"] = "_SWS_AWCSCINP",
+			["col_main"] = {
+				[1] = 0.95686274509804,
+				[2] = 0.59607843137255,
+				[3] = 0.043137254901961,
+			},
+			["lbl"] = "Cascade|Inputs",
+		},
+		[10] = {
+			["act"] = "menu Pan Mode",
+			["col_main"] = {
+				[1] = 0.52156862745098,
+				[2] = 0.007843137254902,
+				[3] = 0.84313725490196,
+			},
+			["lbl"] = "Pan|Modes",
+		},
+		[11] = {
+			["act"] = "_RS406d47e52e9e83f15bba56e9a63b5d83e43651ca",
+			["col_main"] = {
+				[1] = 0.22745098039216,
+				[2] = 0.84313725490196,
+				[3] = 0.90588235294118,
+			},
+			["lbl"] = "Create|Parent",
+		},
+		[12] = {
+			["act"] = "_SWS_AWINSERTCLICKTRK",
+			["col_main"] = {
+				[1] = 0.15294117647059,
+				[2] = 0.95294117647059,
+				[3] = 0.23529411764706,
+			},
+			["lbl"] = "Insert|Click Track",
+		},
+		[13] = {
+			["act"] = "40001",
+			["col_main"] = {
+				[1] = 0.15294117647059,
+				[2] = 0.95294117647059,
+				[3] = 0.23529411764706,
+			},
+			["lbl"] = "Insert|Track",
+		},
+		[14] = {
+			["act"] = "46000",
+			["col_main"] = {
+				[1] = 0.15294117647059,
+				[2] = 0.95294117647059,
+				[3] = 0.23529411764706,
+			},
+			["lbl"] = "Insert|Template",
+		},
+		["alias"] = "track",
+	},
+	[2] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "50124",
+			["col_tog"] = {
+				[1] = 0.44313725490196,
+				[2] = 0.78039215686275,
+				[3] = 0.5843137254902,
+			},
+			["lbl"] = "Media|Explorer",
+		},
+		[1] = {
+			["act"] = "40240",
+			["col_tog"] = {
+				[1] = 0.44313725490196,
+				[2] = 0.78039215686275,
+				[3] = 0.5843137254902,
+			},
+			["lbl"] = "Perform.|Meter",
+		},
+		[2] = {
+			["act"] = "40326",
+			["col_tog"] = {
+				[1] = 0.44313725490196,
+				[2] = 0.78039215686275,
+				[3] = 0.5843137254902,
+			},
+			["lbl"] = "Region|Manager",
+		},
+		[3] = {
+			["act"] = "40422",
+			["col_tog"] = {
+				[1] = 0.44313725490196,
+				[2] = 0.78039215686275,
+				[3] = 0.5843137254902,
+			},
+			["lbl"] = "Screensets",
+		},
+		[4] = {
+			["act"] = "40268",
+			["col_main"] = {
+				[1] = 0.753,
+				[2] = 0.753,
+				[3] = 0.753,
+			},
+			["col_tog"] = {
+				[1] = 0.44313725490196,
+				[2] = 0.78039215686275,
+				[3] = 0.5843137254902,
+			},
+			["lbl"] = "Navigator",
+		},
+		[5] = {
+			["act"] = "40251",
+			["col_tog"] = {
+				[1] = 0.44313725490196,
+				[2] = 0.78039215686275,
+				[3] = 0.5843137254902,
+			},
+			["lbl"] = "Routing",
+		},
+		[6] = {
+			["act"] = "40906",
+			["col_tog"] = {
+				[1] = 0.44313725490196,
+				[2] = 0.78039215686275,
+				[3] = 0.5843137254902,
+			},
+			["lbl"] = "Track|Manager",
+		},
+		[7] = {
+			["act"] = "50125",
+			["col_main"] = {
+				[1] = 0.50196078431373,
+				[2] = 0.57647058823529,
+				[3] = 0.7921568627451,
+			},
+			["col_tog"] = {
+				[1] = 0.44313725490196,
+				[2] = 0.78039215686275,
+				[3] = 0.5843137254902,
+			},
+			["lbl"] = "Video|Window",
+		},
+		[8] = {
+			["act"] = "41157",
+			["col_main"] = {
+				[1] = 0.58823529411765,
+				[2] = 0.7843137254902,
+				[3] = 0.78823529411765,
+			},
+			["col_tog"] = {
+				[1] = 0.44313725490196,
+				[2] = 0.78039215686275,
+				[3] = 0.5843137254902,
+			},
+			["lbl"] = "Project Bay",
+		},
+		[9] = {
+			["act"] = "40016",
+			["col_main"] = {
+				[1] = 0.8,
+				[2] = 0.48627450980392,
+				[3] = 0.36862745098039,
+			},
+			["col_tog"] = {
+				[1] = 0.44313725490196,
+				[2] = 0.78039215686275,
+				[3] = 0.5843137254902,
+			},
+			["lbl"] = "Preferences",
+		},
+		["alias"] = "view",
+	},
+	[3] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "40364",
+			["col_main"] = {
+				[1] = 0.75294117647059,
+				[2] = 0.75294117647059,
+				[3] = 0.75294117647059,
+			},
+			["col_tog"] = {
+				[1] = 0.44313725490196,
+				[2] = 0.78039215686275,
+				[3] = 0.5843137254902,
+			},
+			["lbl"] = "Click",
+		},
+		[1] = {
+			["act"] = "40145",
+			["col_main"] = {
+				[1] = 0.75294117647059,
+				[2] = 0.75294117647059,
+				[3] = 0.75294117647059,
+			},
+			["col_tog"] = {
+				[1] = 0.44313725490196,
+				[2] = 0.78039215686275,
+				[3] = 0.5843137254902,
+			},
+			["lbl"] = "Grid",
+		},
+		[2] = {
+			["act"] = "1157",
+			["col_main"] = {
+				[1] = 0.75294117647059,
+				[2] = 0.75294117647059,
+				[3] = 0.75294117647059,
+			},
+			["col_tog"] = {
+				[1] = 0.44313725490196,
+				[2] = 0.78039215686275,
+				[3] = 0.5843137254902,
+			},
+			["lbl"] = "Snapping",
+		},
+		[3] = {
+			["act"] = "1155",
+			["col_main"] = {
+				[1] = 0.75294117647059,
+				[2] = 0.75294117647059,
+				[3] = 0.75294117647059,
+			},
+			["col_tog"] = {
+				[1] = 0.44313725490196,
+				[2] = 0.78039215686275,
+				[3] = 0.5843137254902,
+			},
+			["lbl"] = "Ripple|Editing",
+			["r_act"] = "41991",
+		},
+		[4] = {
+			["act"] = "40745",
+			["col_tog"] = {
+				[1] = 0.44313725490196,
+				[2] = 0.78039215686275,
+				[3] = 0.5843137254902,
+			},
+			["lbl"] = "Solo In|Front",
+		},
+		[5] = {
+			["act"] = "42073",
+			["col_tog"] = {
+				[1] = 0.44313725490196,
+				[2] = 0.78039215686275,
+				[3] = 0.5843137254902,
+			},
+			["lbl"] = "Spectral|Peaks",
+		},
+		[6] = {
+			["act"] = "42076",
+			["col_tog"] = {
+				[1] = 0.44313725490196,
+				[2] = 0.78039215686275,
+				[3] = 0.5843137254902,
+			},
+			["lbl"] = "Pre-Fader|Metering",
+		},
+		[7] = {
+			["act"] = "40621",
+			["col_tog"] = {
+				[1] = 0.44313725490196,
+				[2] = 0.78039215686275,
+				[3] = 0.5843137254902,
+			},
+			["lbl"] = "Link|Loop|Points",
+		},
+		[8] = {
+			["act"] = "41819",
+			["col_main"] = {
+				[1] = 0.75294117647059,
+				[2] = 0.75294117647059,
+				[3] = 0.75294117647059,
+			},
+			["col_tog"] = {
+				[1] = 0.44313725490196,
+				[2] = 0.78039215686275,
+				[3] = 0.5843137254902,
+			},
+			["lbl"] = "Pre-Roll|On Record",
+		},
+		["alias"] = "options",
+	},
+	[4] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "40760",
+			["lbl"] = "Dynamic|Split",
+		},
+		[1] = {
+			["act"] = "40757",
+			["lbl"] = "Split @|Edit Cursor",
+		},
+		[2] = {
+			["act"] = "40061",
+			["lbl"] = "Split @|Time Sel.",
+		},
+		[3] = {
+			["act"] = "41588",
+			["lbl"] = "Glue|Items",
+		},
+		[4] = {
+			["act"] = "40704",
+			["lbl"] = "Set Color",
+		},
+		[5] = {
+			["act"] = "40108",
+			["lbl"] = "Normalize|Items",
+		},
+		[6] = {
+			["act"] = "40316",
+			["lbl"] = "Quantize|Positions",
+		},
+		[7] = {
+			["act"] = "41622",
+			["col_main"] = {
+				[1] = 0.0,
+				[2] = 0.0,
+				[3] = 0.0,
+			},
+			["lbl"] = "Toggle Zoom|to Selected",
+		},
+		[8] = {
+			["act"] = "_XENAKIOS_LOOPANDPLAYSELITEMS",
+			["col_main"] = {
+				[1] = 0.15294117647059,
+				[2] = 0.95294117647059,
+				[3] = 0.23529411764706,
+			},
+			["lbl"] = "Loop & Play|Selected",
+		},
+		[9] = {
+			["act"] = "42468",
+			["col_main"] = {
+				[1] = 0.47843137254902,
+				[2] = 0.94117647058824,
+				[3] = 0.72941176470588,
+			},
+			["lbl"] = "Calculate|Loudness",
+		},
+		[10] = {
+			["act"] = "42409",
+			["col_main"] = {
+				[1] = 0.66666666666667,
+				[2] = 0.5843137254902,
+				[3] = 0.10980392156863,
+			},
+			["lbl"] = "Set|Razor Edit|to Selected",
+		},
+		[11] = {
+			["act"] = "",
+			["col_main"] = {
+				[1] = 0.4,
+				[2] = 0.67843137254902,
+				[3] = 0.77647058823529,
+			},
+			["lbl"] = "Crossfade|Adjacent Items",
+		},
+		[12] = {
+			["act"] = "",
+			["col_main"] = {
+				[1] = 0.78823529411765,
+				[2] = 0.85490196078431,
+				[3] = 0.10588235294118,
+			},
+			["lbl"] = "Set Loop|from Items",
+		},
+		[13] = {
+			["act"] = "_S&M_OPEN_ITEM_PATH",
+			["col_main"] = {
+				[1] = 0.95686274509804,
+				[2] = 0.59607843137255,
+				[3] = 0.043137254901961,
+			},
+			["lbl"] = "Show in|Explorer/Finder",
+		},
+		["alias"] = "items",
+	},
+	[5] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "40129",
+			["lbl"] = "Delete|Active Take",
+		},
+		[1] = {
+			["act"] = "41340",
+			["col_main"] = {
+				[1] = 0.52941176470588,
+				[2] = 0.12156862745098,
+				[3] = 0.12941176470588,
+			},
+			["lbl"] = "Cycle Take|Channel Mode",
+		},
+		[2] = {
+			["act"] = "40435",
+			["lbl"] = "Show Takes|In Lanes",
+		},
+		[3] = {
+			["act"] = "41331",
+			["lbl"] = "Set Color",
+		},
+		[4] = {
+			["act"] = "menu take env",
+			["lbl"] = "Envelopes",
+		},
+		[5] = {
+			["act"] = "40126",
+			["col_main"] = {
+				[1] = 0.78039215686275,
+				[2] = 0.86274509803922,
+				[3] = 0.062745098039216,
+			},
+			["lbl"] = "Switch To|Prev. Take",
+		},
+		[6] = {
+			["act"] = "40125",
+			["col_main"] = {
+				[1] = 0.78039215686275,
+				[2] = 0.86274509803922,
+				[3] = 0.062745098039216,
+			},
+			["lbl"] = "Switch To|Next Take",
+		},
+		[7] = {
+			["act"] = "40224",
+			["lbl"] = "Explode Across|Tracks",
+		},
+		[8] = {
+			["act"] = "41340",
+			["col_main"] = {
+				[1] = 0.0,
+				[2] = 0.0,
+				[3] = 0.0,
+			},
+			["lbl"] = "Lock to|Active Take",
+		},
+		[9] = {
+			["act"] = "40131",
+			["lbl"] = "Crop To|Active Take",
+		},
+		["alias"] = "take",
+	},
+	[6] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "40364",
+			["col_main"] = {
+				[1] = 0.78039215686275,
+				[2] = 0.86274509803922,
+				[3] = 0.062745098039216,
+			},
+			["lbl"] = "Toggle|Metronome",
+		},
+		[1] = {
+			["act"] = "menu record mode",
+			["lbl"] = "Record|Mode",
+		},
+		[2] = {
+			["act"] = "41038",
+			["lbl"] = "Recording|Pre-Roll",
+		},
+		[3] = {
+			["act"] = "1068",
+			["lbl"] = "Repeat",
+		},
+		[4] = {
+			["act"] = "40490",
+			["col_main"] = {
+				[1] = 0.58039215686275,
+				[2] = 0.71372549019608,
+				[3] = 0.90588235294118,
+			},
+			["lbl"] = "Arm All|Tracks",
+		},
+		[5] = {
+			["act"] = "9",
+			["col_main"] = {
+				[1] = 0.58039215686275,
+				[2] = 0.71372549019608,
+				[3] = 0.90588235294118,
+			},
+			["lbl"] = "Arm Selected|Tracks",
+		},
+		[6] = {
+			["act"] = "",
+			["col_main"] = {
+				[1] = 0.58039215686275,
+				[2] = 0.71372549019608,
+				[3] = 0.90588235294118,
+			},
+			["lbl"] = "Unarm All|Tracks",
+		},
+		[7] = {
+			["act"] = "menu record start",
+			["col_main"] = {
+				[1] = 0.92941176470588,
+				[2] = 0.12156862745098,
+				[3] = 0.043137254901961,
+			},
+			["lbl"] = "Start|Recording...",
+		},
+		[8] = {
+			["act"] = "",
+			["col_main"] = {
+				[1] = 1.0,
+				[2] = 1.0,
+				[3] = 1.0,
+			},
+			["lbl"] = "Stop|Recording",
+		},
+		[9] = {
+			["act"] = "40668",
+			["col_main"] = {
+				[1] = 0.0,
+				[2] = 0.0,
+				[3] = 0.0,
+			},
+			["lbl"] = "Abort|Recording",
+		},
+		["alias"] = "record",
+	},
+	[7] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "midi 40009",
+			["lbl"] = "Quantize",
+		},
+		[1] = {
+			["act"] = "midi 40457",
+			["lbl"] = "Humanize",
+		},
+		[2] = {
+			["act"] = "midi 40759",
+			["lbl"] = "Transpose",
+		},
+		[3] = {
+			["act"] = "menu midi view",
+			["lbl"] = "View Mode",
+		},
+		[4] = {
+			["act"] = "menu midi size",
+			["lbl"] = "Grid Size",
+		},
+		[5] = {
+			["act"] = "menu midi type",
+			["lbl"] = "Grid Type",
+		},
+		[6] = {
+			["act"] = "menu midi length",
+			["lbl"] = "Note Length",
+		},
+		[7] = {
+			["act"] = "menu midi channel",
+			["lbl"] = "Channel",
+		},
+		["alias"] = "midi",
+	},
+	[8] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "menu env sel shape",
+			["lbl"] = "Set Shape|(Sel. Points)",
+		},
+		[1] = {
+			["act"] = "menu env def",
+			["lbl"] = "Set Shape|(Default)",
+		},
+		[2] = {
+			["act"] = "40887",
+			["lbl"] = "Reduce #|Of Points",
+		},
+		[3] = {
+			["act"] = "40726",
+			["lbl"] = "Insert 4 Points|@ Time Sel.",
+		},
+		[4] = {
+			["act"] = "41142",
+			["lbl"] = "Toggle Env.|For Last|Param",
+		},
+		[5] = {
+			["act"] = "41178",
+			["lbl"] = "Move Sel.|Points Left|1 Grid",
+		},
+		[6] = {
+			["act"] = "40415",
+			["lbl"] = "Reset Sel.|Points to 0",
+		},
+		[7] = {
+			["act"] = "41179",
+			["lbl"] = "Move Sel.|Points Right|1 Grid",
+		},
+		["alias"] = "env",
+	},
+	[9] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "40404",
+			["lbl"] = "Latch",
+		},
+		[1] = {
+			["act"] = "42023",
+			["lbl"] = "Latch Preview",
+		},
+		[2] = {
+			["act"] = "40401",
+			["lbl"] = "Read",
+		},
+		[3] = {
+			["act"] = "40402",
+			["lbl"] = "Touch",
+		},
+		[4] = {
+			["act"] = "40400",
+			["lbl"] = "Trim/Read",
+		},
+		[5] = {
+			["act"] = "40403",
+			["lbl"] = "Write",
+		},
+		["alias"] = "track auto",
+	},
+	[10] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "40406",
+			["lbl"] = "Volume",
+		},
+		[1] = {
+			["act"] = "40407",
+			["lbl"] = "Pan",
+		},
+		[2] = {
+			["act"] = "41975",
+			["lbl"] = "Show env.|panel",
+		},
+		[3] = {
+			["act"] = "41151",
+			["col_main"] = {
+				[1] = 0.78039215686275,
+				[2] = 0.86274509803922,
+				[3] = 0.062745098039216,
+			},
+			["lbl"] = "Show/Hide|Envelopes",
+		},
+		["alias"] = "track env",
+	},
+	[11] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "40693",
+			["lbl"] = "Volume",
+		},
+		[1] = {
+			["act"] = "40694",
+			["lbl"] = "Pan",
+		},
+		[2] = {
+			["act"] = "40695",
+			["lbl"] = "Mute",
+		},
+		[3] = {
+			["act"] = "41612",
+			["lbl"] = "Pitch",
+		},
+		[4] = {
+			["act"] = "41974",
+			["lbl"] = "Show Env.|Dialog",
+		},
+		["alias"] = "take env",
+	},
+	[12] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "midi 40482",
+			["lbl"] = "1",
+		},
+		[1] = {
+			["act"] = "midi 40483",
+			["lbl"] = "2",
+		},
+		[2] = {
+			["act"] = "midi 40484",
+			["lbl"] = "3",
+		},
+		[3] = {
+			["act"] = "midi 40485",
+			["lbl"] = "4",
+		},
+		[4] = {
+			["act"] = "midi 40486",
+			["lbl"] = "5",
+		},
+		[5] = {
+			["act"] = "midi 40487",
+			["lbl"] = "6",
+		},
+		[6] = {
+			["act"] = "midi 40488",
+			["lbl"] = "7",
+		},
+		[7] = {
+			["act"] = "midi 40489",
+			["lbl"] = "8",
+		},
+		[8] = {
+			["act"] = "midi 40490",
+			["lbl"] = "9",
+		},
+		[9] = {
+			["act"] = "midi 40491",
+			["lbl"] = "10",
+		},
+		[10] = {
+			["act"] = "midi 40492",
+			["lbl"] = "11",
+		},
+		[11] = {
+			["act"] = "midi 40493",
+			["lbl"] = "12",
+		},
+		[12] = {
+			["act"] = "midi 40494",
+			["lbl"] = "13",
+		},
+		[13] = {
+			["act"] = "midi 40495",
+			["lbl"] = "14",
+		},
+		[14] = {
+			["act"] = "midi 40496",
+			["lbl"] = "15",
+		},
+		[15] = {
+			["act"] = "midi 40497",
+			["lbl"] = "16",
+		},
+		["alias"] = "midi channel",
+	},
+	[13] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "40252",
+			["lbl"] = "Normal",
+		},
+		[1] = {
+			["act"] = "40253",
+			["lbl"] = "Sel. Item|Auto Punch",
+		},
+		[2] = {
+			["act"] = "40076",
+			["lbl"] = "Time Sel.|Auto Punch",
+		},
+		["alias"] = "record mode",
+	},
+	[14] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "40067",
+			["lbl"] = "...After|2 Beats",
+		},
+		[1] = {
+			["act"] = "40046",
+			["lbl"] = "...At Edit|Cursor",
+		},
+		[2] = {
+			["act"] = "40045",
+			["lbl"] = "...At Next|Beat",
+		},
+		[3] = {
+			["act"] = "40003",
+			["lbl"] = "...At Next|Measure",
+		},
+		[4] = {
+			["act"] = "40056",
+			["lbl"] = "...At Next|Proj. Marker",
+		},
+		["alias"] = "record start",
+	},
+	[15] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "midi 40042",
+			["lbl"] = "Piano Roll",
+		},
+		[1] = {
+			["act"] = "midi 40043",
+			["lbl"] = "Named Notes",
+		},
+		[2] = {
+			["act"] = "midi 40056",
+			["lbl"] = "Event List",
+		},
+		[3] = {
+			["act"] = "midi 40954",
+			["lbl"] = "Notation",
+		},
+		["alias"] = "midi view",
+	},
+	[16] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "midi 41016",
+			["lbl"] = "2",
+		},
+		[1] = {
+			["act"] = "midi 41015",
+			["lbl"] = "1",
+		},
+		[2] = {
+			["act"] = "midi 41014",
+			["lbl"] = "1/2",
+		},
+		[3] = {
+			["act"] = "midi 41013",
+			["lbl"] = "1/4",
+		},
+		[4] = {
+			["act"] = "midi 41012",
+			["lbl"] = "1/8",
+		},
+		[5] = {
+			["act"] = "midi 41011",
+			["lbl"] = "1/16",
+		},
+		[6] = {
+			["act"] = "midi 41010",
+			["lbl"] = "1/32",
+		},
+		[7] = {
+			["act"] = "midi 41009",
+			["lbl"] = "1/64",
+		},
+		["alias"] = "midi size",
+	},
+	[17] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "midi 41003",
+			["lbl"] = "Straight",
+		},
+		[1] = {
+			["act"] = "midi 41005",
+			["lbl"] = "Dotted",
+		},
+		[2] = {
+			["act"] = "midi 41006",
+			["lbl"] = "Swing",
+		},
+		[3] = {
+			["act"] = "midi 41004",
+			["lbl"] = "Triplet",
+		},
+		["alias"] = "midi type",
+	},
+	[18] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "midi 41710",
+			["lbl"] = "1",
+		},
+		[1] = {
+			["act"] = "midi 41709",
+			["lbl"] = "1/2",
+		},
+		[2] = {
+			["act"] = "midi 41708",
+			["lbl"] = "1/4",
+		},
+		[3] = {
+			["act"] = "midi 41707",
+			["lbl"] = "1/8",
+		},
+		[4] = {
+			["act"] = "midi 41706",
+			["lbl"] = "1/16",
+		},
+		[5] = {
+			["act"] = "midi 41705",
+			["lbl"] = "1/32",
+		},
+		[6] = {
+			["act"] = "midi 41704",
+			["lbl"] = "1/64",
+		},
+		[7] = {
+			["act"] = "midi 41295",
+			["lbl"] = "Use|Grid",
+		},
+		["alias"] = "midi length",
+	},
+	[19] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "40683",
+			["lbl"] = "Bezier",
+		},
+		[1] = {
+			["act"] = "40429",
+			["lbl"] = "Fast End",
+		},
+		[2] = {
+			["act"] = "40428",
+			["lbl"] = "Fast Start",
+		},
+		[3] = {
+			["act"] = "40189",
+			["lbl"] = "Linear",
+		},
+		[4] = {
+			["act"] = "40424",
+			["lbl"] = "Slow Start/End",
+		},
+		[5] = {
+			["act"] = "40190",
+			["lbl"] = "Square",
+		},
+		["alias"] = "env sel shape",
+	},
+	[20] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "40681",
+			["lbl"] = "Bezier",
+		},
+		[1] = {
+			["act"] = "40431",
+			["lbl"] = "Fast End",
+		},
+		[2] = {
+			["act"] = "40430",
+			["lbl"] = "Fast Start",
+		},
+		[3] = {
+			["act"] = "40187",
+			["lbl"] = "Linear",
+		},
+		[4] = {
+			["act"] = "40425",
+			["lbl"] = "Slow Start/End",
+		},
+		[5] = {
+			["act"] = "40188",
+			["lbl"] = "Square",
+		},
+		["alias"] = "env def",
+	},
+	[21] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "_SWSSNAPSHOT_OPEN",
+			["col_main"] = {
+				[1] = 0.76078431372549,
+				[2] = 0.0,
+				[3] = 0.062745098039216,
+			},
+			["lbl"] = "Snapshots",
+		},
+		[1] = {
+			["act"] = "_S&M_SHOW_NOTES_VIEW",
+			["col_main"] = {
+				[1] = 0.45882352941176,
+				[2] = 0.45882352941176,
+				[3] = 0.45882352941176,
+			},
+			["lbl"] = "Notes",
+		},
+		[2] = {
+			["act"] = "_S&M_CYCLEDITOR",
+			["col_main"] = {
+				[1] = 0.47843137254902,
+				[2] = 0.94117647058824,
+				[3] = 0.72941176470588,
+			},
+			["lbl"] = "Cycle Action|Editor",
+		},
+		[3] = {
+			["act"] = "menu Resources",
+			["col_main"] = {
+				[1] = 0.82745098039216,
+				[2] = 0.72941176470588,
+				[3] = 0.35686274509804,
+			},
+			["lbl"] = "Resources",
+		},
+		[4] = {
+			["act"] = "_SWSAUTOCOLOR_OPEN",
+			["col_main"] = {
+				[1] = 0.86666666666667,
+				[2] = 0.29019607843137,
+				[3] = 0.93725490196078,
+			},
+			["lbl"] = "Autocolor",
+		},
+		[5] = {
+			["act"] = "_SWSMA_ENABLE",
+			["col_main"] = {
+				[1] = 1.0,
+				[2] = 1.0,
+				[3] = 1.0,
+			},
+			["lbl"] = "Action Markers|ON",
+		},
+		[6] = {
+			["act"] = "",
+			["col_main"] = {
+				[1] = 1.0,
+				[2] = 1.0,
+				[3] = 1.0,
+			},
+			["col_tog"] = {
+				[1] = 0.92941176470588,
+				[2] = 0.12156862745098,
+				[3] = 0.043137254901961,
+			},
+			["lbl"] = "Action Markers| OFF",
+		},
+		[7] = {
+			["act"] = "_PADRE_ENVLFO",
+			["col_main"] = {
+				[1] = 0.58039215686275,
+				[2] = 0.71372549019608,
+				[3] = 0.90588235294118,
+			},
+			["lbl"] = "LFO|Generator",
+		},
+		["alias"] = "SWS",
+	},
+	[22] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "_SWS_SETGRID_PRESERVE_TYPE_1_4",
+			["col_main"] = {
+				[1] = 0.0,
+				[2] = 0.0,
+				[3] = 0.0,
+			},
+			["lbl"] = "1/4",
+		},
+		[1] = {
+			["act"] = "_SWS_SETGRID_PRESERVE_TYPE_1_8",
+			["col_main"] = {
+				[1] = 0.0,
+				[2] = 0.0,
+				[3] = 0.0,
+			},
+			["lbl"] = "1/8",
+		},
+		[2] = {
+			["act"] = "_SWS_SETGRID_PRESERVE_TYPE_1_16",
+			["col_main"] = {
+				[1] = 0.0,
+				[2] = 0.0,
+				[3] = 0.0,
+			},
+			["lbl"] = "1/16",
+		},
+		[3] = {
+			["act"] = "_SWS_SETGRID_PRESERVE_TYPE_1_32",
+			["col_main"] = {
+				[1] = 0.0,
+				[2] = 0.0,
+				[3] = 0.0,
+			},
+			["lbl"] = "1/32",
+		},
+		[4] = {
+			["act"] = "_SWS_SETGRID_PRESERVE_TYPE_1_64",
+			["col_main"] = {
+				[1] = 0.0,
+				[2] = 0.0,
+				[3] = 0.0,
+			},
+			["lbl"] = "1/64",
+		},
+		[5] = {
+			["act"] = "_SWS_AWTOGGLETRIPLET",
+			["col_hvr"] = {
+				[1] = 0.878,
+				[2] = 0.878,
+				[3] = 0.878,
+			},
+			["col_main"] = {
+				[1] = 0.30980392156863,
+				[2] = 0.68235294117647,
+				[3] = 0.90588235294118,
+			},
+			["lbl"] = "Triplet",
+		},
+		[6] = {
+			["act"] = "_SWS_AWTOGGLESWING",
+			["col_main"] = {
+				[1] = 0.30980392156863,
+				[2] = 0.68235294117647,
+				[3] = 0.90588235294118,
+			},
+			["lbl"] = "Swing",
+		},
+		[7] = {
+			["act"] = "_SWS_AWTOGGLEDOTTED",
+			["col_main"] = {
+				[1] = 0.30980392156863,
+				[2] = 0.68235294117647,
+				[3] = 0.90588235294118,
+			},
+			["lbl"] = "Dotted",
+		},
+		[8] = {
+			["act"] = "41885",
+			["col_main"] = {
+				[1] = 0.95686274509804,
+				[2] = 0.59607843137255,
+				[3] = 0.043137254901961,
+			},
+			["lbl"] = "Framerate|Grid",
+		},
+		[9] = {
+			["act"] = "_SWS_SETGRID_PRESERVE_TYPE_1",
+			["col_main"] = {
+				[1] = 0.0,
+				[2] = 0.0,
+				[3] = 0.0,
+			},
+			["lbl"] = "1",
+		},
+		[10] = {
+			["act"] = "_SWS_SETGRID_PRESERVE_TYPE_1_2",
+			["col_main"] = {
+				[1] = 0.0,
+				[2] = 0.0,
+				[3] = 0.0,
+			},
+			["lbl"] = "1/2",
+		},
+		["alias"] = "Grid Size",
+	},
+	[23] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "_S&M_SHOW_RESVIEW_MEDIA",
+			["col_main"] = {
+				[1] = 0.2156862745098,
+				[2] = 0.39607843137255,
+				[3] = 0.48627450980392,
+			},
+			["lbl"] = "Media Files",
+		},
+		[1] = {
+			["act"] = "_S&M_SHOW_RESVIEW_IMAGE",
+			["col_main"] = {
+				[1] = 0.59607843137255,
+				[2] = 0.33725490196078,
+				[3] = 0.69803921568627,
+			},
+			["lbl"] = "Images",
+		},
+		[2] = {
+			["act"] = "_S&M_SHOW_RESVIEW_THEME",
+			["col_main"] = {
+				[1] = 0.91764705882353,
+				[2] = 0.48627450980392,
+				[3] = 0.26274509803922,
+			},
+			["lbl"] = "Themes",
+		},
+		[3] = {
+			["act"] = "_S&M_SHOW_RESVIEW_PRJ_TEMPLATES",
+			["col_main"] = {
+				[1] = 0.34117647058824,
+				[2] = 0.73725490196078,
+				[3] = 0.082352941176471,
+			},
+			["lbl"] = "Projects",
+		},
+		[4] = {
+			["act"] = "",
+			["col_main"] = {
+				[1] = 0.87058823529412,
+				[2] = 0.29019607843137,
+				[3] = 0.32549019607843,
+			},
+			["lbl"] = "Track\\Templates",
+		},
+		[5] = {
+			["act"] = "_S&M_SHOWFXCHAINSLOTS",
+			["col_main"] = {
+				[1] = 1.0,
+				[2] = 0.96078431372549,
+				[3] = 0.38039215686275,
+			},
+			["lbl"] = "FX Chains",
+		},
+		["alias"] = "Resources",
+	},
+	[24] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "_SWS_AWPANBALANCENEW",
+			["col_main"] = {
+				[1] = 0.43921568627451,
+				[2] = 0.03921568627451,
+				[3] = 0.63921568627451,
+			},
+			["lbl"] = "Mono Pan",
+		},
+		[1] = {
+			["act"] = "_SWS_AWPANDUALPAN",
+			["col_main"] = {
+				[1] = 0.75294117647059,
+				[2] = 0.10588235294118,
+				[3] = 0.88235294117647,
+			},
+			["lbl"] = "Dual Pan",
+		},
+		[2] = {
+			["act"] = "",
+			["col_main"] = {
+				[1] = 0.3843137254902,
+				[2] = 0.0,
+				[3] = 0.74901960784314,
+			},
+			["lbl"] = "Width Knob",
+		},
+		["alias"] = "Pan Mode",
+	},
+	[25] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "40849",
+			["col_main"] = {
+				[1] = 0.58039215686275,
+				[2] = 0.71372549019608,
+				[3] = 0.90588235294118,
+			},
+			["lbl"] = "Export Project|MIDI",
+		},
+		[1] = {
+			["act"] = "40859",
+			["col_main"] = {
+				[1] = 0.58039215686275,
+				[2] = 0.71372549019608,
+				[3] = 0.90588235294118,
+			},
+			["lbl"] = "New|Project Tab",
+		},
+		[2] = {
+			["act"] = "",
+			["col_main"] = {
+				[1] = 0.58039215686275,
+				[2] = 0.71372549019608,
+				[3] = 0.90588235294118,
+			},
+			["lbl"] = "Insert New|Subproject",
+		},
+		[3] = {
+			["act"] = "",
+			["col_main"] = {
+				[1] = 0.58039215686275,
+				[2] = 0.71372549019608,
+				[3] = 0.90588235294118,
+			},
+			["lbl"] = "Save List|of Open|Projects",
+		},
+		[4] = {
+			["act"] = "_S&M_OPEN_PRJ_PATH",
+			["col_main"] = {
+				[1] = 0.79607843137255,
+				[2] = 0.64705882352941,
+				[3] = 0.73725490196078,
+			},
+			["lbl"] = "Open Project|Path in|Explorer/Finder",
+		},
+		[5] = {
+			["act"] = "",
+			["col_main"] = {
+				[1] = 0.79607843137255,
+				[2] = 0.68235294117647,
+				[3] = 0.48627450980392,
+			},
+			["lbl"] = "Project|Settings",
+		},
+		[6] = {
+			["act"] = "40098",
+			["col_main"] = {
+				[1] = 0.8,
+				[2] = 0.46666666666667,
+				[3] = 0.48235294117647,
+			},
+			["lbl"] = "Clean Project|Directory",
+		},
+		[7] = {
+			["act"] = "40394",
+			["col_main"] = {
+				[1] = 0.58039215686275,
+				[2] = 0.71372549019608,
+				[3] = 0.90588235294118,
+			},
+			["lbl"] = "Save Project|as Template",
+		},
+		["alias"] = "Project",
+	},
+	[26] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "menu Compressor",
+			["col_main"] = {
+				[1] = 0.92941176470588,
+				[2] = 0.12156862745098,
+				[3] = 0.043137254901961,
+			},
+			["lbl"] = "Compressor",
+		},
+		[1] = {
+			["act"] = "menu Harmonics",
+			["col_main"] = {
+				[1] = 0.95686274509804,
+				[2] = 0.59607843137255,
+				[3] = 0.043137254901961,
+			},
+			["lbl"] = "Harmonics",
+		},
+		[2] = {
+			["act"] = "menu Delay",
+			["col_main"] = {
+				[1] = 0.58039215686275,
+				[2] = 0.71372549019608,
+				[3] = 0.90588235294118,
+			},
+			["lbl"] = "Delay",
+		},
+		[3] = {
+			["act"] = "menu Reverb",
+			["col_main"] = {
+				[1] = 0.10588235294118,
+				[2] = 0.0,
+				[3] = 0.96862745098039,
+			},
+			["lbl"] = "Reverb",
+		},
+		[4] = {
+			["act"] = "menu Modulation",
+			["col_main"] = {
+				[1] = 0.85882352941176,
+				[2] = 0.0,
+				[3] = 0.92941176470588,
+			},
+			["lbl"] = "Modulation",
+		},
+		[5] = {
+			["act"] = "menu MIDI",
+			["col_main"] = {
+				[1] = 0.52941176470588,
+				[2] = 0.12156862745098,
+				[3] = 0.12941176470588,
+			},
+			["lbl"] = "MIDI",
+		},
+		[6] = {
+			["act"] = "menu Amps",
+			["col_main"] = {
+				[1] = 0.78039215686275,
+				[2] = 0.86274509803922,
+				[3] = 0.062745098039216,
+			},
+			["lbl"] = "Amps",
+		},
+		[7] = {
+			["act"] = "menu Utilities",
+			["col_main"] = {
+				[1] = 0.0,
+				[2] = 0.0,
+				[3] = 0.0,
+			},
+			["lbl"] = "Utilities",
+		},
+		[8] = {
+			["act"] = "menu Cockos",
+			["col_main"] = {
+				[1] = 0.47843137254902,
+				[2] = 0.94117647058824,
+				[3] = 0.72941176470588,
+			},
+			["lbl"] = "Cockos",
+		},
+		[9] = {
+			["act"] = "menu EQ",
+			["col_main"] = {
+				[1] = 0.48235294117647,
+				[2] = 0.49411764705882,
+				[3] = 0.49411764705882,
+			},
+			["lbl"] = "EQ",
+		},
+		["alias"] = "Plugins",
+	},
+	[27] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "",
+			["lbl"] = "EQ 0",
+		},
+		[1] = {
+			["act"] = "",
+			["lbl"] = "EQ 1",
+		},
+		[2] = {
+			["act"] = "",
+			["lbl"] = "EQ 2",
+		},
+		[3] = {
+			["act"] = "",
+			["lbl"] = "EQ 3",
+		},
+		[4] = {
+			["act"] = "",
+			["lbl"] = "EQ 4",
+		},
+		[5] = {
+			["act"] = "",
+			["lbl"] = "EQ 5",
+		},
+		[6] = {
+			["act"] = "",
+			["lbl"] = "EQ 6",
+		},
+		[7] = {
+			["act"] = "",
+			["lbl"] = "EQ 7",
+		},
+		["alias"] = "EQ",
+	},
+	[28] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "",
+			["lbl"] = "Compressor 0",
+		},
+		[1] = {
+			["act"] = "",
+			["lbl"] = "Compressor 1",
+		},
+		[2] = {
+			["act"] = "",
+			["lbl"] = "Compressor 2",
+		},
+		[3] = {
+			["act"] = "",
+			["lbl"] = "Compressor 3",
+		},
+		[4] = {
+			["act"] = "",
+			["lbl"] = "Compressor 4",
+		},
+		[5] = {
+			["act"] = "",
+			["lbl"] = "Compressor 5",
+		},
+		[6] = {
+			["act"] = "",
+			["lbl"] = "Compressor 6",
+		},
+		[7] = {
+			["act"] = "",
+			["lbl"] = "Compressor 7",
+		},
+		["alias"] = "Compressor",
+	},
+	[29] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "",
+			["lbl"] = "Harmonics 0",
+		},
+		[1] = {
+			["act"] = "",
+			["lbl"] = "Harmonics 1",
+		},
+		[2] = {
+			["act"] = "",
+			["lbl"] = "Harmonics 2",
+		},
+		[3] = {
+			["act"] = "",
+			["lbl"] = "Harmonics 3",
+		},
+		[4] = {
+			["act"] = "",
+			["lbl"] = "Harmonics 4",
+		},
+		[5] = {
+			["act"] = "",
+			["lbl"] = "Harmonics 5",
+		},
+		[6] = {
+			["act"] = "",
+			["lbl"] = "Harmonics 6",
+		},
+		[7] = {
+			["act"] = "",
+			["lbl"] = "Harmonics 7",
+		},
+		["alias"] = "Harmonics",
+	},
+	[30] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "",
+			["lbl"] = "Delay 0",
+		},
+		[1] = {
+			["act"] = "",
+			["lbl"] = "Delay 1",
+		},
+		[2] = {
+			["act"] = "",
+			["lbl"] = "Delay 2",
+		},
+		[3] = {
+			["act"] = "",
+			["lbl"] = "Delay 3",
+		},
+		[4] = {
+			["act"] = "",
+			["lbl"] = "Delay 4",
+		},
+		[5] = {
+			["act"] = "",
+			["lbl"] = "Delay 5",
+		},
+		[6] = {
+			["act"] = "",
+			["lbl"] = "Delay 6",
+		},
+		[7] = {
+			["act"] = "",
+			["lbl"] = "Delay 7",
+		},
+		["alias"] = "Delay",
+	},
+	[31] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "",
+			["lbl"] = "Reverb 0",
+		},
+		[1] = {
+			["act"] = "",
+			["lbl"] = "Reverb 1",
+		},
+		[2] = {
+			["act"] = "",
+			["lbl"] = "Reverb 2",
+		},
+		[3] = {
+			["act"] = "",
+			["lbl"] = "Reverb 3",
+		},
+		[4] = {
+			["act"] = "",
+			["lbl"] = "Reverb 4",
+		},
+		[5] = {
+			["act"] = "",
+			["lbl"] = "Reverb 5",
+		},
+		[6] = {
+			["act"] = "",
+			["lbl"] = "Reverb 6",
+		},
+		[7] = {
+			["act"] = "",
+			["lbl"] = "Reverb 7",
+		},
+		["alias"] = "Reverb",
+	},
+	[32] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "",
+			["lbl"] = "Modulation 0",
+		},
+		[1] = {
+			["act"] = "",
+			["lbl"] = "Modulation 1",
+		},
+		[2] = {
+			["act"] = "",
+			["lbl"] = "Modulation 2",
+		},
+		[3] = {
+			["act"] = "",
+			["lbl"] = "Modulation 3",
+		},
+		[4] = {
+			["act"] = "",
+			["lbl"] = "Modulation 4",
+		},
+		[5] = {
+			["act"] = "",
+			["lbl"] = "Modulation 5",
+		},
+		[6] = {
+			["act"] = "",
+			["lbl"] = "Modulation 6",
+		},
+		[7] = {
+			["act"] = "",
+			["lbl"] = "Modulation 7",
+		},
+		["alias"] = "Modulation",
+	},
+	[33] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "",
+			["lbl"] = "MIDI 0",
+		},
+		[1] = {
+			["act"] = "",
+			["lbl"] = "MIDI 1",
+		},
+		[2] = {
+			["act"] = "",
+			["lbl"] = "MIDI 2",
+		},
+		[3] = {
+			["act"] = "",
+			["lbl"] = "MIDI 3",
+		},
+		[4] = {
+			["act"] = "",
+			["lbl"] = "MIDI 4",
+		},
+		[5] = {
+			["act"] = "",
+			["lbl"] = "MIDI 5",
+		},
+		[6] = {
+			["act"] = "",
+			["lbl"] = "MIDI 6",
+		},
+		[7] = {
+			["act"] = "",
+			["lbl"] = "MIDI 7",
+		},
+		["alias"] = "MIDI",
+	},
+	[34] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "",
+			["lbl"] = "Utilities 0",
+		},
+		[1] = {
+			["act"] = "",
+			["lbl"] = "Utilities 1",
+		},
+		[2] = {
+			["act"] = "",
+			["lbl"] = "Utilities 2",
+		},
+		[3] = {
+			["act"] = "",
+			["lbl"] = "Utilities 3",
+		},
+		[4] = {
+			["act"] = "",
+			["lbl"] = "Utilities 4",
+		},
+		[5] = {
+			["act"] = "",
+			["lbl"] = "Utilities 5",
+		},
+		[6] = {
+			["act"] = "",
+			["lbl"] = "Utilities 6",
+		},
+		[7] = {
+			["act"] = "",
+			["lbl"] = "Utilities 7",
+		},
+		["alias"] = "Utilities",
+	},
+	[35] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "",
+			["lbl"] = "Amps 0",
+		},
+		[1] = {
+			["act"] = "",
+			["lbl"] = "Amps 1",
+		},
+		[2] = {
+			["act"] = "",
+			["lbl"] = "Amps 2",
+		},
+		[3] = {
+			["act"] = "",
+			["lbl"] = "Amps 3",
+		},
+		[4] = {
+			["act"] = "",
+			["lbl"] = "Amps 4",
+		},
+		[5] = {
+			["act"] = "",
+			["lbl"] = "Amps 5",
+		},
+		[6] = {
+			["act"] = "",
+			["lbl"] = "Amps 6",
+		},
+		[7] = {
+			["act"] = "",
+			["lbl"] = "Amps 7",
+		},
+		["alias"] = "Amps",
+	},
+	[36] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "",
+			["lbl"] = "ReaXComp",
+		},
+		[1] = {
+			["act"] = "",
+			["lbl"] = "ReaLimit",
+		},
+		[2] = {
+			["act"] = "",
+			["lbl"] = "ReaDelay",
+		},
+		[3] = {
+			["act"] = "",
+			["lbl"] = "ReaVerb",
+		},
+		[4] = {
+			["act"] = "",
+			["lbl"] = "ReaTune",
+		},
+		[5] = {
+			["act"] = "",
+			["lbl"] = "ReaPitch",
+		},
+		[6] = {
+			["act"] = "",
+			["lbl"] = "ReaFIR",
+		},
+		[7] = {
+			["act"] = "",
+			["lbl"] = "General|Dynamics",
+		},
+		[8] = {
+			["act"] = "",
+			["lbl"] = "LUFS|Meter",
+		},
+		[9] = {
+			["act"] = "",
+			["lbl"] = "ReaEQ",
+		},
+		[10] = {
+			["act"] = "",
+			["lbl"] = "ReaComp",
+		},
+		["alias"] = "Cockos",
+	},
+	[37] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "40204",
+			["col_main"] = {
+				[1] = 0.79607843137255,
+				[2] = 0.56862745098039,
+				[3] = 0.74509803921569,
+			},
+			["lbl"] = "LMB +1 st|RMB -1 st|MMB Reset",
+			["m_act"] = "40653",
+			["r_act"] = "40205",
+		},
+		[1] = {
+			["act"] = "40797",
+			["col_main"] = {
+				[1] = 0.79607843137255,
+				[2] = 0.56862745098039,
+				[3] = 0.74509803921569,
+			},
+			["lbl"] = "LMB 6% fst|RMB 6% slo|MMB 1.0",
+			["m_act"] = "40652",
+			["r_act"] = "40798",
+		},
+		[2] = {
+			["act"] = "40338",
+			["col_main"] = {
+				[1] = 0.51764705882353,
+				[2] = 0.78039215686275,
+				[3] = 0.52549019607843,
+			},
+			["lbl"] = "Time Selection|to Measure",
+		},
+		[3] = {
+			["act"] = "41999",
+			["col_main"] = {
+				[1] = 0.50196078431373,
+				[2] = 0.57647058823529,
+				[3] = 0.7921568627451,
+			},
+			["lbl"] = "Render|Items",
+		},
+		[4] = {
+			["act"] = "41193",
+			["col_main"] = {
+				[1] = 0.8,
+				[2] = 0.46666666666667,
+				[3] = 0.48235294117647,
+			},
+			["lbl"] = "Remove Fades",
+		},
+		[5] = {
+			["act"] = "40032",
+			["col_main"] = {
+				[1] = 0.79607843137255,
+				[2] = 0.56862745098039,
+				[3] = 0.74509803921569,
+			},
+			["lbl"] = "LMB Group|RMB Ungroup",
+			["r_act"] = "40033",
+		},
+		[6] = {
+			["act"] = "41226",
+			["col_main"] = {
+				[1] = 0.79607843137255,
+				[2] = 0.68235294117647,
+				[3] = 0.48627450980392,
+			},
+			["lbl"] = "Nudge/Set|Items",
+		},
+		[7] = {
+			["act"] = "41996",
+			["col_main"] = {
+				[1] = 0.8,
+				[2] = 0.46666666666667,
+				[3] = 0.48235294117647,
+			},
+			["lbl"] = "Move to|Subproject",
+		},
+		[8] = {
+			["act"] = "_XENAKIOS_REPOSITION_ITEMS",
+			["col_main"] = {
+				[1] = 0.79607843137255,
+				[2] = 0.70588235294118,
+				[3] = 0.47058823529412,
+			},
+			["lbl"] = "Reposition|Items",
+		},
+		[9] = {
+			["act"] = "42023",
+			["col_main"] = {
+				[1] = 0.58823529411765,
+				[2] = 0.7843137254902,
+				[3] = 0.78823529411765,
+			},
+			["lbl"] = "LMB Latch/Prev|RMB Trim/Read",
+			["r_act"] = "40400",
+		},
+		[10] = {
+			["act"] = "42013",
+			["col_main"] = {
+				[1] = 0.58823529411765,
+				[2] = 0.7843137254902,
+				[3] = 0.78823529411765,
+			},
+			["lbl"] = "Write to|Time Selection",
+		},
+		["alias"] = "Advanced",
+	},
+	[38] = {
+		[-1] = {
+			["act"] = "back",
+			["lbl"] = "Back",
+		},
+		[0] = {
+			["act"] = "41051",
+			["lbl"] = "Toggle|Reverse",
+		},
+		[1] = {
+			["act"] = "40181",
+			["lbl"] = "Toggle|Phase",
+		},
+		[2] = {
+			["act"] = "40179",
+			["lbl"] = "Mono|LMB Left|RMB Right|MMB Downmix",
+			["m_act"] = "40178",
+			["r_act"] = "40180",
+		},
+		[3] = {
+			["act"] = "40175",
+			["lbl"] = "Lock",
+		},
+		[4] = {
+			["act"] = "40254",
+			["lbl"] = "Normalize to|Common Gain",
+		},
+		[5] = {
+			["act"] = "42460",
+			["lbl"] = "Normalize|(Peak,RMS,LUFS)",
+		},
+		[6] = {
+			["act"] = "42429",
+			["lbl"] = "Channel|Mapper",
+		},
+		[7] = {
+			["act"] = "40009",
+			["lbl"] = "Open Item|Properties...",
+		},
+		[8] = {
+			["act"] = "40795",
+			["lbl"] = "Preserve Pitch|LMB ON|RMB OFF",
+			["r_act"] = "40796",
+		},
+		["alias"] = "Item Prop",
+	},
+}

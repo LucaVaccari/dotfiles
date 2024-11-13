@@ -1,0 +1,62 @@
+C10018 "D:\Software\FLStudio 20.8.4\Data\Patches\Packs\Legacy\Loops"
+F "DL_Classic Break.wav" 706554 0 1575368424 0
+D t "Classic Break" p 60 s 44100 n 2
+D l 0:04.000 i 16
+F DL_Drumroom.wav 706550 0 1575368424 0
+D t Drumroom p 60 s 44100 n 2
+D l 0:04.000 i 16
+F DL_DudaFunk.wav 38158 0 1575368424 0
+F DL_Electrobox.wav 706948 0 1575368424 0
+D t Electrobox p 60 s 44100 n 2
+D l 0:04.000 i 16
+F DL_Electroloop.wav 706948 0 1575368424 0
+D t Electroloop p 60 s 44100 n 2
+D l 0:04.000 i 16
+F "DL_Ghost Break.wav" 706948 0 1575368424 0
+D t "Ghost Break" p 60 s 44100 n 2
+D l 0:04.000 i 16
+F DL_Halftime.wav 706418 0 1575368424 0
+D t Halftime p 60 s 44100 n 2
+D l 0:04.000 i 16
+F DL_Houser.wav 706812 0 1575368424 0
+D t Houser p 60 s 44100 n 2
+D l 0:04.000 i 16
+F DL_Housetime.wav 706946 0 1575368424 0
+D t Housetime p 60 s 44100 n 2
+D l 0:04.000 i 16
+F DL_Jazzfunk.wav 706946 0 1575368424 0
+D t Jazzfunk p 60 s 44100 n 2
+D l 0:04.000 i 16
+F DL_Jazzmaster.wav 706616 0 1575368424 0
+D t Jazzmaster p 60 s 44100 n 2
+D l 0:04.000 i 16
+F DL_Lectrohaus.wav 706618 0 1575368424 0
+D t Lectrohaus p 60 s 44100 n 2
+D l 0:04.000 i 16
+F DL_Pounder.wav 706614 0 1575368424 0
+D t Pounder p 60 s 44100 n 2
+D l 0:04.000 i 16
+F "DL_Power Break.wav" 706684 0 1575368424 0
+D t "Power Break" p 60 s 44100 n 2
+D l 0:04.000 i 16
+F "DL_Ride Break.wav" 706618 0 1575368424 0
+D t "Ride Break" p 60 s 44100 n 2
+D l 0:04.000 i 16
+F DL_Rocker.wav 706548 0 1575368424 0
+D t Rocker p 60 s 44100 n 2
+D l 0:04.000 i 16
+F "DL_Rolling Break.wav" 706488 0 1575368424 0
+D t "Rolling Break" p 60 s 44100 n 2
+D l 0:04.000 i 16
+F DL_Smooth.wav 706614 0 1575368424 0
+D t Smooth p 60 s 44100 n 2
+D l 0:04.000 i 16
+F DL_Synthbeat.wav 706682 0 1575368424 0
+D t Synthbeat p 60 s 44100 n 2
+D l 0:04.000 i 16
+F DL_Synthdrum.wav 706484 0 1575368424 0
+D t Synthdrum p 60 s 44100 n 2
+D l 0:04.000 i 16
+F "DL_The Funk.wav" 706418 0 1575368424 0
+D t "The Funk" p 60 s 44100 n 2
+D l 0:04.000 i 16

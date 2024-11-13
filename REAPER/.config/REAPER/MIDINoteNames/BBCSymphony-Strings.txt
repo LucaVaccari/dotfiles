@@ -1,0 +1,5 @@
+# MIDI note/CC name map
+3 Tremolo
+2 Pizzicato
+1 Spiccato
+0 Legato

@@ -1,0 +1,45 @@
+C10018 "D:\luca\Personal\Music\Production\Lit Silver\Album\3. Butterfly\1. What we need to know\Audio"
+F "01-Acoustic guitar.flac" 36194610 0 1718912182 0
+D s 44100 n 2 l 4:02.608 i 24
+F 02-L.flac 18254554 0 1718912184 0
+D s 44100 n 1 l 3:44.925 i 24
+F 03-R.flac 15540712 0 1718912186 0
+D s 44100 n 1 l 3:44.925 i 24
+F 05-Main.flac 16668649 0 1718912189 0
+D s 44100 n 2 l 4:00.610 i 24
+F 06-Noises.flac 875511 0 1718912190 0
+D y 2023-10-16 s 44100 n 1 l 0:13.058
+D i 24
+F "08-Rev 1-01.flac" 8324837 0 1718912191 0
+D s 44100 n 2 l 1:13.337 i 24
+F "08-Rev 1-02.flac" 8806289 0 1718912192 0
+D s 44100 n 2 l 1:12.600 i 24
+F "08-Rev 1-03.flac" 2289436 0 1718912193 0
+D s 44100 n 2 l 0:29.678 i 24
+F "08-Rev 1.flac" 1131004 0 1718912190 0
+D s 44100 n 2 l 0:15.058 i 24
+F "09-Rev 2.flac" 30404429 0 1718912197 0
+D s 44100 n 2 l 3:58.611 i 24
+F 10-2023-10-16_18.55-01_m.flac 936192 0 1707066923 0
+D y 2023-10-16 s 48000 n 1 l 0:13.724
+D i 24
+F 10-Delay-01.flac 3623275 0 1718912199 0
+D s 44100 n 2 l 1:12.600 i 24
+F 10-Delay-02.flac 1070008 0 1718912200 0
+D s 44100 n 2 l 0:29.678 i 24
+F 10-Delay.flac 3260734 0 1718912198 0
+D s 44100 n 2 l 1:13.337 i 24
+F "WhatWeNeedToKnow_freeze_Acoustic guitar.flac" 36091555 0 1718912158 0
+D s 44100 n 2 l 4:02.608 i 24
+F WhatWeNeedToKnow_freeze_Delay.flac 8937669 0 1718912111 0
+D s 44100 n 2 l 3:57.275 i 24
+F WhatWeNeedToKnow_freeze_L.flac 18231120 0 1718912091 0
+D s 44100 n 1 l 3:44.920 i 24
+F WhatWeNeedToKnow_freeze_R.flac 15462375 0 1718912091 0
+D s 44100 n 1 l 3:44.920 i 24
+F "WhatWeNeedToKnow_freeze_Rev 1.flac" 20411500 0 1718912111 0
+D s 44100 n 2 l 3:57.275 i 24
+F "WhatWeNeedToKnow_freeze_Rev 2.flac" 30218746 0 1718912111 0
+D s 44100 n 2 l 3:57.275 i 24
+F WhatWeNeedToKnow_stems_Main.flac 16551363 0 1718912134 0
+D s 44100 n 2 l 4:00.608 i 24

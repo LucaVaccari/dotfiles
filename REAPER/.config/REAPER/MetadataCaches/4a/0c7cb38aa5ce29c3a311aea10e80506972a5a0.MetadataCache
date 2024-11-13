@@ -1,0 +1,8 @@
+C10018 "D:\Software\FLStudio 20.8.4\Data\Patches\Packs\Legacy\Instruments\Bass"
+F BASS_EfEm_C2.wav 21246 0 1575368414 0
+D t GillEfEm2_C2 y 2002-04-20 s 44100 n 1
+D l 0:00.238 i 16
+F HIP_Bass.wav 19030 0 1575368414 0
+D s 44100 n 1 l 0:00.214 i 16
+F HIP_Bass_2.wav 26394 0 1575368414 0
+D s 44100 n 1 l 0:00.298 i 16

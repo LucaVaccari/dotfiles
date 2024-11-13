@@ -1,0 +1,111 @@
+config = {
+	SEARCH = "",
+	always_add_to_track = false,
+	always_on_top = true,
+	colors = {
+		default = {
+			guid = "default",
+			preset_name = "Default"
+		}
+	},
+	enable_synonyms = true,
+	esc_always_closes_script = true,
+	fav_order = {
+		
+	},
+	folders_order = {
+		
+	},
+	font = 0,
+	font_scales = {
+		results = 1,
+		search = 1
+	},
+	font_size = 14,
+	fx_alt_mode = 0,
+	fx_order = {
+		disabled = {
+			
+		},
+		"vst3",
+		"vst3i",
+		"other",
+		"jsfx",
+		"vst",
+		"vsti",
+		"au",
+		"aui",
+		"clap",
+		"clapi",
+		"lv2",
+		"lv2i"
+	},
+	keys = {
+		
+	},
+	last_cursor_context = 1,
+	persistent_mode = false,
+	prefs = false,
+	project_directories = {
+		
+	},
+	project_directories_sort = "Name",
+	recent = {
+		{
+			id = "VST3:Ozone 11 (iZotope)",
+			type = "vst3"
+		},
+		{
+			id = "VST3i:Bassline (AIR Music Technology)",
+			type = "vst3i"
+		},
+		{
+			id = "VST3:Pro-L 2 (FabFilter)",
+			type = "vst3"
+		},
+		{
+			id = "ReaLlm: REAPER Low latency monitoring (AK5K_REALLM) (Main)",
+			type = "action"
+		},
+		{
+			id = "VST3:Archetype Gojira (Neural DSP)",
+			type = "vst3"
+		},
+		{
+			id = "Container",
+			type = "other"
+		}
+	},
+	recent_results_amount = 10,
+	remove_duplicate_fx = true,
+	results_order = {
+		disabled = {
+			
+		},
+		"fx",
+		"chain",
+		"track template",
+		"action",
+		"project",
+		"track",
+		"take",
+		"region",
+		"marker",
+		"folder item"
+	},
+	scale = 1,
+	search_scale = 1,
+	show_fx = true,
+	show_sidebar = true,
+	sort_method = "Relevance",
+	style_vars = {
+		
+	},
+	version = "1.10.7"
+}
+folders = {
+	
+}
+fav = {
+	
+}

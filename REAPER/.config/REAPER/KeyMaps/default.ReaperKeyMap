@@ -1,0 +1,16 @@
+SCR 4 0 RS1ee9bb229dabffe151848d7efa3c10f748e1a1cf "Custom: lyrics.lua" Cockos/lyrics.lua
+SCR 4 32060 RS7d3c_1ee9bb229dabffe151848d7efa3c10f748e1a1cf "Custom: lyrics.lua" Cockos/lyrics.lua
+SCR 4 0 RS1cbf05b0c4f875518496f34a5ce45adefe05cb67 "Custom: Default_6.0_theme_adjuster.lua" Cockos/Default_6.0_theme_adjuster.lua
+SCR 4 0 RS64c58143c69f93c74347ca8caed894d680cec4a5 "Custom: solger_ReaLauncher.lua" "ReaTeam Scripts/Project Properties/solger_ReaLauncher.lua"
+SCR 4 0 RS1c6ad1164e1d29bb4b1f2c1acf82f5853ce77875 "Custom: Set Lokasenna_GUI v2 library path.lua" "ReaTeam Scripts/Development/Lokasenna_GUI v2/Library/Set Lokasenna_GUI v2 library path.lua"
+KEY 1 87 0 0
+KEY 176 17 1007 0
+KEY 176 18 1013 0
+KEY 176 16 1016 0
+KEY 144 4760 40161 0
+KEY 144 2329 40162 0
+KEY 144 5402 40163 0
+KEY 144 7835 40164 0
+KEY 176 22 40172 0
+KEY 176 21 40173 0
+KEY 5 73 40200 0

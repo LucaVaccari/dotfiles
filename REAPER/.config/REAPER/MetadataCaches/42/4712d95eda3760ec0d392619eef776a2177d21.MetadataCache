@@ -1,0 +1,21 @@
+C10018 "C:\Users\luca_\Desktop\3. Butterfly\Butterfly-MASTER\Audio"
+F Rediscovery_m.flac 64531296 0 1707305874 0
+D t Rediscovery a "Lit Silver" b Butterfly y 2023-11-07
+D k "E major" s 44100 n 2 l 5:49.013
+D i 24 m 4
+F SafeAndCalm_m.flac 59403637 0 1707305874 0
+D t "Safe and calm" a "Lit Silver" b Butterfly y 2023-11-01
+D k "A minor" s 44100 n 2 l 6:03.205
+D i 24 m 3
+F ThankYou_m.flac 19193415 0 1707305874 0
+D t "Thank you" a "Lit Silver" b Butterfly y 2023-11-01
+D k "F major" s 44100 n 2 l 2:38.385
+D i 24 m 5
+F TheSkyInABox_m.flac 54220880 0 1707305873 0
+D t "The sky in a box" a "Lit Silver" b Butterfly y 2023-11-01
+D p 80 k "D major" s 44100 n 2
+D l 4:40.138 i 24 m 2
+F WhatWeNeedToKnow_m.flac 38284915 0 1707305873 0
+D t "What we need to know" a "Lit Silver" b Butterfly y 2023-10-25
+D k "A major" s 44100 n 2 l 3:55.608
+D i 24 m 1

@@ -1,0 +1,37 @@
+C10018 "C:\Users\luca_\Desktop\Luca\ReaperProjects\4. Fallen leaves\FallingLeavesSingles-MASTER\Audio"
+F 01-Singles-01.flac 55837985 0 1719161374 0
+D s 44100 n 2 l 4:42.430 i 24
+F 01-Singles-02.flac 54181872 0 1719161377 0
+D s 44100 n 2 l 4:26.684 i 24
+F 01-Singles-03.flac 44489235 0 1719161381 0
+D s 44100 n 2 l 3:48.011 i 24
+F 01-Singles.flac 56709615 0 1719161370 0
+D s 44100 n 2 l 4:59.331 i 24
+F FallingLeavesSingles-MASTER_freeze_Singles-001.wav 105604184 0 1719161197 0
+D y 2024-06-23 s 44100 n 2 l 4:59.329
+D i 32
+F FallingLeavesSingles-MASTER_freeze_Singles-002.wav 99640904 0 1719161252 0
+D y 2024-06-23 s 44100 n 2 r 5:11.516
+D l 4:42.426 i 32
+F FallingLeavesSingles-MASTER_freeze_Singles-003.wav 94086024 0 1719161313 0
+D y 2024-06-23 s 44100 n 2 r 10:20.612
+D l 4:26.681 i 32
+F FallingLeavesSingles-MASTER_freeze_Singles-004.wav 80442960 0 1719161348 0
+D y 2024-06-23 s 44100 n 2 r 15:12.367
+D l 3:48.010 i 32
+F "HowLong (single edit).wav" 74205526 0 1710004396 0
+D t "How long" a "Lit Silver" b "Fallen leaves singles" y 2024-03-09
+D p 110 s 44100 n 2 l 4:40.426
+D i 24 m 2
+F "Lament (single edit).wav" 78677976 0 1707380965 0
+D t Lament a "Lit Silver" b "Fallen leaves singles" y 2024-02-08
+D k "B major" s 44100 n 2 l 4:57.329
+D i 24 m 1
+F "Nothing in the world.wav" 59807040 0 1718170599 0
+D t "Nothing in the world" a "Lit Silver" b "Fallen leaves" y 2024-06-12
+D s 44100 n 2 l 3:46.010 i 24
+D m 4
+F "Recurring dreams (single edit).wav" 70039382 0 1713714596 0
+D t "Recurring dreams" a "Lit Silver" b "Fallen leaves singles" y 2024-04-21
+D s 44100 n 2 l 4:24.681 i 24
+D m 3

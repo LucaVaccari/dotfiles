@@ -1,0 +1,56 @@
+
+--Default_v5_REAPER_theme--
+
+This set is from HOWT's v5 theme and is an example
+of what your composited 'core' icon set will be like
+when finished. 
+
+You can use the content of this folder to borrow from,
+use the 'toolbar_blank' and 'composite_toolbar_overlay'
+images as templates by importing them into your image
+editing program as a base layer, and building on top of them,
+or simply use the contents of this folder as a referendum when
+building your 'core' set.
+
+Most themes to date do not have a 100% complete set, due in part
+to the fact that v5 changed alot in terms of capability & content,
+and due also to the fact that the standard by which themes should
+now, and in the future follow, is a tremendous departure from previous
+versions, thanks to the new v5 default theme, which is a flagship
+for the v5 WALTER standard. 
+
+Additionally, there is no definative source for an uncomposited
+stock set of toolbar icons that is 100% complete, leaving some
+work for you, the end-user...that is, of course, if you would like
+to build your own theme, while keeping all of the elements 
+graphically cohesive.
+
+There are, however alot of illustrations that have been created by
+REAPER users, such as myself, and others, who recognize the need
+for extended content in this area. Most of these icon sets though,
+are created in image software, flattened, and then offered as 
+composed icon buttons - fitting the style of the creator's theme,
+or designed to their personal taste. While these offerings are
+no doubt appreciated, they do not help much in the way of future
+development across many different types of styles.
+
+That's where this pack comes in. I have taken all of the uncomposited,
+bare-bones glyphs that I can find, whether they be in a sliced-button
+format, and ready-to-go, or a single illustration or 'shape' as HOWT
+calls it. In this pack are all kinds of icon 'shapes', for all
+kinds of different applications, in color, gray, black, white, -
+(Standard and Inverted, or Mask) styles, with credits where possible.
+This resource should give you enough to pull from to make a 
+quality set of sleek-looking icons for your theme --
+
+That actually match the style of your theme!!
+
+This is your starting point. Put together your version of these
+'core' 38 icons as I call them, and then it's all downhill from here.
+
+For more on naming conventions used in this pkg, see 
+'Assembling your own icon set - A brief tutorial for beginners'
+text file located in the root of this pkg.
+
+Best,
+Never

@@ -1,0 +1,73 @@
+C10018 "D:\luca\Software\FLStudio 20.8.4\Data\Patches\Packs\Shapes\Misc"
+F SHP_Additive.wav 872 0 1575368428 0
+D s 44100 n 1 l 0:00.007 i 16
+F SHP_Additive_2.wav 872 0 1575368428 0
+D s 44100 n 1 l 0:00.007 i 16
+F SHP_BungList.wav 874 0 1575368428 0
+D s 44100 n 1 l 0:00.007 i 16
+F SHP_BungList_2.wav 874 0 1575368428 0
+D s 44100 n 1 l 0:00.007 i 16
+F SHP_BungList_3.wav 874 0 1575368428 0
+D s 44100 n 1 l 0:00.007 i 16
+F SHP_BungList_4.wav 874 0 1575368428 0
+D s 44100 n 1 l 0:00.007 i 16
+F SHP_BungList_5.wav 874 0 1575368428 0
+D s 44100 n 1 l 0:00.007 i 16
+F SHP_BungList_6.wav 874 0 1575368428 0
+D s 44100 n 1 l 0:00.007 i 16
+F SHP_BungList_7.wav 874 0 1575368428 0
+D s 44100 n 1 l 0:00.007 i 16
+F SHP_BungList_8.wav 874 0 1575368428 0
+D s 44100 n 1 l 0:00.007 i 16
+F SHP_BungList_9.wav 874 0 1575368428 0
+D s 44100 n 1 l 0:00.007 i 16
+F "SHP_Detuned Saw.wav" 82468 0 1575368428 0
+D s 44100 n 2 l 0:00.466 i 16
+F SHP_Harmonics.wav 876 0 1575368428 0
+D s 44100 n 1 l 0:00.007 i 16
+F SHP_Moog.wav 2928 0 1575368428 0
+D s 44100 n 1 l 0:00.030 i 16
+F "SHP_Noise Bass.wav" 8176 0 1575368428 0
+D s 44100 n 1 l 0:00.091 i 16
+F SHP_Noise.wav 22304 0 1575368428 0
+D c "altered by FruityLoops (98-00) Didier Dambrin" s 44100 n 1 l 0:00.250
+D i 16
+F SHP_Overtone.wav 876 0 1575368428 0
+D s 44100 n 1 l 0:00.007 i 16
+F SHP_Overtone_2.wav 874 0 1575368428 0
+D s 44100 n 1 l 0:00.007 i 16
+F "SHP_Ramp Saw.wav" 874 0 1575368430 0
+D s 44100 n 1 l 0:00.007 i 16
+F SHP_Ramp.wav 22304 0 1575368430 0
+D c "altered by FruityLoops (98-00) Didier Dambrin" s 44100 n 1 l 0:00.250
+D i 16
+F SHP_Rand.wav 574 0 1575368428 0
+D y 2000-04-27 s 44100 n 1 l 0:00.004
+D i 16
+F SHP_Rand_2.wav 544 0 1575368430 0
+D y 2000-04-27 s 44100 n 1 l 0:00.004
+D i 16
+F "SHP_Rough Square.wav" 874 0 1575368430 0
+D s 44100 n 1 l 0:00.007 i 16
+F "SHP_Rough Step.wav" 876 0 1575368430 0
+D s 44100 n 1 l 0:00.007 i 16
+F "SHP_Rough Step_2.wav" 874 0 1575368428 0
+D s 44100 n 1 l 0:00.007 i 16
+F SHP_Saw+Sine.wav 556 0 1575368428 0
+D s 44100 n 1 l 0:00.003 i 16
+F "SHP_Sawing Synth.wav" 8336 0 1575368428 0
+D s 44100 n 1 l 0:00.093 i 16
+F SHP_Synth.wav 8972 0 1575368430 0
+D s 44100 n 1 l 0:00.100 i 16
+F "SHP_Thin Pulse.wav" 538 0 1575368430 0
+D s 44100 n 1 l 0:00.003 i 16
+F SHP_Thin.wav 872 0 1575368430 0
+D s 44100 n 1 l 0:00.007 i 16
+F "SHP_Vowel A.wav" 1548 0 1575368430 0
+D s 44100 n 2 l 0:00.007 i 16
+F "SHP_Vowel U.wav" 1548 0 1575368428 0
+D s 44100 n 2 l 0:00.007 i 16
+F "SHP_Wire Scan.wav" 1548 0 1575368428 0
+D s 44100 n 2 l 0:00.007 i 16
+F "SHP_Wooble Synth.wav" 7952 0 1575368428 0
+D s 44100 n 1 l 0:00.088 i 16
