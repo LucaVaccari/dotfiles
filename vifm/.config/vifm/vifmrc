@@ -217,6 +217,7 @@ fileviewer {*.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
         \ %pc
         \ vifmimg clear
 
+" HTML
 filetype {*.xhtml,*.html,*.htm},<text/html>
         \ {Open with librewolf}
         \ librewolf %f &,
@@ -326,6 +327,8 @@ filetype */
         \ vifm %f &,
 fileviewer */ ls --color=always
 fileviewer .*/ ls --color=always
+
+" fileviewer * file %c
 
 " Syntax highlighting in preview
 "
