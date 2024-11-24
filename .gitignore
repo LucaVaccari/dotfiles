@@ -8,3 +8,5 @@ fish/.config/fish/fish_variables
 
 REAPER/.config/REAPER/Configurations/
 REAPER/.config/REAPER/MetadataCaches/
+REAPER/.config/REAPER/ReaPack/cache
+REAPER/.config/REAPER/Effects/
