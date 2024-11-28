@@ -242,7 +242,10 @@ fileviewer {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
          \ vifmimg clear
 
 " MuseScore
-filetype {*.mscz},mscore %f
+filetype {*.mscz},mscore %f &
+
+" Xournal++
+filetype *.xopp,xournalpp %f &
 
 " MD5
 filetype *.md5
