@@ -10,7 +10,7 @@ return {
 		config = function()
 			require("mason-lspconfig").setup({
 				-- https://github.com/williamboman/mason-lspconfig.nvim
-				ensure_installed = { "bashls", "cssls", "hyprls", "lua_ls" },
+				ensure_installed = { "arduino_language_server", "bashls", "clangd", "cssls", "hyprls", "lua_ls" },
 			})
 		end,
 	},
@@ -31,6 +31,16 @@ return {
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 			local lspconfig = require("lspconfig")
+			lspconfig.arduino_language_server.setup({
+				capabilities = capabilities,
+				cmd = {
+					"arduino-language-server",
+					"-cli-config",
+					"/home/luca/.arduino15/arduino-cli.yaml",
+					"-fqbn",
+					"esp32:esp32:esp32",
+				},
+			})
 			lspconfig.bashls.setup({
 				capabilities = capabilities,
 			})
