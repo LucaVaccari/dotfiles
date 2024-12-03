@@ -1,8 +1,8 @@
 vifm/.config/vifm/colors/catppuccin-mocha.vifm
 vifm/.config/vifm/vifminfo.json
 
-yazi/Catpuccin-mocha.tmTheme
-yazi/theme.toml
+yazi/.config/yazi/Catpuccin-mocha.tmTheme
+yazi/.config/yazi/theme.toml
 
 nvim/.config/nvim/lazy-lock.json
 
