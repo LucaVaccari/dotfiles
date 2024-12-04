@@ -10,7 +10,15 @@ return {
 		config = function()
 			require("mason-lspconfig").setup({
 				-- https://github.com/williamboman/mason-lspconfig.nvim
-				ensure_installed = { "arduino_language_server", "bashls", "clangd", "cssls", "hyprls", "lua_ls" },
+				ensure_installed = {
+					"arduino_language_server",
+					"bashls",
+					"clangd",
+					"cssls",
+					"hyprls",
+					"lua_ls",
+					"taplo",
+				},
 			})
 		end,
 	},
@@ -47,10 +55,13 @@ return {
 			lspconfig.cssls.setup({
 				capabilities = capabilities,
 			})
-			lspconfig.hyprls.setup({})
+			lspconfig.hyprls.setup({
+				capabilities = capabilities,
+			})
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
 			})
+			lspconfig.taplo.setup({})
 
 			-- Hyprlang LSP
 			vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
