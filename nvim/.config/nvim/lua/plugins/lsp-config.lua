@@ -17,6 +17,7 @@ return {
 					"cssls",
 					"hyprls",
 					"lua_ls",
+					"sqlls",
 					"taplo",
 				},
 			})
@@ -40,16 +41,24 @@ return {
 
 			local lspconfig = require("lspconfig")
 			lspconfig.arduino_language_server.setup({
-				capabilities = capabilities,
+				filetypes = { "arduino" },
+				capabilities = {},
 				cmd = {
 					"arduino-language-server",
 					"-cli-config",
 					"/home/luca/.arduino15/arduino-cli.yaml",
 					"-fqbn",
 					"esp32:esp32:esp32",
+					"-clangd",
+					"/usr/bin/clangd",
+					"-cli",
+					"/usr/bin/arduino-cli",
 				},
 			})
 			lspconfig.bashls.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.clangd.setup({
 				capabilities = capabilities,
 			})
 			lspconfig.cssls.setup({
@@ -60,6 +69,13 @@ return {
 			})
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
+			})
+			lspconfig.sqlls.setup({
+				capabilities = capabilities,
+				filetypes = { "sql", "mysql" },
+				root_dir = function()
+					return vim.loop.cwd()
+				end,
 			})
 			lspconfig.taplo.setup({})
 
@@ -75,13 +91,19 @@ return {
 					})
 				end,
 			})
-			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
-			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
-			vim.keymap.set("n", "gD", vim.lsp.buf.declaration, {})
-			vim.keymap.set("n", "gi", vim.lsp.buf.implementation, {})
-			vim.keymap.set("n", "gr", vim.lsp.buf.references, {})
-			vim.keymap.set("n", "<F2>", vim.lsp.buf.rename, {})
-			vim.keymap.set({ "n", "v" }, "<F4>", vim.lsp.buf.code_action, {})
+
+			vim.api.nvim_create_autocmd("LspAttach", {
+				desc = "Lsp actions",
+				callback = function()
+					vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
+					vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
+					vim.keymap.set("n", "gD", vim.lsp.buf.declaration, {})
+					vim.keymap.set("n", "gi", vim.lsp.buf.implementation, {})
+					vim.keymap.set("n", "gr", vim.lsp.buf.references, {})
+					vim.keymap.set("n", "<F2>", vim.lsp.buf.rename, {})
+					vim.keymap.set({ "n", "v" }, "<F4>", vim.lsp.buf.code_action, {})
+				end,
+			})
 		end,
 	},
 }

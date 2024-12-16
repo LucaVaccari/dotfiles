@@ -112,11 +112,23 @@ name = "*"
 run = "mime-ext"
 prio = "high"
 
-[[plugin.prepend_previewers]]
-name = "*.md"
-run = "glow"
+[[plugin.prepend_fetchers]]
+id = "git"
+name = "*"
+run = "git"
+
+[[plugin.prepend_fetchers]]
+id = "git"
+name = "*/"
+run = "git"
 
 [plugin]
+prepend_previewers = [
+	{ name = "*.md", run = "mdcat" },
+	{ mime = "text/csv", run = "miller" },
+	{ mime = "{image,audio,video}/*", run = "mediainfo" },
+	{ mime = "applications/x-subrip", run = "mediainfo" },
+]
 fetchers = [
 	# Mimetype
 	{ id = "mime", name = "*", run = "mime", if = "!mime", prio = "high" },

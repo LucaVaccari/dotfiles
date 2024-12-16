@@ -2,6 +2,8 @@ require("full-border"):setup({
 	type = ui.Border.ROUNDED,
 })
 
+require("git"):setup()
+
 -- Show username and host-name in header
 Header:children_add(function()
 	if ya.target_family() ~= "unix" then

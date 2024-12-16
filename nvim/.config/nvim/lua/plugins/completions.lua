@@ -45,7 +45,6 @@ return {
 				mapping = cmp.mapping.preset.insert({
 					["<C-u>"] = cmp.mapping.scroll_docs(-4),
 					["<C-d>"] = cmp.mapping.scroll_docs(4),
-					-- ["<C-Space>"] = cmp.mapping.complete(),
 					["<C-e>"] = cmp.mapping.abort(),
 					["<C-Space>"] = cmp.mapping.confirm({ select = true }),
 					["<C-f>"] = cmp.mapping(function(fallback)
@@ -82,9 +81,9 @@ return {
 					end, { "i", "s" }),
 				}),
 				sources = cmp.config.sources({
-					{ name = "nvim_lsp" },
-					{ name = "luasnip" },
-					{ name = "buffer" },
+					{ name = "nvim_lsp", keyword_length = 1 },
+					{ name = "luasnip", keyword_length = 2 },
+					{ name = "buffer", keyword_length = 3 },
 					{ name = "path" },
 				}),
 				formatting = {
@@ -119,16 +118,47 @@ return {
 
 						-- Kind icons
 						vim_item.kind = string.format("%s", kind_icons[vim_item.kind]) -- , vim_item.kind) -- This concatenates the icons with the name of the item kind
-						-- Source
-						-- vim_item.menu = ({
-						--	buffer = "[Buffer]",
-						--	nvim_lsp = "[LSP]",
-						--	luasnip = "[LuaSnip]",
-						--	nvim_lua = "[Lua]",
-						--	latex_symbols = "[LaTeX]",
-						-- })[entry.source.name]
+						local menu_icon = {
+							nvim_lsp = "λ",
+							luasnip = "⋗",
+							buffer = "Ω",
+							path = "🖫",
+						}
+
+						vim_item.menu = menu_icon[entry.source.name]
 						return vim_item
 					end,
+				},
+			})
+
+			vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = "rounded" })
+
+			vim.lsp.handlers["textDocument/signatureHelp"] =
+				vim.lsp.with(vim.lsp.handlers.signature_help, { border = "rounded" })
+
+			-- diagnostic lines look
+			local sign = function(opts)
+				vim.fn.sign_define(opts.name, {
+					texthl = opts.name,
+					text = opts.text,
+					numhl = "",
+				})
+			end
+
+			sign({ name = "DiagnosticSignError", text = "✘" })
+			sign({ name = "DiagnosticSignWarn", text = "▲" })
+			sign({ name = "DiagnosticSignHint", text = "⚑" })
+			sign({ name = "DiagnosticSignInfo", text = "»" })
+
+			vim.diagnostic.config({
+				virtual_text = true,
+				signs = true,
+				update_in_insert = true,
+				underline = true,
+				severity_sort = true,
+				float = {
+					border = "rounded",
+					source = "always",
 				},
 			})
 		end,
