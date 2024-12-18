@@ -17,7 +17,6 @@ return {
 					"cssls",
 					"hyprls",
 					"lua_ls",
-					"sqlls",
 					"taplo",
 				},
 			})

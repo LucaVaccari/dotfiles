@@ -1,6 +1,4 @@
-# A TOML linter such as https://taplo.tamasfe.dev/ can use this schema to validate your config.
-# If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
-"$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
+# $schema" = "https://yazi-rs.github.io/schemas/yazi.json"
 
 [manager]
 ratio = [1, 4, 3]
@@ -126,7 +124,7 @@ run = "git"
 prepend_previewers = [
 	{ name = "*.md", run = "mdcat" },
 	{ mime = "text/csv", run = "miller" },
-	{ mime = "{image,audio,video}/*", run = "mediainfo" },
+	# { mime = "{image,audio,video}/*", run = "mediainfo" },
 	{ mime = "applications/x-subrip", run = "mediainfo" },
 ]
 fetchers = [
@@ -239,6 +237,8 @@ open_offset = [0, 1, 50, 7]
 
 [which]
 sort_by = "none"
+# A TOML linter such as https://taplo.tamasfe.dev/ can use this schema to validate your config.
+# If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
 sort_sensitive = false
 sort_reverse = false
 sort_translit = false
