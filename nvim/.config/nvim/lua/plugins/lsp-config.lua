@@ -91,18 +91,14 @@ return {
 				end,
 			})
 
-			vim.api.nvim_create_autocmd("LspAttach", {
-				desc = "Lsp actions",
-				callback = function()
-					vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
-					vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
-					vim.keymap.set("n", "gD", vim.lsp.buf.declaration, {})
-					vim.keymap.set("n", "gi", vim.lsp.buf.implementation, {})
-					vim.keymap.set("n", "gr", vim.lsp.buf.references, {})
-					vim.keymap.set("n", "<F2>", vim.lsp.buf.rename, {})
-					vim.keymap.set({ "n", "v" }, "<F4>", vim.lsp.buf.code_action, {})
-				end,
-			})
+			-- Navbuddy keybind
+			vim.keymap.set("n", "<leader>t", "<cmd>Navbuddy<cr>", { desc = "Navbuddy code elements" })
+		end,
+	},
+	{
+		"j-hui/fidget.nvim",
+		config = function()
+			require("fidget").setup()
 		end,
 	},
 }

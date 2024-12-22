@@ -1,3 +1,5 @@
+vim.loader.enable()
+
 require("user.generic")
 require("user.theming")
 require("user.autocommands")

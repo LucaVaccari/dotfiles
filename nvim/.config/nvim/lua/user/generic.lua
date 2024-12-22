@@ -9,5 +9,5 @@ vim.opt.smartcase = true -- search for uppercase only if search word contains up
 vim.opt.tabstop = 4 -- tab 4 spaces
 vim.opt.shiftwidth = 4 -- shift 4 spaces when << or >>
 vim.opt.cursorline = true
-vim.opt.termguicolors = true
+vim.opt.laststatus = 3
 vim.g.mapleader = " " -- leader key
