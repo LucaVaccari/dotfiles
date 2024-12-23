@@ -1,10 +1,9 @@
 return {
-	{
-		"hrsh7th/cmp-nvim-lsp",
-	},
-	{
-		"hrsh7th/cmp-path",
-	},
+	{ "hrsh7th/cmp-nvim-lsp" },
+	{ "hrsh7th/cmp-buffer" },
+	{ "hrsh7th/cmp-path" },
+	{ "hrsh7th/cmp-nvim-lua" },
+	{ "dmitmel/cmp-digraphs" },
 	{
 		"L3MON4D3/LuaSnip",
 		dependencies = {
@@ -85,6 +84,8 @@ return {
 					{ name = "luasnip", keyword_length = 2 },
 					{ name = "buffer", keyword_length = 3 },
 					{ name = "path" },
+					{ name = "digraphs", keyword_length = 0 },
+					{ name = "nvim_lua", keyword_length = 0 },
 				}),
 				formatting = {
 					format = function(entry, vim_item)
@@ -123,6 +124,8 @@ return {
 							luasnip = "⋗",
 							buffer = "Ω",
 							path = "🖫",
+							digraphs = "dig",
+							nvim_lua = "N",
 						}
 
 						vim_item.menu = menu_icon[entry.source.name]
@@ -150,16 +153,35 @@ return {
 			sign({ name = "DiagnosticSignHint", text = "⚑" })
 			sign({ name = "DiagnosticSignInfo", text = "»" })
 
-			vim.diagnostic.config({
-				virtual_text = true,
-				signs = true,
-				update_in_insert = true,
-				underline = true,
-				severity_sort = true,
-				float = {
-					border = "rounded",
-					source = "always",
-				},
+			-- vim.diagnostic.config({
+			-- 	virtual_text = true,
+			-- 	signs = true,
+			-- 	update_in_insert = true,
+			-- 	underline = true,
+			-- 	severity_sort = true,
+			-- 	float = {
+			-- 		border = "rounded",
+			-- 		source = "always",
+			-- 	},
+			-- })
+		end,
+	},
+	{
+		"ray-x/lsp_signature.nvim",
+		event = "VeryLazy",
+		opts = {},
+		config = function()
+			vim.api.nvim_create_autocmd("LspAttach", {
+				callback = function(args)
+					local bufnr = args.buf
+					local client = vim.lsp.get_client_by_id(args.data.client_id)
+					if vim.tbl_contains({ "null-ls" }, client.name) then -- blacklist lsp
+						return
+					end
+					require("lsp_signature").on_attach({
+						-- ... setup options here ...
+					}, bufnr)
+				end,
 			})
 		end,
 	},

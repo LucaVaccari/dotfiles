@@ -14,7 +14,4 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	end,
 })
 
-vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
-	pattern = "*.md",
-	command = "Markview splitEnable",
-})
+vim.cmd([[ autocmd BufEnter * silent! lcd %:p:h ]])
